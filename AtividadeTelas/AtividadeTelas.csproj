@@ -46,87 +46,87 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CadastroCliente.cs">
+    <Compile Include="view\CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroCliente.Designer.cs">
+    <Compile Include="view\CadastroCliente.Designer.cs">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroLivros.cs">
+    <Compile Include="view\CadastroLivros.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroLivros.Designer.cs">
+    <Compile Include="view\CadastroLivros.Designer.cs">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
     </Compile>
-    <Compile Include="CadastroFuncioario.cs">
+    <Compile Include="view\CadastroFuncioario.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="CadastroFuncioario.Designer.cs">
+    <Compile Include="view\CadastroFuncioario.Designer.cs">
       <DependentUpon>CadastroFuncioario.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesquisarCliente.cs">
+    <Compile Include="view\PesquisarCliente.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesquisarCliente.Designer.cs">
+    <Compile Include="view\PesquisarCliente.Designer.cs">
       <DependentUpon>PesquisarCliente.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesquisaVendas.cs">
+    <Compile Include="view\PesquisaVendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesquisaVendas.Designer.cs">
+    <Compile Include="view\PesquisaVendas.Designer.cs">
       <DependentUpon>PesquisaVendas.cs</DependentUpon>
     </Compile>
-    <Compile Include="PesqusarLivro.cs">
+    <Compile Include="view\PesqusarLivro.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="PesqusarLivro.Designer.cs">
+    <Compile Include="view\PesqusarLivro.Designer.cs">
       <DependentUpon>PesqusarLivro.cs</DependentUpon>
     </Compile>
-    <Compile Include="Relatorio.cs">
+    <Compile Include="view\Relatorio.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Relatorio.Designer.cs">
+    <Compile Include="view\Relatorio.Designer.cs">
       <DependentUpon>Relatorio.cs</DependentUpon>
     </Compile>
-    <Compile Include="TelaPrincipal.cs">
+    <Compile Include="view\TelaPrincipal.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TelaPrincipal.Designer.cs">
+    <Compile Include="view\TelaPrincipal.Designer.cs">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </Compile>
-    <Compile Include="Vendas.cs">
+    <Compile Include="view\Vendas.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Vendas.Designer.cs">
+    <Compile Include="view\Vendas.Designer.cs">
       <DependentUpon>Vendas.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="CadastroCliente.resx">
+    <EmbeddedResource Include="view\CadastroCliente.resx">
       <DependentUpon>CadastroCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroLivros.resx">
+    <EmbeddedResource Include="view\CadastroLivros.resx">
       <DependentUpon>CadastroLivros.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="CadastroFuncioario.resx">
+    <EmbeddedResource Include="view\CadastroFuncioario.resx">
       <DependentUpon>CadastroFuncioario.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesquisarCliente.resx">
+    <EmbeddedResource Include="view\PesquisarCliente.resx">
       <DependentUpon>PesquisarCliente.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesquisaVendas.resx">
+    <EmbeddedResource Include="view\PesquisaVendas.resx">
       <DependentUpon>PesquisaVendas.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="PesqusarLivro.resx">
+    <EmbeddedResource Include="view\PesqusarLivro.resx">
       <DependentUpon>PesqusarLivro.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Relatorio.resx">
+    <EmbeddedResource Include="view\Relatorio.resx">
       <DependentUpon>Relatorio.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TelaPrincipal.resx">
+    <EmbeddedResource Include="view\TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Vendas.resx">
+    <EmbeddedResource Include="view\Vendas.resx">
       <DependentUpon>Vendas.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
