@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Control\Banco.cs" />
     <Compile Include="Control\ClienteControle.cs" />
     <Compile Include="Control\FuncionarioControle.cs" />
     <Compile Include="Control\LivroControle.cs" />
