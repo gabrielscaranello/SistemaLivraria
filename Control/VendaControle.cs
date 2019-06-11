@@ -37,12 +37,8 @@ namespace AtividadeTelas.control
 
         public Array ListaVenda()
         {
-<<<<<<< HEAD
-            return 0;
-=======
             return null;
 
->>>>>>> master
         }
 
     }

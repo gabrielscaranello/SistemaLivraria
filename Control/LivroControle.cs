@@ -28,30 +28,25 @@ namespace AtividadeTelas.control
 
         public Array BuscarLivroNome(String nome)
         {
-<<<<<<< HEAD
-            return 0;
-=======
+
             return null;
->>>>>>> master
+
         }
 
         public Livro BuscarLivroId(int id)
         {
-<<<<<<< HEAD
-            return 0;
-=======
+
             return null;
->>>>>>> master
+
         }
 
         public Array ListaLivro()
         {
-<<<<<<< HEAD
-            return 0;
-=======
+
+
 
             return null;
->>>>>>> master
+
         }
 
     }
