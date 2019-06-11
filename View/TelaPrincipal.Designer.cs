@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.label1 = new System.Windows.Forms.Label();
             this.btVenda = new System.Windows.Forms.Button();
             this.btCadCli = new System.Windows.Forms.Button();
@@ -38,28 +37,13 @@
             this.btControleCliente = new System.Windows.Forms.Button();
             this.btControleFunc = new System.Windows.Forms.Button();
             this.btControleLivro = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
-            this.pictureBox1.Image = global::SistemaBiblioteca.Properties.Resources.fundoBiblioteca;
-            this.pictureBox1.Location = new System.Drawing.Point(-7, -2);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(706, 459);
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // label1
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.label1.Font = new System.Drawing.Font("Montserrat Subrayada", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
             this.label1.Location = new System.Drawing.Point(257, 27);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(235, 43);
@@ -69,7 +53,6 @@
             // btVenda
             // 
             this.btVenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btVenda.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btVenda.Location = new System.Drawing.Point(254, 89);
             this.btVenda.Name = "btVenda";
@@ -82,7 +65,6 @@
             // btCadCli
             // 
             this.btCadCli.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btCadCli.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btCadCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadCli.Location = new System.Drawing.Point(254, 126);
             this.btCadCli.Name = "btCadCli";
@@ -95,7 +77,6 @@
             // btCadFun
             // 
             this.btCadFun.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btCadFun.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btCadFun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadFun.Location = new System.Drawing.Point(254, 163);
             this.btCadFun.Name = "btCadFun";
@@ -108,7 +89,6 @@
             // btCadLivros
             // 
             this.btCadLivros.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btCadLivros.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btCadLivros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btCadLivros.Location = new System.Drawing.Point(254, 200);
             this.btCadLivros.Name = "btCadLivros";
@@ -121,7 +101,6 @@
             // btControleVenda
             // 
             this.btControleVenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btControleVenda.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btControleVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btControleVenda.Location = new System.Drawing.Point(254, 237);
             this.btControleVenda.Name = "btControleVenda";
@@ -133,7 +112,6 @@
             // btControleCliente
             // 
             this.btControleCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btControleCliente.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btControleCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btControleCliente.Location = new System.Drawing.Point(254, 274);
             this.btControleCliente.Name = "btControleCliente";
@@ -145,7 +123,6 @@
             // btControleFunc
             // 
             this.btControleFunc.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btControleFunc.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btControleFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btControleFunc.Location = new System.Drawing.Point(254, 311);
             this.btControleFunc.Name = "btControleFunc";
@@ -158,7 +135,6 @@
             // btControleLivro
             // 
             this.btControleLivro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.btControleLivro.BackColor = System.Drawing.SystemColors.ControlDarkDark;
             this.btControleLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btControleLivro.Location = new System.Drawing.Point(254, 348);
             this.btControleLivro.Name = "btControleLivro";
@@ -181,18 +157,14 @@
             this.Controls.Add(this.btCadCli);
             this.Controls.Add(this.btVenda);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.pictureBox1);
             this.Name = "telaPrincipal";
             this.Text = "Tela Principal";
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btVenda;
         private System.Windows.Forms.Button btCadCli;
