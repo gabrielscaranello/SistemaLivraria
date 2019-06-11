@@ -40,6 +40,7 @@
             this.tbNomeCli = new System.Windows.Forms.TextBox();
             this.tbCodFunc = new System.Windows.Forms.TextBox();
             this.dtDataVenda = new System.Windows.Forms.DateTimePicker();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button5
@@ -143,14 +144,24 @@
             // 
             this.dtDataVenda.Location = new System.Drawing.Point(150, 145);
             this.dtDataVenda.Name = "dtDataVenda";
-            this.dtDataVenda.Size = new System.Drawing.Size(200, 20);
+            this.dtDataVenda.Size = new System.Drawing.Size(228, 20);
             this.dtDataVenda.TabIndex = 29;
+            // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(150, 171);
+            this.maskedTextBox1.Mask = "00/00/0000 90:00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(100, 20);
+            this.maskedTextBox1.TabIndex = 30;
+            this.maskedTextBox1.ValidatingType = typeof(System.DateTime);
             // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.dtDataVenda);
             this.Controls.Add(this.tbCodFunc);
             this.Controls.Add(this.tbNomeCli);
@@ -184,5 +195,6 @@
         private System.Windows.Forms.TextBox tbNomeCli;
         private System.Windows.Forms.TextBox tbCodFunc;
         private System.Windows.Forms.DateTimePicker dtDataVenda;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
     }
 }
