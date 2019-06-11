@@ -36,8 +36,6 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.tbNome = new System.Windows.Forms.TextBox();
-            this.tbTel = new System.Windows.Forms.TextBox();
-            this.tbCPF = new System.Windows.Forms.TextBox();
             this.tbEnd = new System.Windows.Forms.TextBox();
             this.tbEmail = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -46,6 +44,8 @@
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.mtxtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
+            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(386, 61);
+            this.label3.Location = new System.Drawing.Point(479, 61);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 3;
@@ -97,7 +97,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(397, 91);
+            this.label6.Location = new System.Drawing.Point(316, 91);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 6;
@@ -106,7 +106,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(240, 91);
+            this.label7.Location = new System.Drawing.Point(159, 91);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 7;
@@ -116,23 +116,8 @@
             // 
             this.tbNome.Location = new System.Drawing.Point(69, 58);
             this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(311, 20);
+            this.tbNome.Size = new System.Drawing.Size(404, 20);
             this.tbNome.TabIndex = 8;
-            // 
-            // tbTel
-            // 
-            this.tbTel.Location = new System.Drawing.Point(444, 58);
-            this.tbTel.Name = "tbTel";
-            this.tbTel.Size = new System.Drawing.Size(182, 20);
-            this.tbTel.TabIndex = 9;
-            // 
-            // tbCPF
-            // 
-            this.tbCPF.Location = new System.Drawing.Point(69, 88);
-            this.tbCPF.Name = "tbCPF";
-            this.tbCPF.Size = new System.Drawing.Size(165, 20);
-            this.tbCPF.TabIndex = 10;
-            this.tbCPF.TextChanged += new System.EventHandler(this.TextBox3_TextChanged);
             // 
             // tbEnd
             // 
@@ -143,15 +128,15 @@
             // 
             // tbEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(438, 88);
+            this.tbEmail.Location = new System.Drawing.Point(357, 88);
             this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(188, 20);
+            this.tbEmail.Size = new System.Drawing.Size(269, 20);
             this.tbEmail.TabIndex = 12;
             // 
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(308, 183);
+            this.button5.Location = new System.Drawing.Point(308, 140);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 66);
             this.button5.TabIndex = 17;
@@ -160,7 +145,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(551, 183);
+            this.btExcluir.Location = new System.Drawing.Point(551, 140);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(75, 66);
             this.btExcluir.TabIndex = 16;
@@ -169,7 +154,7 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(470, 183);
+            this.btSalvar.Location = new System.Drawing.Point(470, 140);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(75, 66);
             this.btSalvar.TabIndex = 15;
@@ -178,7 +163,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(389, 183);
+            this.btEditar.Location = new System.Drawing.Point(389, 140);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(75, 66);
             this.btEditar.TabIndex = 14;
@@ -187,7 +172,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(227, 183);
+            this.btVoltar.Location = new System.Drawing.Point(227, 140);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 66);
             this.btVoltar.TabIndex = 0;
@@ -196,18 +181,36 @@
             // 
             // mtxtNascimento
             // 
-            this.mtxtNascimento.Location = new System.Drawing.Point(325, 88);
+            this.mtxtNascimento.Location = new System.Drawing.Point(244, 88);
             this.mtxtNascimento.Mask = "00/00/0000";
             this.mtxtNascimento.Name = "mtxtNascimento";
             this.mtxtNascimento.Size = new System.Drawing.Size(66, 20);
             this.mtxtNascimento.TabIndex = 18;
             this.mtxtNascimento.ValidatingType = typeof(System.DateTime);
             // 
+            // maskedTextBox1
+            // 
+            this.maskedTextBox1.Location = new System.Drawing.Point(69, 88);
+            this.maskedTextBox1.Mask = "000,000,000-00";
+            this.maskedTextBox1.Name = "maskedTextBox1";
+            this.maskedTextBox1.Size = new System.Drawing.Size(84, 20);
+            this.maskedTextBox1.TabIndex = 19;
+            // 
+            // maskedTextBox2
+            // 
+            this.maskedTextBox2.Location = new System.Drawing.Point(537, 58);
+            this.maskedTextBox2.Mask = "(00) 00000-0000";
+            this.maskedTextBox2.Name = "maskedTextBox2";
+            this.maskedTextBox2.Size = new System.Drawing.Size(89, 20);
+            this.maskedTextBox2.TabIndex = 20;
+            // 
             // Cadastro_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 261);
+            this.ClientSize = new System.Drawing.Size(638, 216);
+            this.Controls.Add(this.maskedTextBox2);
+            this.Controls.Add(this.maskedTextBox1);
             this.Controls.Add(this.mtxtNascimento);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btExcluir);
@@ -215,8 +218,6 @@
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.tbEmail);
             this.Controls.Add(this.tbEnd);
-            this.Controls.Add(this.tbCPF);
-            this.Controls.Add(this.tbTel);
             this.Controls.Add(this.tbNome);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -244,8 +245,6 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox tbNome;
-        private System.Windows.Forms.TextBox tbTel;
-        private System.Windows.Forms.TextBox tbCPF;
         private System.Windows.Forms.TextBox tbEnd;
         private System.Windows.Forms.TextBox tbEmail;
         private System.Windows.Forms.Button btEditar;
@@ -253,5 +252,7 @@
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox mtxtNascimento;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
+        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
     }
 }
