@@ -14,30 +14,35 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarVenda(Venda Venda)
         {
-
+            return false;
         }
         public Boolean AtualizarVenda(Venda Venda)
         {
-
+            return false;
         }
         public Boolean ExcluirVenda(Venda Venda)
         {
-
+            return false;
         }
 
         public Array BuscarVendaNome(String nome)
         {
-
+            return null;
         }
 
         public Venda BuscarVendaId(int id)
         {
-
+            return null;
         }
 
         public Array ListaVenda()
         {
+<<<<<<< HEAD
             return 0;
+=======
+            return null;
+
+>>>>>>> master
         }
 
     }
