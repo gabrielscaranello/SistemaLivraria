@@ -1,6 +1,6 @@
 ﻿namespace SistemaBiblioteca
 {
-    partial class Funcionario_Controle
+    partial class PesquisaFuncionario
     {
         /// <summary>
         /// Required designer variable.
@@ -133,7 +133,7 @@
             this.ResultadoPesquisa.Size = new System.Drawing.Size(557, 173);
             this.ResultadoPesquisa.TabIndex = 30;
             // 
-            // Funcionario_Controle
+            // PesquisaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -148,7 +148,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
-            this.Name = "Funcionario_Controle";
+            this.Name = "PesquisaFuncionario";
             this.Text = "Funcionário Controle";
             this.Load += new System.EventHandler(this.Controle_Funcionário_Load);
             this.ResumeLayout(false);
