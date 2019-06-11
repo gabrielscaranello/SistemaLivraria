@@ -43,10 +43,10 @@
             // 
             this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Montserrat Subrayada", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(257, 27);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(133, 9);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(235, 43);
+            this.label1.Size = new System.Drawing.Size(229, 39);
             this.label1.TabIndex = 1;
             this.label1.Text = "BIBLIOTECA";
             // 
@@ -54,7 +54,7 @@
             // 
             this.btVenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btVenda.Location = new System.Drawing.Point(254, 89);
+            this.btVenda.Location = new System.Drawing.Point(15, 66);
             this.btVenda.Name = "btVenda";
             this.btVenda.Size = new System.Drawing.Size(249, 31);
             this.btVenda.TabIndex = 2;
@@ -66,7 +66,7 @@
             // 
             this.btCadCli.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btCadCli.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadCli.Location = new System.Drawing.Point(254, 126);
+            this.btCadCli.Location = new System.Drawing.Point(15, 103);
             this.btCadCli.Name = "btCadCli";
             this.btCadCli.Size = new System.Drawing.Size(249, 31);
             this.btCadCli.TabIndex = 3;
@@ -78,7 +78,7 @@
             // 
             this.btCadFun.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btCadFun.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadFun.Location = new System.Drawing.Point(254, 163);
+            this.btCadFun.Location = new System.Drawing.Point(15, 140);
             this.btCadFun.Name = "btCadFun";
             this.btCadFun.Size = new System.Drawing.Size(249, 31);
             this.btCadFun.TabIndex = 4;
@@ -90,7 +90,7 @@
             // 
             this.btCadLivros.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btCadLivros.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btCadLivros.Location = new System.Drawing.Point(254, 200);
+            this.btCadLivros.Location = new System.Drawing.Point(15, 177);
             this.btCadLivros.Name = "btCadLivros";
             this.btCadLivros.Size = new System.Drawing.Size(249, 31);
             this.btCadLivros.TabIndex = 5;
@@ -102,7 +102,7 @@
             // 
             this.btControleVenda.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btControleVenda.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btControleVenda.Location = new System.Drawing.Point(254, 237);
+            this.btControleVenda.Location = new System.Drawing.Point(270, 66);
             this.btControleVenda.Name = "btControleVenda";
             this.btControleVenda.Size = new System.Drawing.Size(249, 31);
             this.btControleVenda.TabIndex = 6;
@@ -113,7 +113,7 @@
             // 
             this.btControleCliente.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btControleCliente.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btControleCliente.Location = new System.Drawing.Point(254, 274);
+            this.btControleCliente.Location = new System.Drawing.Point(270, 103);
             this.btControleCliente.Name = "btControleCliente";
             this.btControleCliente.Size = new System.Drawing.Size(249, 31);
             this.btControleCliente.TabIndex = 7;
@@ -124,7 +124,7 @@
             // 
             this.btControleFunc.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btControleFunc.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btControleFunc.Location = new System.Drawing.Point(254, 311);
+            this.btControleFunc.Location = new System.Drawing.Point(270, 140);
             this.btControleFunc.Name = "btControleFunc";
             this.btControleFunc.Size = new System.Drawing.Size(249, 31);
             this.btControleFunc.TabIndex = 8;
@@ -136,7 +136,7 @@
             // 
             this.btControleLivro.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
             this.btControleLivro.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btControleLivro.Location = new System.Drawing.Point(254, 348);
+            this.btControleLivro.Location = new System.Drawing.Point(270, 177);
             this.btControleLivro.Name = "btControleLivro";
             this.btControleLivro.Size = new System.Drawing.Size(249, 31);
             this.btControleLivro.TabIndex = 9;
@@ -147,7 +147,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(690, 450);
+            this.ClientSize = new System.Drawing.Size(540, 250);
             this.Controls.Add(this.btControleLivro);
             this.Controls.Add(this.btControleFunc);
             this.Controls.Add(this.btControleCliente);

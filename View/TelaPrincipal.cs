@@ -25,7 +25,7 @@ namespace SistemaBiblioteca
 
         private void BtPesqFunc_Click(object sender, EventArgs e)
         {
-
+            
         }
 
         private void BtVenda_Click(object sender, EventArgs e)

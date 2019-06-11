@@ -140,7 +140,6 @@
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 26;
             this.label4.Text = "Data da venda:";
-            this.label4.Click += new System.EventHandler(this.Label4_Click);
             // 
             // txtBNomeCliente
             // 
@@ -236,6 +235,7 @@
             this.btnPesquisaFuncionario.TabIndex = 34;
             this.btnPesquisaFuncionario.Text = "Pesquisar";
             this.btnPesquisaFuncionario.UseVisualStyleBackColor = true;
+            this.btnPesquisaFuncionario.Click += new System.EventHandler(this.BtnPesquisaFuncionario_Click);
             // 
             // btnProduto
             // 
@@ -253,7 +253,6 @@
             this.txtProduto.Name = "txtProduto";
             this.txtProduto.Size = new System.Drawing.Size(136, 20);
             this.txtProduto.TabIndex = 36;
-            this.txtProduto.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // label6
             // 
