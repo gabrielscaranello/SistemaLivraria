@@ -16,5 +16,15 @@ namespace SistemaBiblioteca
         {
             InitializeComponent();
         }
+
+        private void Label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TbCargo_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

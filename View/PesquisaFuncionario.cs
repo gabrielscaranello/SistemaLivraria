@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaBiblioteca
 {
-    public partial class Funcionario_Controle : Form
+    public partial class PesquisaFuncionario : Form
     {
-        public Funcionario_Controle()
+        public PesquisaFuncionario()
         {
             InitializeComponent();
         }
