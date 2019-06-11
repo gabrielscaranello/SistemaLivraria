@@ -45,7 +45,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(609, 395);
+            this.button5.Location = new System.Drawing.Point(609, 307);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(61, 43);
             this.button5.TabIndex = 22;
@@ -54,7 +54,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(543, 395);
+            this.btVoltar.Location = new System.Drawing.Point(543, 307);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(60, 43);
             this.btVoltar.TabIndex = 18;
@@ -75,7 +75,7 @@
             this.cbCadastrar.AutoSize = true;
             this.cbCadastrar.Checked = true;
             this.cbCadastrar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbCadastrar.Location = new System.Drawing.Point(219, 96);
+            this.cbCadastrar.Location = new System.Drawing.Point(242, 79);
             this.cbCadastrar.Name = "cbCadastrar";
             this.cbCadastrar.Size = new System.Drawing.Size(71, 17);
             this.cbCadastrar.TabIndex = 24;
@@ -85,7 +85,7 @@
             // cbAtualizar
             // 
             this.cbAtualizar.AutoSize = true;
-            this.cbAtualizar.Location = new System.Drawing.Point(348, 96);
+            this.cbAtualizar.Location = new System.Drawing.Point(319, 79);
             this.cbAtualizar.Name = "cbAtualizar";
             this.cbAtualizar.Size = new System.Drawing.Size(66, 17);
             this.cbAtualizar.TabIndex = 25;
@@ -95,7 +95,7 @@
             // cbExcluir
             // 
             this.cbExcluir.AutoSize = true;
-            this.cbExcluir.Location = new System.Drawing.Point(532, 98);
+            this.cbExcluir.Location = new System.Drawing.Point(391, 79);
             this.cbExcluir.Name = "cbExcluir";
             this.cbExcluir.Size = new System.Drawing.Size(57, 17);
             this.cbExcluir.TabIndex = 26;
@@ -105,7 +105,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(52, 142);
+            this.label2.Location = new System.Drawing.Point(59, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 27;
@@ -115,7 +115,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(47, 170);
+            this.label3.Location = new System.Drawing.Point(54, 131);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(43, 13);
             this.label3.TabIndex = 28;
@@ -123,23 +123,23 @@
             // 
             // tbTitulo
             // 
-            this.tbTitulo.Location = new System.Drawing.Point(103, 135);
+            this.tbTitulo.Location = new System.Drawing.Point(103, 102);
             this.tbTitulo.Name = "tbTitulo";
             this.tbTitulo.Size = new System.Drawing.Size(486, 20);
             this.tbTitulo.TabIndex = 29;
             // 
             // btPesquisarLivro
             // 
-            this.btPesquisarLivro.Location = new System.Drawing.Point(595, 132);
+            this.btPesquisarLivro.Location = new System.Drawing.Point(596, 102);
             this.btPesquisarLivro.Name = "btPesquisarLivro";
-            this.btPesquisarLivro.Size = new System.Drawing.Size(75, 23);
+            this.btPesquisarLivro.Size = new System.Drawing.Size(75, 46);
             this.btPesquisarLivro.TabIndex = 30;
             this.btPesquisarLivro.Text = "PESQUISAR";
             this.btPesquisarLivro.UseVisualStyleBackColor = true;
             // 
             // tbCodigo
             // 
-            this.tbCodigo.Location = new System.Drawing.Point(103, 163);
+            this.tbCodigo.Location = new System.Drawing.Point(103, 128);
             this.tbCodigo.Name = "tbCodigo";
             this.tbCodigo.Size = new System.Drawing.Size(486, 20);
             this.tbCodigo.TabIndex = 31;
@@ -147,16 +147,16 @@
             // Resultado
             // 
             this.Resultado.FormattingEnabled = true;
-            this.Resultado.Location = new System.Drawing.Point(103, 197);
+            this.Resultado.Location = new System.Drawing.Point(104, 154);
             this.Resultado.Name = "Resultado";
             this.Resultado.Size = new System.Drawing.Size(567, 147);
             this.Resultado.TabIndex = 32;
             // 
-            // Livro_Controle
+            // PesquisaLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(683, 450);
+            this.ClientSize = new System.Drawing.Size(683, 356);
             this.Controls.Add(this.Resultado);
             this.Controls.Add(this.tbCodigo);
             this.Controls.Add(this.btPesquisarLivro);
@@ -169,7 +169,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
-            this.Name = "Livro_Controle";
+            this.Name = "PesquisaLivro";
             this.Text = "Livro_Controle";
             this.ResumeLayout(false);
             this.PerformLayout();

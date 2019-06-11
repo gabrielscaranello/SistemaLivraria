@@ -62,7 +62,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(277, 372);
+            this.button5.Location = new System.Drawing.Point(324, 311);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 66);
             this.button5.TabIndex = 22;
@@ -71,7 +71,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(520, 372);
+            this.btExcluir.Location = new System.Drawing.Point(567, 311);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(75, 66);
             this.btExcluir.TabIndex = 21;
@@ -80,7 +80,7 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(439, 372);
+            this.btSalvar.Location = new System.Drawing.Point(486, 311);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(75, 66);
             this.btSalvar.TabIndex = 20;
@@ -89,7 +89,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(358, 372);
+            this.btEditar.Location = new System.Drawing.Point(405, 311);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(75, 66);
             this.btEditar.TabIndex = 19;
@@ -98,7 +98,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(196, 372);
+            this.btVoltar.Location = new System.Drawing.Point(243, 311);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 66);
             this.btVoltar.TabIndex = 18;
@@ -126,7 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 82);
+            this.label3.Location = new System.Drawing.Point(9, 81);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 25;
@@ -135,7 +135,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 111);
+            this.label4.Location = new System.Drawing.Point(12, 111);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 26;
@@ -145,19 +145,19 @@
             // 
             this.txtBNomeCliente.Location = new System.Drawing.Point(99, 52);
             this.txtBNomeCliente.Name = "txtBNomeCliente";
-            this.txtBNomeCliente.Size = new System.Drawing.Size(250, 20);
+            this.txtBNomeCliente.Size = new System.Drawing.Size(462, 20);
             this.txtBNomeCliente.TabIndex = 27;
             // 
             // tbCodFunc
             // 
-            this.tbCodFunc.Location = new System.Drawing.Point(141, 79);
+            this.tbCodFunc.Location = new System.Drawing.Point(99, 79);
             this.tbCodFunc.Name = "tbCodFunc";
-            this.tbCodFunc.Size = new System.Drawing.Size(136, 20);
+            this.tbCodFunc.Size = new System.Drawing.Size(462, 20);
             this.tbCodFunc.TabIndex = 28;
             // 
             // dtDataVenda
             // 
-            this.dtDataVenda.Location = new System.Drawing.Point(136, 105);
+            this.dtDataVenda.Location = new System.Drawing.Point(99, 105);
             this.dtDataVenda.Name = "dtDataVenda";
             this.dtDataVenda.Size = new System.Drawing.Size(228, 20);
             this.dtDataVenda.TabIndex = 29;
@@ -171,7 +171,7 @@
             this.Preco,
             this.Quantidade,
             this.ValorTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(52, 165);
+            this.dataGridView1.Location = new System.Drawing.Point(99, 159);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(543, 126);
             this.dataGridView1.TabIndex = 30;
@@ -219,7 +219,7 @@
             // 
             // btnPesquisaCliente
             // 
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(355, 50);
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(567, 50);
             this.btnPesquisaCliente.Name = "btnPesquisaCliente";
             this.btnPesquisaCliente.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaCliente.TabIndex = 33;
@@ -229,7 +229,7 @@
             // 
             // btnPesquisaFuncionario
             // 
-            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(283, 77);
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(567, 76);
             this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
             this.btnPesquisaFuncionario.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaFuncionario.TabIndex = 34;
@@ -239,7 +239,7 @@
             // 
             // btnProduto
             // 
-            this.btnProduto.Location = new System.Drawing.Point(241, 130);
+            this.btnProduto.Location = new System.Drawing.Point(415, 130);
             this.btnProduto.Name = "btnProduto";
             this.btnProduto.Size = new System.Drawing.Size(75, 23);
             this.btnProduto.TabIndex = 37;
@@ -251,13 +251,13 @@
             // 
             this.txtProduto.Location = new System.Drawing.Point(99, 131);
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(136, 20);
+            this.txtProduto.Size = new System.Drawing.Size(310, 20);
             this.txtProduto.TabIndex = 36;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 134);
+            this.label6.Location = new System.Drawing.Point(45, 135);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 35;
@@ -266,7 +266,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 135);
+            this.label7.Location = new System.Drawing.Point(496, 135);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 38;
@@ -274,7 +274,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(436, 129);
+            this.btnOk.Location = new System.Drawing.Point(611, 130);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(31, 23);
             this.btnOk.TabIndex = 40;
@@ -283,7 +283,7 @@
             // 
             // numQuantidade
             // 
-            this.numQuantidade.Location = new System.Drawing.Point(392, 130);
+            this.numQuantidade.Location = new System.Drawing.Point(567, 133);
             this.numQuantidade.Name = "numQuantidade";
             this.numQuantidade.Size = new System.Drawing.Size(38, 20);
             this.numQuantidade.TabIndex = 41;
@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 450);
+            this.ClientSize = new System.Drawing.Size(695, 388);
             this.Controls.Add(this.numQuantidade);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);
