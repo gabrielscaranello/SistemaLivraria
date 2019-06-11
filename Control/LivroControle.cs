@@ -11,33 +11,35 @@ namespace AtividadeTelas.control
     {
         public LivroControle()
         {
+            
         }
         public Boolean CadastrarLivro(Livro Livro)
         {
-
+            return false;
         }
         public Boolean AtualizarLivro(Livro Livro)
         {
-
+            return false;
         }
         public Boolean ExcluirLivro(Livro Livro)
         {
-
+            return false;
         }
 
         public Array BuscarLivroNome(String nome)
         {
-
+            return null;
         }
 
         public Livro BuscarLivroId(int id)
         {
-
+            return null;
         }
 
         public Array ListaLivro()
         {
 
+            return null;
         }
 
     }
