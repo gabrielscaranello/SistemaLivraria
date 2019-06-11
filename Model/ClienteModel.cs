@@ -8,13 +8,21 @@ namespace AtividadeTelas.model
 {
     class Cliente
     {
-        protected int id;
-        protected String nome;
-        protected String telefone;
-        protected String cpf;
-        protected String endereco;
-        protected String email;
-        protected DateTime dataNasc;
+        private int id;
+        private String nome;
+        private String telefone;
+        private String cpf;
+        private String endereco;
+        private String email;
+        private DateTime dataNasc;
+
+        protected int Id { get => id; set => id = value; }
+        protected string Nome { get => nome; set => nome = value; }
+        protected string Telefone { get => telefone; set => telefone = value; }
+        protected string Cpf { get => cpf; set => cpf = value; }
+        protected string Endereco { get => endereco; set => endereco = value; }
+        protected string Email { get => email; set => email = value; }
+        protected DateTime DataNasc { get => dataNasc; set => dataNasc = value; }
 
         public Cliente()
         {
