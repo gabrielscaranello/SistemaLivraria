@@ -21,5 +21,20 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void Label6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -34,7 +34,7 @@
             this.cbExCli = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.tbPesquisarNome = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnPesquisa = new System.Windows.Forms.Button();
             this.ResultadoPesquisa = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
@@ -98,14 +98,15 @@
             this.tbPesquisarNome.Size = new System.Drawing.Size(463, 20);
             this.tbPesquisarNome.TabIndex = 31;
             // 
-            // button1
+            // btnPesquisa
             // 
-            this.button1.Location = new System.Drawing.Point(555, 131);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 32;
-            this.button1.Text = "PESQUISAR";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnPesquisa.Location = new System.Drawing.Point(555, 131);
+            this.btnPesquisa.Name = "btnPesquisa";
+            this.btnPesquisa.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisa.TabIndex = 32;
+            this.btnPesquisa.Text = "PESQUISAR";
+            this.btnPesquisa.UseVisualStyleBackColor = true;
+            this.btnPesquisa.Click += new System.EventHandler(this.Button1_Click);
             // 
             // ResultadoPesquisa
             // 
@@ -133,13 +134,13 @@
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
             // 
-            // Cliente_Controle
+            // PesquisaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(673, 450);
             this.Controls.Add(this.ResultadoPesquisa);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnPesquisa);
             this.Controls.Add(this.tbPesquisarNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbExCli);
@@ -148,7 +149,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
-            this.Name = "Cliente_Controle";
+            this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,7 +166,7 @@
         private System.Windows.Forms.CheckBox cbExCli;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox tbPesquisarNome;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.ListBox ResultadoPesquisa;
     }
 }
