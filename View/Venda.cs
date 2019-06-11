@@ -17,26 +17,14 @@ namespace SistemaBiblioteca
             InitializeComponent();
         }
 
-        private void Label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Label6_Click(object sender, EventArgs e)
-        {
-
-        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
-
+            PesquisaLivro pesquisaLivro = new PesquisaLivro();
+            pesquisaLivro.ShowDialog();
         }
 
-        private void TextBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+       
         private void BtnPesquisaCliente_Click(object sender, EventArgs e)
         {
             PesquisaCliente pesquisaCliente = new PesquisaCliente();
@@ -46,6 +34,11 @@ namespace SistemaBiblioteca
         private void BtnPesquisaFuncionario_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void Label6_Click_1(object sender, EventArgs e)
+        {
+
         }
     }
 }
