@@ -33,7 +33,7 @@
             this.cbAtuCli = new System.Windows.Forms.CheckBox();
             this.cbExCli = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbPesquisarNome = new System.Windows.Forms.TextBox();
+            this.txtPesquisarNome = new System.Windows.Forms.TextBox();
             this.btnPesquisa = new System.Windows.Forms.Button();
             this.ResultadoPesquisa = new System.Windows.Forms.ListBox();
             this.button5 = new System.Windows.Forms.Button();
@@ -91,16 +91,16 @@
             this.label2.TabIndex = 30;
             this.label2.Text = "Nome:";
             // 
-            // tbPesquisarNome
+            // txtPesquisarNome
             // 
-            this.tbPesquisarNome.Location = new System.Drawing.Point(73, 131);
-            this.tbPesquisarNome.Name = "tbPesquisarNome";
-            this.tbPesquisarNome.Size = new System.Drawing.Size(463, 20);
-            this.tbPesquisarNome.TabIndex = 31;
+            this.txtPesquisarNome.Location = new System.Drawing.Point(73, 128);
+            this.txtPesquisarNome.Name = "txtPesquisarNome";
+            this.txtPesquisarNome.Size = new System.Drawing.Size(463, 20);
+            this.txtPesquisarNome.TabIndex = 31;
             // 
             // btnPesquisa
             // 
-            this.btnPesquisa.Location = new System.Drawing.Point(555, 131);
+            this.btnPesquisa.Location = new System.Drawing.Point(555, 126);
             this.btnPesquisa.Name = "btnPesquisa";
             this.btnPesquisa.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisa.TabIndex = 32;
@@ -141,7 +141,7 @@
             this.ClientSize = new System.Drawing.Size(673, 450);
             this.Controls.Add(this.ResultadoPesquisa);
             this.Controls.Add(this.btnPesquisa);
-            this.Controls.Add(this.tbPesquisarNome);
+            this.Controls.Add(this.txtPesquisarNome);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbExCli);
             this.Controls.Add(this.cbAtuCli);
@@ -165,7 +165,7 @@
         private System.Windows.Forms.CheckBox cbAtuCli;
         private System.Windows.Forms.CheckBox cbExCli;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbPesquisarNome;
+        private System.Windows.Forms.TextBox txtPesquisarNome;
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.ListBox ResultadoPesquisa;
     }

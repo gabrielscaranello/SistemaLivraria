@@ -35,7 +35,7 @@
             this.cbAtualizar = new System.Windows.Forms.CheckBox();
             this.cbExcluir = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbVenda = new System.Windows.Forms.TextBox();
+            this.txtVenda = new System.Windows.Forms.TextBox();
             this.btPesquisarVenda = new System.Windows.Forms.Button();
             this.Resultados = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
@@ -43,7 +43,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(560, 406);
+            this.button5.Location = new System.Drawing.Point(560, 355);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(61, 41);
             this.button5.TabIndex = 22;
@@ -52,7 +52,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(492, 406);
+            this.btVoltar.Location = new System.Drawing.Point(492, 355);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(62, 41);
             this.btVoltar.TabIndex = 18;
@@ -110,12 +110,12 @@
             this.label2.TabIndex = 27;
             this.label2.Text = "Venda:";
             // 
-            // tbVenda
+            // txtVenda
             // 
-            this.tbVenda.Location = new System.Drawing.Point(64, 130);
-            this.tbVenda.Name = "tbVenda";
-            this.tbVenda.Size = new System.Drawing.Size(462, 20);
-            this.tbVenda.TabIndex = 28;
+            this.txtVenda.Location = new System.Drawing.Point(64, 130);
+            this.txtVenda.Name = "txtVenda";
+            this.txtVenda.Size = new System.Drawing.Size(462, 20);
+            this.txtVenda.TabIndex = 28;
             // 
             // btPesquisarVenda
             // 
@@ -134,14 +134,14 @@
             this.Resultados.Size = new System.Drawing.Size(558, 186);
             this.Resultados.TabIndex = 30;
             // 
-            // Venda_Controle
+            // PesquisaVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(640, 450);
+            this.ClientSize = new System.Drawing.Size(640, 403);
             this.Controls.Add(this.Resultados);
             this.Controls.Add(this.btPesquisarVenda);
-            this.Controls.Add(this.tbVenda);
+            this.Controls.Add(this.txtVenda);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbExcluir);
             this.Controls.Add(this.cbAtualizar);
@@ -149,7 +149,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
-            this.Name = "Venda_Controle";
+            this.Name = "PesquisaVenda";
             this.Text = "Controle_Venda";
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -165,7 +165,7 @@
         private System.Windows.Forms.CheckBox cbAtualizar;
         private System.Windows.Forms.CheckBox cbExcluir;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbVenda;
+        private System.Windows.Forms.TextBox txtVenda;
         private System.Windows.Forms.Button btPesquisarVenda;
         private System.Windows.Forms.ListBox Resultados;
     }

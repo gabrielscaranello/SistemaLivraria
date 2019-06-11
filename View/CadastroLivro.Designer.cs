@@ -41,19 +41,19 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
-            this.tbTitulo = new System.Windows.Forms.TextBox();
-            this.tbAutor = new System.Windows.Forms.TextBox();
-            this.tbEstoque = new System.Windows.Forms.TextBox();
-            this.tbEditora = new System.Windows.Forms.TextBox();
-            this.tbISBN = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.txtAutor = new System.Windows.Forms.TextBox();
+            this.txtEstoque = new System.Windows.Forms.TextBox();
+            this.txtEditora = new System.Windows.Forms.TextBox();
+            this.txtISBN = new System.Windows.Forms.TextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
+            this.mtxtDataPublicacao = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(303, 204);
+            this.button5.Location = new System.Drawing.Point(303, 181);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 66);
             this.button5.TabIndex = 22;
@@ -62,7 +62,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(546, 204);
+            this.btExcluir.Location = new System.Drawing.Point(546, 181);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(75, 66);
             this.btExcluir.TabIndex = 21;
@@ -71,7 +71,7 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(465, 204);
+            this.btSalvar.Location = new System.Drawing.Point(465, 181);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(75, 66);
             this.btSalvar.TabIndex = 20;
@@ -80,7 +80,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(384, 204);
+            this.btEditar.Location = new System.Drawing.Point(384, 181);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(75, 66);
             this.btEditar.TabIndex = 19;
@@ -89,7 +89,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(222, 204);
+            this.btVoltar.Location = new System.Drawing.Point(222, 181);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 66);
             this.btVoltar.TabIndex = 18;
@@ -109,7 +109,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-            this.label2.Location = new System.Drawing.Point(20, 92);
+            this.label2.Location = new System.Drawing.Point(20, 69);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 24;
@@ -118,7 +118,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(23, 116);
+            this.label3.Location = new System.Drawing.Point(23, 93);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(35, 13);
             this.label3.TabIndex = 25;
@@ -127,7 +127,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(9, 143);
+            this.label4.Location = new System.Drawing.Point(9, 120);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(49, 13);
             this.label4.TabIndex = 26;
@@ -136,16 +136,16 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(360, 116);
+            this.label5.Location = new System.Drawing.Point(360, 93);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(29, 13);
+            this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 27;
-            this.label5.Text = "Ano:";
+            this.label5.Text = "Data de Publicação:";
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(220, 143);
+            this.label6.Location = new System.Drawing.Point(220, 120);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(43, 13);
             this.label6.TabIndex = 28;
@@ -154,7 +154,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(406, 143);
+            this.label7.Location = new System.Drawing.Point(406, 120);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(45, 13);
             this.label7.TabIndex = 29;
@@ -163,74 +163,76 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(23, 169);
+            this.label8.Location = new System.Drawing.Point(23, 146);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(35, 13);
             this.label8.TabIndex = 30;
             this.label8.Text = "ISBN:";
             // 
-            // tbTitulo
+            // txtTitulo
             // 
-            this.tbTitulo.Location = new System.Drawing.Point(64, 89);
-            this.tbTitulo.Name = "tbTitulo";
-            this.tbTitulo.Size = new System.Drawing.Size(557, 20);
-            this.tbTitulo.TabIndex = 31;
+            this.txtTitulo.Location = new System.Drawing.Point(64, 66);
+            this.txtTitulo.Name = "txtTitulo";
+            this.txtTitulo.Size = new System.Drawing.Size(557, 20);
+            this.txtTitulo.TabIndex = 31;
             // 
-            // tbAutor
+            // txtAutor
             // 
-            this.tbAutor.Location = new System.Drawing.Point(64, 113);
-            this.tbAutor.Name = "tbAutor";
-            this.tbAutor.Size = new System.Drawing.Size(290, 20);
-            this.tbAutor.TabIndex = 32;
+            this.txtAutor.Location = new System.Drawing.Point(64, 90);
+            this.txtAutor.Name = "txtAutor";
+            this.txtAutor.Size = new System.Drawing.Size(290, 20);
+            this.txtAutor.TabIndex = 32;
             // 
-            // tbEstoque
+            // txtEstoque
             // 
-            this.tbEstoque.Location = new System.Drawing.Point(64, 140);
-            this.tbEstoque.Name = "tbEstoque";
-            this.tbEstoque.Size = new System.Drawing.Size(150, 20);
-            this.tbEstoque.TabIndex = 33;
+            this.txtEstoque.Location = new System.Drawing.Point(64, 117);
+            this.txtEstoque.Name = "txtEstoque";
+            this.txtEstoque.Size = new System.Drawing.Size(150, 20);
+            this.txtEstoque.TabIndex = 33;
             // 
-            // tbEditora
+            // txtEditora
             // 
-            this.tbEditora.Location = new System.Drawing.Point(269, 140);
-            this.tbEditora.Name = "tbEditora";
-            this.tbEditora.Size = new System.Drawing.Size(131, 20);
-            this.tbEditora.TabIndex = 35;
+            this.txtEditora.Location = new System.Drawing.Point(269, 117);
+            this.txtEditora.Name = "txtEditora";
+            this.txtEditora.Size = new System.Drawing.Size(131, 20);
+            this.txtEditora.TabIndex = 35;
             // 
-            // tbISBN
+            // txtISBN
             // 
-            this.tbISBN.Location = new System.Drawing.Point(64, 166);
-            this.tbISBN.Name = "tbISBN";
-            this.tbISBN.Size = new System.Drawing.Size(557, 20);
-            this.tbISBN.TabIndex = 37;
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(395, 113);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
-            this.dateTimePicker1.TabIndex = 38;
+            this.txtISBN.Location = new System.Drawing.Point(64, 143);
+            this.txtISBN.Name = "txtISBN";
+            this.txtISBN.Size = new System.Drawing.Size(557, 20);
+            this.txtISBN.TabIndex = 37;
             // 
             // cboGenero
             // 
             this.cboGenero.FormattingEnabled = true;
-            this.cboGenero.Location = new System.Drawing.Point(457, 139);
+            this.cboGenero.Location = new System.Drawing.Point(457, 116);
             this.cboGenero.Name = "cboGenero";
             this.cboGenero.Size = new System.Drawing.Size(164, 21);
             this.cboGenero.TabIndex = 39;
+            // 
+            // mtxtDataPublicacao
+            // 
+            this.mtxtDataPublicacao.Location = new System.Drawing.Point(470, 90);
+            this.mtxtDataPublicacao.Mask = "00/00/0000";
+            this.mtxtDataPublicacao.Name = "mtxtDataPublicacao";
+            this.mtxtDataPublicacao.Size = new System.Drawing.Size(64, 20);
+            this.mtxtDataPublicacao.TabIndex = 40;
+            this.mtxtDataPublicacao.ValidatingType = typeof(System.DateTime);
             // 
             // Cadastro_de_livro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(645, 290);
+            this.ClientSize = new System.Drawing.Size(645, 259);
+            this.Controls.Add(this.mtxtDataPublicacao);
             this.Controls.Add(this.cboGenero);
-            this.Controls.Add(this.dateTimePicker1);
-            this.Controls.Add(this.tbISBN);
-            this.Controls.Add(this.tbEditora);
-            this.Controls.Add(this.tbEstoque);
-            this.Controls.Add(this.tbAutor);
-            this.Controls.Add(this.tbTitulo);
+            this.Controls.Add(this.txtISBN);
+            this.Controls.Add(this.txtEditora);
+            this.Controls.Add(this.txtEstoque);
+            this.Controls.Add(this.txtAutor);
+            this.Controls.Add(this.txtTitulo);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
@@ -266,12 +268,12 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox tbTitulo;
-        private System.Windows.Forms.TextBox tbAutor;
-        private System.Windows.Forms.TextBox tbEstoque;
-        private System.Windows.Forms.TextBox tbEditora;
-        private System.Windows.Forms.TextBox tbISBN;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox txtTitulo;
+        private System.Windows.Forms.TextBox txtAutor;
+        private System.Windows.Forms.TextBox txtEstoque;
+        private System.Windows.Forms.TextBox txtEditora;
+        private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.ComboBox cboGenero;
+        private System.Windows.Forms.MaskedTextBox mtxtDataPublicacao;
     }
 }
