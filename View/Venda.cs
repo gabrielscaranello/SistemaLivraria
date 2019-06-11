@@ -39,7 +39,8 @@ namespace SistemaBiblioteca
 
         private void BtnPesquisaCliente_Click(object sender, EventArgs e)
         {
-            
+            //PesquisaCliente pesquisaCliente = new PesquisaCliente();
+            //pesquisaCliente.ShowDialog();
         }
     }
 }
