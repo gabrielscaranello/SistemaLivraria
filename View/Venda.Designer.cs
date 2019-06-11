@@ -226,6 +226,7 @@
             this.btnPesquisaCliente.TabIndex = 33;
             this.btnPesquisaCliente.Text = "Pesquisar";
             this.btnPesquisaCliente.UseVisualStyleBackColor = true;
+            this.btnPesquisaCliente.Click += new System.EventHandler(this.BtnPesquisaCliente_Click);
             // 
             // btnPesquisaFuncionario
             // 
