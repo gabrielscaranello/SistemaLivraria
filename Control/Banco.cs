@@ -7,18 +7,17 @@ using MySql.Data.MySqlClient;
 
 
 
-namespace AtividadeTelas.controle
+namespace AtividadeTelas.control
 {
     class Banco
     {
 
-        public void Connectar()
+        public MySqlConnection Conn()
         {
-            string conexao = "Server=localhost;Database=livraria;Uid=root;Pwd=12345";
+            string conexao = "Server=localhost;Port=3306;Database=livraria;Uid=root;Pwd=12345";
             MySqlConnection connection = new MySqlConnection(conexao);
-            connection.Open();
+            return connection;
         }
-
 
 
     }
