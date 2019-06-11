@@ -35,8 +35,8 @@
             this.cbAtualizar = new System.Windows.Forms.CheckBox();
             this.cbExcluir = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
-            this.tbNomefunc = new System.Windows.Forms.TextBox();
-            this.btPesquisarFunc = new System.Windows.Forms.Button();
+            this.txtNomeFunc = new System.Windows.Forms.TextBox();
+            this.btnPesquisarFunc = new System.Windows.Forms.Button();
             this.ResultadoPesquisa = new System.Windows.Forms.ListBox();
             this.SuspendLayout();
             // 
@@ -103,27 +103,27 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(59, 133);
+            this.label2.Location = new System.Drawing.Point(59, 129);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 27;
             this.label2.Text = "Nome:";
             // 
-            // tbNomefunc
+            // txtNomeFunc
             // 
-            this.tbNomefunc.Location = new System.Drawing.Point(103, 126);
-            this.tbNomefunc.Name = "tbNomefunc";
-            this.tbNomefunc.Size = new System.Drawing.Size(435, 20);
-            this.tbNomefunc.TabIndex = 28;
+            this.txtNomeFunc.Location = new System.Drawing.Point(103, 126);
+            this.txtNomeFunc.Name = "txtNomeFunc";
+            this.txtNomeFunc.Size = new System.Drawing.Size(435, 20);
+            this.txtNomeFunc.TabIndex = 28;
             // 
-            // btPesquisarFunc
+            // btnPesquisarFunc
             // 
-            this.btPesquisarFunc.Location = new System.Drawing.Point(544, 124);
-            this.btPesquisarFunc.Name = "btPesquisarFunc";
-            this.btPesquisarFunc.Size = new System.Drawing.Size(75, 23);
-            this.btPesquisarFunc.TabIndex = 29;
-            this.btPesquisarFunc.Text = "PESQUISAR";
-            this.btPesquisarFunc.UseVisualStyleBackColor = true;
+            this.btnPesquisarFunc.Location = new System.Drawing.Point(544, 124);
+            this.btnPesquisarFunc.Name = "btnPesquisarFunc";
+            this.btnPesquisarFunc.Size = new System.Drawing.Size(75, 23);
+            this.btnPesquisarFunc.TabIndex = 29;
+            this.btnPesquisarFunc.Text = "PESQUISAR";
+            this.btnPesquisarFunc.UseVisualStyleBackColor = true;
             // 
             // ResultadoPesquisa
             // 
@@ -139,8 +139,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(656, 450);
             this.Controls.Add(this.ResultadoPesquisa);
-            this.Controls.Add(this.btPesquisarFunc);
-            this.Controls.Add(this.tbNomefunc);
+            this.Controls.Add(this.btnPesquisarFunc);
+            this.Controls.Add(this.txtNomeFunc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.cbExcluir);
             this.Controls.Add(this.cbAtualizar);
@@ -165,8 +165,8 @@
         private System.Windows.Forms.CheckBox cbAtualizar;
         private System.Windows.Forms.CheckBox cbExcluir;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox tbNomefunc;
-        private System.Windows.Forms.Button btPesquisarFunc;
+        private System.Windows.Forms.TextBox txtNomeFunc;
+        private System.Windows.Forms.Button btnPesquisarFunc;
         private System.Windows.Forms.ListBox ResultadoPesquisa;
     }
 }

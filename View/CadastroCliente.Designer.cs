@@ -35,17 +35,17 @@
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.tbNome = new System.Windows.Forms.TextBox();
-            this.tbEnd = new System.Windows.Forms.TextBox();
-            this.tbEmail = new System.Windows.Forms.TextBox();
+            this.txtNome = new System.Windows.Forms.TextBox();
+            this.txtEndereco = new System.Windows.Forms.TextBox();
+            this.txtEmail = new System.Windows.Forms.TextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.mtxtNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox1 = new System.Windows.Forms.MaskedTextBox();
-            this.maskedTextBox2 = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -112,26 +112,26 @@
             this.label7.TabIndex = 7;
             this.label7.Text = "Data de Nasc.:";
             // 
-            // tbNome
+            // txtNome
             // 
-            this.tbNome.Location = new System.Drawing.Point(69, 58);
-            this.tbNome.Name = "tbNome";
-            this.tbNome.Size = new System.Drawing.Size(404, 20);
-            this.tbNome.TabIndex = 8;
+            this.txtNome.Location = new System.Drawing.Point(69, 58);
+            this.txtNome.Name = "txtNome";
+            this.txtNome.Size = new System.Drawing.Size(404, 20);
+            this.txtNome.TabIndex = 8;
             // 
-            // tbEnd
+            // txtEndereco
             // 
-            this.tbEnd.Location = new System.Drawing.Point(69, 114);
-            this.tbEnd.Name = "tbEnd";
-            this.tbEnd.Size = new System.Drawing.Size(557, 20);
-            this.tbEnd.TabIndex = 11;
+            this.txtEndereco.Location = new System.Drawing.Point(69, 114);
+            this.txtEndereco.Name = "txtEndereco";
+            this.txtEndereco.Size = new System.Drawing.Size(557, 20);
+            this.txtEndereco.TabIndex = 11;
             // 
-            // tbEmail
+            // txtEmail
             // 
-            this.tbEmail.Location = new System.Drawing.Point(357, 88);
-            this.tbEmail.Name = "tbEmail";
-            this.tbEmail.Size = new System.Drawing.Size(269, 20);
-            this.tbEmail.TabIndex = 12;
+            this.txtEmail.Location = new System.Drawing.Point(357, 88);
+            this.txtEmail.Name = "txtEmail";
+            this.txtEmail.Size = new System.Drawing.Size(269, 20);
+            this.txtEmail.TabIndex = 12;
             // 
             // button5
             // 
@@ -188,37 +188,37 @@
             this.mtxtNascimento.TabIndex = 18;
             this.mtxtNascimento.ValidatingType = typeof(System.DateTime);
             // 
-            // maskedTextBox1
+            // mtxtCPF
             // 
-            this.maskedTextBox1.Location = new System.Drawing.Point(69, 88);
-            this.maskedTextBox1.Mask = "000,000,000-00";
-            this.maskedTextBox1.Name = "maskedTextBox1";
-            this.maskedTextBox1.Size = new System.Drawing.Size(84, 20);
-            this.maskedTextBox1.TabIndex = 19;
+            this.mtxtCPF.Location = new System.Drawing.Point(69, 88);
+            this.mtxtCPF.Mask = "000,000,000-00";
+            this.mtxtCPF.Name = "mtxtCPF";
+            this.mtxtCPF.Size = new System.Drawing.Size(84, 20);
+            this.mtxtCPF.TabIndex = 19;
             // 
-            // maskedTextBox2
+            // mtxtTelefone
             // 
-            this.maskedTextBox2.Location = new System.Drawing.Point(537, 58);
-            this.maskedTextBox2.Mask = "(00) 00000-0000";
-            this.maskedTextBox2.Name = "maskedTextBox2";
-            this.maskedTextBox2.Size = new System.Drawing.Size(89, 20);
-            this.maskedTextBox2.TabIndex = 20;
+            this.mtxtTelefone.Location = new System.Drawing.Point(537, 58);
+            this.mtxtTelefone.Mask = "(00) 00000-0000";
+            this.mtxtTelefone.Name = "mtxtTelefone";
+            this.mtxtTelefone.Size = new System.Drawing.Size(89, 20);
+            this.mtxtTelefone.TabIndex = 20;
             // 
             // Cadastro_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(638, 216);
-            this.Controls.Add(this.maskedTextBox2);
-            this.Controls.Add(this.maskedTextBox1);
+            this.Controls.Add(this.mtxtTelefone);
+            this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.mtxtNascimento);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
-            this.Controls.Add(this.tbEmail);
-            this.Controls.Add(this.tbEnd);
-            this.Controls.Add(this.tbNome);
+            this.Controls.Add(this.txtEmail);
+            this.Controls.Add(this.txtEndereco);
+            this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
@@ -244,15 +244,15 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox tbNome;
-        private System.Windows.Forms.TextBox tbEnd;
-        private System.Windows.Forms.TextBox tbEmail;
+        private System.Windows.Forms.TextBox txtNome;
+        private System.Windows.Forms.TextBox txtEndereco;
+        private System.Windows.Forms.TextBox txtEmail;
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.MaskedTextBox mtxtNascimento;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox1;
-        private System.Windows.Forms.MaskedTextBox maskedTextBox2;
+        private System.Windows.Forms.MaskedTextBox mtxtCPF;
+        private System.Windows.Forms.MaskedTextBox mtxtTelefone;
     }
 }

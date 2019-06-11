@@ -21,5 +21,15 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
