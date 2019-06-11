@@ -14,7 +14,7 @@ namespace AtividadeTelas.control
 
         public MySqlConnection Conn()
         {
-            string conexao = "Server=localhost;Port=3306;Database=livraria;Uid=root;Pwd=12345";
+            string conexao = "Server=srv02.hostoo.io;Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=T5-G&w&EfQ5K5RCZ";
             MySqlConnection connection = new MySqlConnection(conexao);
             return connection;
         }
