@@ -12,7 +12,7 @@ namespace AtividadeTelas.controle
     class Banco
     {
 
-        public void connectar()
+        public void Connectar()
         {
             string conexao = "Server=localhost;Database=livraria;Uid=root;Pwd=root";
             MySqlConnection connection = new MySqlConnection(conexao);
