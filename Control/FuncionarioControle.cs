@@ -32,7 +32,7 @@ namespace AtividadeTelas.control
 
         public Funcionario BuscarFuncionarioId(int id)
         {
-            return 0;
+            return null;
         }
 
         public Array ListaFuncionario()

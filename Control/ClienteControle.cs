@@ -27,17 +27,17 @@ namespace AtividadeTelas.control
 
         public Array BuscarClienteNome(String nome)
         {
-            return "";
+            return null;
         }
 
         public Cliente BuscarClienteId(int id)
         {
-            return 0;
+            return null;
         }
 
         public Array ListaCliente()
         {
-            return "";
+            return null;
         }
 
     }
