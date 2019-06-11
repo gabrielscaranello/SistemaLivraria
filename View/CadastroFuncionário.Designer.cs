@@ -46,8 +46,6 @@
             this.label7 = new System.Windows.Forms.Label();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.txtCodFunc = new System.Windows.Forms.TextBox();
-            this.label8 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -72,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(22, 78);
+            this.label3.Location = new System.Drawing.Point(308, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
@@ -97,7 +95,7 @@
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(66, 75);
+            this.txtCargo.Location = new System.Drawing.Point(352, 49);
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(149, 20);
             this.txtCargo.TabIndex = 28;
@@ -175,15 +173,15 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(287, 75);
+            this.txtEndereco.Location = new System.Drawing.Point(66, 75);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(214, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(435, 20);
             this.txtEndereco.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(225, 78);
+            this.label7.Location = new System.Drawing.Point(4, 78);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 34;
@@ -205,29 +203,11 @@
             this.mtxtTelefone.Size = new System.Drawing.Size(90, 20);
             this.mtxtTelefone.TabIndex = 37;
             // 
-            // txtCodFunc
-            // 
-            this.txtCodFunc.Location = new System.Drawing.Point(357, 49);
-            this.txtCodFunc.Name = "txtCodFunc";
-            this.txtCodFunc.Size = new System.Drawing.Size(144, 20);
-            this.txtCodFunc.TabIndex = 39;
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(308, 52);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(43, 13);
-            this.label8.TabIndex = 38;
-            this.label8.Text = "Código:";
-            // 
             // CadastroFuncionário
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(535, 216);
-            this.Controls.Add(this.txtCodFunc);
-            this.Controls.Add(this.label8);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.txtEndereco);
@@ -273,7 +253,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox mtxtCPF;
         private System.Windows.Forms.MaskedTextBox mtxtTelefone;
-        private System.Windows.Forms.TextBox txtCodFunc;
-        private System.Windows.Forms.Label label8;
     }
 }
