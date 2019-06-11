@@ -47,10 +47,16 @@
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnPesquisaProduto = new System.Windows.Forms.Button();
             this.btnPesquisaCliente = new System.Windows.Forms.Button();
             this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
+            this.btnProduto = new System.Windows.Forms.Button();
+            this.txtProduto = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.numQuantidade = new System.Windows.Forms.NumericUpDown();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
             // 
             // button5
@@ -166,7 +172,7 @@
             this.Preco,
             this.Quantidade,
             this.ValorTotal});
-            this.dataGridView1.Location = new System.Drawing.Point(52, 142);
+            this.dataGridView1.Location = new System.Drawing.Point(52, 165);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(543, 126);
             this.dataGridView1.TabIndex = 30;
@@ -212,15 +218,6 @@
             this.label5.TabIndex = 31;
             this.label5.Text = "Total";
             // 
-            // btnPesquisaProduto
-            // 
-            this.btnPesquisaProduto.Location = new System.Drawing.Point(509, 274);
-            this.btnPesquisaProduto.Name = "btnPesquisaProduto";
-            this.btnPesquisaProduto.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisaProduto.TabIndex = 32;
-            this.btnPesquisaProduto.Text = "Pesquisar";
-            this.btnPesquisaProduto.UseVisualStyleBackColor = true;
-            // 
             // btnPesquisaCliente
             // 
             this.btnPesquisaCliente.Location = new System.Drawing.Point(333, 50);
@@ -239,14 +236,72 @@
             this.btnPesquisaFuncionario.Text = "Pesquisar";
             this.btnPesquisaFuncionario.UseVisualStyleBackColor = true;
             // 
+            // btnProduto
+            // 
+            this.btnProduto.Location = new System.Drawing.Point(241, 130);
+            this.btnProduto.Name = "btnProduto";
+            this.btnProduto.Size = new System.Drawing.Size(75, 23);
+            this.btnProduto.TabIndex = 37;
+            this.btnProduto.Text = "Pesquisar";
+            this.btnProduto.UseVisualStyleBackColor = true;
+            this.btnProduto.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // txtProduto
+            // 
+            this.txtProduto.Location = new System.Drawing.Point(99, 131);
+            this.txtProduto.Name = "txtProduto";
+            this.txtProduto.Size = new System.Drawing.Size(136, 20);
+            this.txtProduto.TabIndex = 36;
+            this.txtProduto.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(51, 134);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(47, 13);
+            this.label6.TabIndex = 35;
+            this.label6.Text = "Produto:";
+            this.label6.Click += new System.EventHandler(this.Label6_Click);
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(328, 135);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(65, 13);
+            this.label7.TabIndex = 38;
+            this.label7.Text = "Quantidade:";
+            // 
+            // btnOk
+            // 
+            this.btnOk.Location = new System.Drawing.Point(436, 129);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(31, 23);
+            this.btnOk.TabIndex = 40;
+            this.btnOk.Text = "OK";
+            this.btnOk.UseVisualStyleBackColor = true;
+            // 
+            // numQuantidade
+            // 
+            this.numQuantidade.Location = new System.Drawing.Point(392, 130);
+            this.numQuantidade.Name = "numQuantidade";
+            this.numQuantidade.Size = new System.Drawing.Size(38, 20);
+            this.numQuantidade.TabIndex = 41;
+            // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(612, 450);
+            this.Controls.Add(this.numQuantidade);
+            this.Controls.Add(this.btnOk);
+            this.Controls.Add(this.label7);
+            this.Controls.Add(this.btnProduto);
+            this.Controls.Add(this.txtProduto);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btnPesquisaFuncionario);
             this.Controls.Add(this.btnPesquisaCliente);
-            this.Controls.Add(this.btnPesquisaProduto);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.dtDataVenda);
@@ -264,6 +319,7 @@
             this.Name = "Venda";
             this.Text = "Venda";
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -290,8 +346,13 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
         private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button btnPesquisaProduto;
         private System.Windows.Forms.Button btnPesquisaCliente;
         private System.Windows.Forms.Button btnPesquisaFuncionario;
+        private System.Windows.Forms.Button btnProduto;
+        private System.Windows.Forms.TextBox txtProduto;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Button btnOk;
+        private System.Windows.Forms.NumericUpDown numQuantidade;
     }
 }
