@@ -37,7 +37,7 @@ namespace AtividadeTelas.control
 
         public Array ListaVenda()
         {
-
+            return 0;
         }
 
     }

@@ -14,30 +14,30 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarFuncionario(Funcionario Funcionario)
         {
-
+            return false;
         }
         public Boolean AtualizarFuncionario(Funcionario Funcionario)
         {
-
+            return false;
         }
         public Boolean ExcluirFuncionario(Funcionario Funcionario)
         {
-
+            return false;
         }
 
         public Array BuscarFuncionarioNome(String nome)
         {
-
+            return null;
         }
 
         public Funcionario BuscarFuncionarioId(int id)
         {
-
+            return 0;
         }
 
         public Array ListaFuncionario()
         {
-
+            return null;
         }
 
     }

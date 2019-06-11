@@ -14,30 +14,30 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarCliente(Cliente cliente)
         {
-
+            return false;
         }
         public Boolean AtualizarCliente(Cliente cliente)
         {
-
+            return false;
         }
         public Boolean ExcluirCliente(Cliente cliente)
         {
-
+            return false;
         }
 
         public Array BuscarClienteNome(String nome)
         {
-
+            return "";
         }
 
         public Cliente BuscarClienteId(int id)
         {
-
+            return 0;
         }
 
         public Array ListaCliente()
         {
-
+            return "";
         }
 
     }

@@ -14,7 +14,7 @@ namespace AtividadeTelas.controle
 
         public void Connectar()
         {
-            string conexao = "Server=localhost;Database=livraria;Uid=root;Pwd=root";
+            string conexao = "Server=localhost;Database=livraria;Uid=root;Pwd=12345";
             MySqlConnection connection = new MySqlConnection(conexao);
             connection.Open();
         }
