@@ -33,7 +33,8 @@ namespace SistemaBiblioteca
 
         private void BtnPesquisaFuncionario_Click(object sender, EventArgs e)
         {
-            
+            PesquisaFuncionario pesquisaFuncionario = new PesquisaFuncionario();
+            pesquisaFuncionario.ShowDialog();
         }
 
         private void Label6_Click_1(object sender, EventArgs e)

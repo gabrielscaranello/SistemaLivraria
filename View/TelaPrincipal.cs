@@ -25,7 +25,8 @@ namespace SistemaBiblioteca
 
         private void BtPesqFunc_Click(object sender, EventArgs e)
         {
-            
+            PesquisaFuncionario pesquisaFuncionario = new PesquisaFuncionario();
+            pesquisaFuncionario.ShowDialog();
         }
 
         private void BtVenda_Click(object sender, EventArgs e)
