@@ -145,7 +145,7 @@
             // 
             this.txtBNomeCliente.Location = new System.Drawing.Point(99, 52);
             this.txtBNomeCliente.Name = "txtBNomeCliente";
-            this.txtBNomeCliente.Size = new System.Drawing.Size(228, 20);
+            this.txtBNomeCliente.Size = new System.Drawing.Size(250, 20);
             this.txtBNomeCliente.TabIndex = 27;
             // 
             // tbCodFunc
@@ -219,7 +219,7 @@
             // 
             // btnPesquisaCliente
             // 
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(333, 50);
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(355, 50);
             this.btnPesquisaCliente.Name = "btnPesquisaCliente";
             this.btnPesquisaCliente.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaCliente.TabIndex = 33;

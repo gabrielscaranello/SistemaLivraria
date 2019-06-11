@@ -45,9 +45,9 @@
             this.tbAutor = new System.Windows.Forms.TextBox();
             this.tbEstoque = new System.Windows.Forms.TextBox();
             this.tbEditora = new System.Windows.Forms.TextBox();
-            this.tbGenero = new System.Windows.Forms.TextBox();
             this.tbISBN = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.cboGenero = new System.Windows.Forms.ComboBox();
             this.SuspendLayout();
             // 
             // button5
@@ -101,9 +101,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(225, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(168, 24);
+            this.label1.Size = new System.Drawing.Size(175, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Cadastro De Livo";
+            this.label1.Text = "Cadastro De Livro";
             // 
             // label2
             // 
@@ -197,13 +197,6 @@
             this.tbEditora.Size = new System.Drawing.Size(131, 20);
             this.tbEditora.TabIndex = 35;
             // 
-            // tbGenero
-            // 
-            this.tbGenero.Location = new System.Drawing.Point(457, 140);
-            this.tbGenero.Name = "tbGenero";
-            this.tbGenero.Size = new System.Drawing.Size(164, 20);
-            this.tbGenero.TabIndex = 36;
-            // 
             // tbISBN
             // 
             this.tbISBN.Location = new System.Drawing.Point(64, 166);
@@ -218,14 +211,22 @@
             this.dateTimePicker1.Size = new System.Drawing.Size(226, 20);
             this.dateTimePicker1.TabIndex = 38;
             // 
+            // cboGenero
+            // 
+            this.cboGenero.FormattingEnabled = true;
+            this.cboGenero.Location = new System.Drawing.Point(457, 139);
+            this.cboGenero.Name = "cboGenero";
+            this.cboGenero.Size = new System.Drawing.Size(164, 21);
+            this.cboGenero.TabIndex = 39;
+            // 
             // Cadastro_de_livro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(645, 290);
+            this.Controls.Add(this.cboGenero);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.tbISBN);
-            this.Controls.Add(this.tbGenero);
             this.Controls.Add(this.tbEditora);
             this.Controls.Add(this.tbEstoque);
             this.Controls.Add(this.tbAutor);
@@ -269,8 +270,8 @@
         private System.Windows.Forms.TextBox tbAutor;
         private System.Windows.Forms.TextBox tbEstoque;
         private System.Windows.Forms.TextBox tbEditora;
-        private System.Windows.Forms.TextBox tbGenero;
         private System.Windows.Forms.TextBox tbISBN;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.ComboBox cboGenero;
     }
 }
