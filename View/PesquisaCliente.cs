@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace SistemaBiblioteca
 {
@@ -18,12 +19,10 @@ namespace SistemaBiblioteca
             InitializeComponent();
         }
 
+        
 
-        SqlConnection sqlconn = null;
-        private String strCon = "Server=srv02.hostoo.io;Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
-        private String strSql = String.Empty;
-        private String strComand = "select * from livraria.Cliente where nome=@nome";
-
+        
+        
         private void Label2_Click(object sender, EventArgs e)
         {
 
@@ -31,25 +30,23 @@ namespace SistemaBiblioteca
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            String connString = " Server=srv02.hostoo.io; Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
+            MySqlConnection conn = new MySqlConnection(connString);
+            MySqlCommand comand = conn.CreateCommand();
+            comand.CommandText = "select nome from livraria.Cliente";
+
             try
             {
-                //string de conexão
-                strCon objconn = new strCon("Server=srv02.hostoo.io;Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=B1n2&thcHhj9CdP4");
-     
-                //abre a conexão com o banco de dados
-                sqlconn.Open();
-
-                var strcom = new strComand("select nome from livraria.Cliente where nome=@nome", strComand);
-
-
-
-                //fecha conexão com o banco
-                sqlconn.Close();
+                conn.Open();
             }
             catch (Exception erro) {
                 MessageBox.Show("Erro na pesquisa" + erro);
             }
-            
+            MySqlDataReader reader = comand.ExecuteReader();
+            while (reader.Read()) {
+                Console.WriteLine(reader["nome"].ToString());
+            }
+            Console.ReadLine();
 
         }
 

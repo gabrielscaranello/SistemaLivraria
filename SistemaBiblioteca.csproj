@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="comand\ComandText.cs" />
     <Compile Include="Control\Banco.cs" />
     <Compile Include="Control\ClienteControle.cs" />
     <Compile Include="Control\FuncionarioControle.cs" />
@@ -101,8 +102,6 @@
     <Compile Include="View\PesquisaFuncionario.Designer.cs">
       <DependentUpon>PesquisaFuncionario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\strComand.cs" />
-    <Compile Include="View\strCon.cs" />
     <Compile Include="View\Venda.cs">
       <SubType>Form</SubType>
     </Compile>
