@@ -115,6 +115,7 @@
             this.ResultadoPesquisa.Name = "ResultadoPesquisa";
             this.ResultadoPesquisa.Size = new System.Drawing.Size(557, 173);
             this.ResultadoPesquisa.TabIndex = 33;
+            this.ResultadoPesquisa.SelectedIndexChanged += new System.EventHandler(this.ResultadoPesquisa_SelectedIndexChanged);
             // 
             // button5
             // 

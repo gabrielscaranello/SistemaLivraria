@@ -101,6 +101,8 @@
     <Compile Include="View\PesquisaFuncionario.Designer.cs">
       <DependentUpon>PesquisaFuncionario.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\strComand.cs" />
+    <Compile Include="View\strCon.cs" />
     <Compile Include="View\Venda.cs">
       <SubType>Form</SubType>
     </Compile>
