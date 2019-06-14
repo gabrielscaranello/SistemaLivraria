@@ -38,6 +38,10 @@ namespace SistemaBiblioteca
             try
             {
                 conn.Open();
+
+                
+
+                conn.Close();
             }
             catch (Exception erro) {
                 MessageBox.Show("Erro na pesquisa" + erro);
