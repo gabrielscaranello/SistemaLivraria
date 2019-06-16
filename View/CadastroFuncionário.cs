@@ -34,5 +34,10 @@ namespace SistemaBiblioteca
                 this.Close();
             }
         }
+
+        private void CadastroFuncionário_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

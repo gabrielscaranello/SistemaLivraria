@@ -28,11 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btSalvar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -47,68 +42,28 @@
             this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
-            this.btnPesquisaCliente = new System.Windows.Forms.Button();
-            this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
-            this.btnPesquisaProduto = new System.Windows.Forms.Button();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
-            this.btnOk = new System.Windows.Forms.Button();
             this.numQuantidade = new System.Windows.Forms.NumericUpDown();
+            this.btnOk = new System.Windows.Forms.Button();
+            this.btnPesquisaProduto = new System.Windows.Forms.Button();
+            this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
+            this.btnPesquisaCliente = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(277, 352);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 66);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(520, 352);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(75, 66);
-            this.btExcluir.TabIndex = 21;
-            this.btExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btSalvar
-            // 
-            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(439, 352);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(75, 66);
-            this.btSalvar.TabIndex = 20;
-            this.btSalvar.UseVisualStyleBackColor = true;
-            // 
-            // btEditar
-            // 
-            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(358, 352);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(75, 66);
-            this.btEditar.TabIndex = 19;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(196, 352);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(75, 66);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(50, 21);
+            this.label1.Location = new System.Drawing.Point(16, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 23;
@@ -117,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(88, 105);
+            this.label2.Location = new System.Drawing.Point(45, 98);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 24;
@@ -126,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(49, 142);
+            this.label3.Location = new System.Drawing.Point(3, 153);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 25;
@@ -135,7 +90,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(52, 74);
+            this.label4.Location = new System.Drawing.Point(6, 64);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 26;
@@ -143,27 +98,28 @@
             // 
             // txtNomeCliente
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(139, 102);
+            this.txtNomeCliente.Location = new System.Drawing.Point(93, 95);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(375, 20);
+            this.txtNomeCliente.Size = new System.Drawing.Size(474, 20);
             this.txtNomeCliente.TabIndex = 27;
             // 
             // txtCodFunc
             // 
-            this.txtCodFunc.Location = new System.Drawing.Point(139, 142);
+            this.txtCodFunc.Location = new System.Drawing.Point(93, 150);
             this.txtCodFunc.Name = "txtCodFunc";
-            this.txtCodFunc.Size = new System.Drawing.Size(375, 20);
+            this.txtCodFunc.Size = new System.Drawing.Size(474, 20);
             this.txtCodFunc.TabIndex = 28;
             // 
             // dtpDataVenda
             // 
-            this.dtpDataVenda.Location = new System.Drawing.Point(139, 67);
+            this.dtpDataVenda.Location = new System.Drawing.Point(93, 58);
             this.dtpDataVenda.Name = "dtpDataVenda";
             this.dtpDataVenda.Size = new System.Drawing.Size(228, 20);
             this.dtpDataVenda.TabIndex = 29;
             // 
             // dataGVProdutos
             // 
+            this.dataGVProdutos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
             this.dataGVProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGVProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.CodProduto,
@@ -171,10 +127,11 @@
             this.Preco,
             this.Quantidade,
             this.ValorTotal});
-            this.dataGVProdutos.Location = new System.Drawing.Point(52, 220);
+            this.dataGVProdutos.Location = new System.Drawing.Point(93, 290);
             this.dataGVProdutos.Name = "dataGVProdutos";
-            this.dataGVProdutos.Size = new System.Drawing.Size(543, 126);
+            this.dataGVProdutos.Size = new System.Drawing.Size(537, 113);
             this.dataGVProdutos.TabIndex = 30;
+            this.dataGVProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGVProdutos_CellContentClick);
             // 
             // CodProduto
             // 
@@ -217,47 +174,17 @@
             this.label5.TabIndex = 31;
             this.label5.Text = "Total";
             // 
-            // btnPesquisaCliente
-            // 
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(520, 100);
-            this.btnPesquisaCliente.Name = "btnPesquisaCliente";
-            this.btnPesquisaCliente.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisaCliente.TabIndex = 33;
-            this.btnPesquisaCliente.Text = "Pesquisar";
-            this.btnPesquisaCliente.UseVisualStyleBackColor = true;
-            this.btnPesquisaCliente.Click += new System.EventHandler(this.BtnPesquisaCliente_Click);
-            // 
-            // btnPesquisaFuncionario
-            // 
-            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(520, 142);
-            this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
-            this.btnPesquisaFuncionario.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisaFuncionario.TabIndex = 34;
-            this.btnPesquisaFuncionario.Text = "Pesquisar";
-            this.btnPesquisaFuncionario.UseVisualStyleBackColor = true;
-            this.btnPesquisaFuncionario.Click += new System.EventHandler(this.BtnPesquisaFuncionario_Click);
-            // 
-            // btnPesquisaProduto
-            // 
-            this.btnPesquisaProduto.Location = new System.Drawing.Point(321, 185);
-            this.btnPesquisaProduto.Name = "btnPesquisaProduto";
-            this.btnPesquisaProduto.Size = new System.Drawing.Size(75, 23);
-            this.btnPesquisaProduto.TabIndex = 37;
-            this.btnPesquisaProduto.Text = "Pesquisar";
-            this.btnPesquisaProduto.UseVisualStyleBackColor = true;
-            this.btnPesquisaProduto.Click += new System.EventHandler(this.Button1_Click);
-            // 
             // txtProduto
             // 
-            this.txtProduto.Location = new System.Drawing.Point(139, 185);
+            this.txtProduto.Location = new System.Drawing.Point(93, 203);
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(176, 20);
+            this.txtProduto.Size = new System.Drawing.Size(474, 20);
             this.txtProduto.TabIndex = 36;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(83, 190);
+            this.label6.Location = new System.Drawing.Point(40, 206);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 35;
@@ -266,33 +193,109 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(427, 188);
+            this.label7.Location = new System.Drawing.Point(22, 254);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 38;
             this.label7.Text = "Quantidade:";
             // 
-            // btnOk
-            // 
-            this.btnOk.Location = new System.Drawing.Point(564, 183);
-            this.btnOk.Name = "btnOk";
-            this.btnOk.Size = new System.Drawing.Size(31, 23);
-            this.btnOk.TabIndex = 40;
-            this.btnOk.Text = "OK";
-            this.btnOk.UseVisualStyleBackColor = true;
-            // 
             // numQuantidade
             // 
-            this.numQuantidade.Location = new System.Drawing.Point(498, 186);
+            this.numQuantidade.Location = new System.Drawing.Point(93, 254);
             this.numQuantidade.Name = "numQuantidade";
-            this.numQuantidade.Size = new System.Drawing.Size(38, 20);
+            this.numQuantidade.Size = new System.Drawing.Size(47, 20);
             this.numQuantidade.TabIndex = 41;
+            // 
+            // btnOk
+            // 
+            this.btnOk.Image = global::SistemaBiblioteca.Properties.Resources.ok4737;
+            this.btnOk.Location = new System.Drawing.Point(576, 236);
+            this.btnOk.Name = "btnOk";
+            this.btnOk.Size = new System.Drawing.Size(55, 47);
+            this.btnOk.TabIndex = 40;
+            this.btnOk.UseVisualStyleBackColor = true;
+            // 
+            // btnPesquisaProduto
+            // 
+            this.btnPesquisaProduto.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
+            this.btnPesquisaProduto.Location = new System.Drawing.Point(573, 183);
+            this.btnPesquisaProduto.Name = "btnPesquisaProduto";
+            this.btnPesquisaProduto.Size = new System.Drawing.Size(55, 47);
+            this.btnPesquisaProduto.TabIndex = 37;
+            this.btnPesquisaProduto.UseVisualStyleBackColor = true;
+            this.btnPesquisaProduto.Click += new System.EventHandler(this.Button1_Click);
+            // 
+            // btnPesquisaFuncionario
+            // 
+            this.btnPesquisaFuncionario.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(573, 128);
+            this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
+            this.btnPesquisaFuncionario.Size = new System.Drawing.Size(55, 47);
+            this.btnPesquisaFuncionario.TabIndex = 34;
+            this.btnPesquisaFuncionario.UseVisualStyleBackColor = true;
+            this.btnPesquisaFuncionario.Click += new System.EventHandler(this.BtnPesquisaFuncionario_Click);
+            // 
+            // btnPesquisaCliente
+            // 
+            this.btnPesquisaCliente.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(573, 75);
+            this.btnPesquisaCliente.Name = "btnPesquisaCliente";
+            this.btnPesquisaCliente.Size = new System.Drawing.Size(55, 47);
+            this.btnPesquisaCliente.TabIndex = 33;
+            this.btnPesquisaCliente.UseVisualStyleBackColor = true;
+            this.btnPesquisaCliente.Click += new System.EventHandler(this.BtnPesquisaCliente_Click);
+            // 
+            // button5
+            // 
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(391, 409);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(55, 47);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btExcluir.Location = new System.Drawing.Point(578, 409);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(55, 47);
+            this.btExcluir.TabIndex = 21;
+            this.btExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btSalvar
+            // 
+            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btSalvar.Location = new System.Drawing.Point(511, 409);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(55, 47);
+            this.btSalvar.TabIndex = 20;
+            this.btSalvar.UseVisualStyleBackColor = true;
+            // 
+            // btEditar
+            // 
+            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btEditar.Location = new System.Drawing.Point(449, 409);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(55, 47);
+            this.btEditar.TabIndex = 19;
+            this.btEditar.UseVisualStyleBackColor = true;
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(330, 409);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(55, 47);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 430);
+            this.ClientSize = new System.Drawing.Size(637, 461);
             this.Controls.Add(this.numQuantidade);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);
@@ -318,6 +321,7 @@
             this.KeyPreview = true;
             this.Name = "Venda";
             this.Text = "Venda";
+            this.Load += new System.EventHandler(this.Venda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Venda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();

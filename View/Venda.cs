@@ -49,5 +49,20 @@ namespace SistemaBiblioteca
                 this.Close();
             }
         }
+
+        private void Venda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtVoltar_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void DataGVProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

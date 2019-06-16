@@ -30,5 +30,11 @@ namespace SistemaBiblioteca
 
             }
         }
+
+        private void PesquisaVenda_Load(object sender, EventArgs e)
+        {
+
+            
+        }
     }
 }

@@ -28,8 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button5 = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.cbCadastrar = new System.Windows.Forms.CheckBox();
             this.cbAtualizar = new System.Windows.Forms.CheckBox();
@@ -40,27 +38,9 @@
             this.btPesquisarLivro = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
             this.ResultadoPesquisa = new System.Windows.Forms.ListBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(485, 322);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 43);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            this.button5.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(419, 322);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(60, 43);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // label1
             // 
@@ -127,38 +107,58 @@
             // 
             this.txtTitulo.Location = new System.Drawing.Point(60, 86);
             this.txtTitulo.Name = "txtTitulo";
-            this.txtTitulo.Size = new System.Drawing.Size(486, 20);
+            this.txtTitulo.Size = new System.Drawing.Size(487, 20);
             this.txtTitulo.TabIndex = 29;
             // 
             // btPesquisarLivro
             // 
-            this.btPesquisarLivro.Location = new System.Drawing.Point(471, 140);
+            this.btPesquisarLivro.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
+            this.btPesquisarLivro.Location = new System.Drawing.Point(553, 83);
             this.btPesquisarLivro.Name = "btPesquisarLivro";
-            this.btPesquisarLivro.Size = new System.Drawing.Size(75, 23);
+            this.btPesquisarLivro.Size = new System.Drawing.Size(69, 51);
             this.btPesquisarLivro.TabIndex = 30;
-            this.btPesquisarLivro.Text = "PESQUISAR";
             this.btPesquisarLivro.UseVisualStyleBackColor = true;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(60, 114);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(486, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(487, 20);
             this.txtCodigo.TabIndex = 31;
             // 
             // ResultadoPesquisa
             // 
             this.ResultadoPesquisa.FormattingEnabled = true;
-            this.ResultadoPesquisa.Location = new System.Drawing.Point(60, 169);
+            this.ResultadoPesquisa.Location = new System.Drawing.Point(59, 143);
             this.ResultadoPesquisa.Name = "ResultadoPesquisa";
-            this.ResultadoPesquisa.Size = new System.Drawing.Size(486, 147);
+            this.ResultadoPesquisa.Size = new System.Drawing.Size(563, 186);
             this.ResultadoPesquisa.TabIndex = 32;
+            // 
+            // button5
+            // 
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(561, 406);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(61, 43);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            this.button5.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(495, 406);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(60, 43);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // PesquisaLivro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(561, 378);
+            this.ClientSize = new System.Drawing.Size(634, 461);
             this.Controls.Add(this.ResultadoPesquisa);
             this.Controls.Add(this.txtCodigo);
             this.Controls.Add(this.btPesquisarLivro);

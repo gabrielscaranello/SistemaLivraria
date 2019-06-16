@@ -29,5 +29,10 @@ namespace SistemaBiblioteca
                 this.Close();
             }
         }
+
+        private void BtVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

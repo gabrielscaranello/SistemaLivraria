@@ -38,21 +38,21 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.txtEmail = new System.Windows.Forms.TextBox();
+            this.mtxtNascimento = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
+            this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.button5 = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
-            this.mtxtNascimento = new System.Windows.Forms.MaskedTextBox();
-            this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
-            this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(181, 22);
+            this.label1.Location = new System.Drawing.Point(65, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(261, 24);
             this.label1.TabIndex = 1;
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(479, 61);
+            this.label3.Location = new System.Drawing.Point(369, 99);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(52, 13);
             this.label3.TabIndex = 3;
@@ -79,7 +79,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(32, 91);
+            this.label4.Location = new System.Drawing.Point(33, 95);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 13);
             this.label4.TabIndex = 4;
@@ -88,7 +88,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(6, 117);
+            this.label5.Location = new System.Drawing.Point(7, 167);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(56, 13);
             this.label5.TabIndex = 5;
@@ -97,7 +97,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(316, 91);
+            this.label6.Location = new System.Drawing.Point(27, 131);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(35, 13);
             this.label6.TabIndex = 6;
@@ -106,7 +106,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(159, 91);
+            this.label7.Location = new System.Drawing.Point(159, 100);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(79, 13);
             this.label7.TabIndex = 7;
@@ -116,72 +116,26 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(69, 58);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(404, 20);
+            this.txtNome.Size = new System.Drawing.Size(553, 20);
             this.txtNome.TabIndex = 8;
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(69, 114);
+            this.txtEndereco.Location = new System.Drawing.Point(69, 164);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(557, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(553, 20);
             this.txtEndereco.TabIndex = 11;
             // 
             // txtEmail
             // 
-            this.txtEmail.Location = new System.Drawing.Point(357, 88);
+            this.txtEmail.Location = new System.Drawing.Point(68, 128);
             this.txtEmail.Name = "txtEmail";
-            this.txtEmail.Size = new System.Drawing.Size(269, 20);
+            this.txtEmail.Size = new System.Drawing.Size(554, 20);
             this.txtEmail.TabIndex = 12;
-            // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(308, 140);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 66);
-            this.button5.TabIndex = 17;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(551, 140);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(75, 66);
-            this.btExcluir.TabIndex = 16;
-            this.btExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btSalvar
-            // 
-            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(470, 140);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(75, 66);
-            this.btSalvar.TabIndex = 15;
-            this.btSalvar.UseVisualStyleBackColor = true;
-            // 
-            // btEditar
-            // 
-            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(389, 140);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(75, 66);
-            this.btEditar.TabIndex = 14;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(227, 140);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(75, 66);
-            this.btVoltar.TabIndex = 0;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // mtxtNascimento
             // 
-            this.mtxtNascimento.Location = new System.Drawing.Point(244, 88);
+            this.mtxtNascimento.Location = new System.Drawing.Point(244, 92);
             this.mtxtNascimento.Mask = "00/00/0000";
             this.mtxtNascimento.Name = "mtxtNascimento";
             this.mtxtNascimento.Size = new System.Drawing.Size(66, 20);
@@ -190,7 +144,7 @@
             // 
             // mtxtCPF
             // 
-            this.mtxtCPF.Location = new System.Drawing.Point(69, 88);
+            this.mtxtCPF.Location = new System.Drawing.Point(69, 95);
             this.mtxtCPF.Mask = "000,000,000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(84, 20);
@@ -198,17 +152,63 @@
             // 
             // mtxtTelefone
             // 
-            this.mtxtTelefone.Location = new System.Drawing.Point(537, 58);
+            this.mtxtTelefone.Location = new System.Drawing.Point(427, 93);
             this.mtxtTelefone.Mask = "(00) 00000-0000";
             this.mtxtTelefone.Name = "mtxtTelefone";
-            this.mtxtTelefone.Size = new System.Drawing.Size(89, 20);
+            this.mtxtTelefone.Size = new System.Drawing.Size(195, 20);
             this.mtxtTelefone.TabIndex = 20;
+            // 
+            // button5
+            // 
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(394, 399);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(53, 51);
+            this.button5.TabIndex = 17;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btExcluir.Location = new System.Drawing.Point(571, 399);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(51, 51);
+            this.btExcluir.TabIndex = 16;
+            this.btExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btSalvar
+            // 
+            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btSalvar.Location = new System.Drawing.Point(512, 399);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(53, 51);
+            this.btSalvar.TabIndex = 15;
+            this.btSalvar.UseVisualStyleBackColor = true;
+            // 
+            // btEditar
+            // 
+            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btEditar.Location = new System.Drawing.Point(453, 399);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(53, 51);
+            this.btEditar.TabIndex = 14;
+            this.btEditar.UseVisualStyleBackColor = true;
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(335, 399);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(53, 51);
+            this.btVoltar.TabIndex = 0;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // Cadastro_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(638, 216);
+            this.ClientSize = new System.Drawing.Size(634, 462);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.mtxtNascimento);
