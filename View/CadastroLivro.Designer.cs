@@ -136,7 +136,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(360, 93);
+            this.label5.Location = new System.Drawing.Point(447, 93);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 27;
@@ -180,7 +180,7 @@
             // 
             this.txtAutor.Location = new System.Drawing.Point(64, 90);
             this.txtAutor.Name = "txtAutor";
-            this.txtAutor.Size = new System.Drawing.Size(290, 20);
+            this.txtAutor.Size = new System.Drawing.Size(364, 20);
             this.txtAutor.TabIndex = 32;
             // 
             // txtEstoque
@@ -214,7 +214,7 @@
             // 
             // mtxtDataPublicacao
             // 
-            this.mtxtDataPublicacao.Location = new System.Drawing.Point(470, 90);
+            this.mtxtDataPublicacao.Location = new System.Drawing.Point(557, 90);
             this.mtxtDataPublicacao.Mask = "00/00/0000";
             this.mtxtDataPublicacao.Name = "mtxtDataPublicacao";
             this.mtxtDataPublicacao.Size = new System.Drawing.Size(64, 20);
@@ -246,8 +246,11 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "Cadastro_de_livro";
             this.Text = "Cadastro_de_livro";
+            this.Load += new System.EventHandler(this.Cadastro_de_livro_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Cadastro_de_livro_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

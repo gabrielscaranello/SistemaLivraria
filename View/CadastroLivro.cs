@@ -16,5 +16,18 @@ namespace SistemaBiblioteca
         {
             InitializeComponent();
         }
+
+        private void Cadastro_de_livro_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Cadastro_de_livro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
     }
 }

@@ -150,8 +150,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

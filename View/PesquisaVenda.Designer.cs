@@ -149,8 +149,10 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "PesquisaVenda";
             this.Text = "Controle_Venda";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaVenda_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

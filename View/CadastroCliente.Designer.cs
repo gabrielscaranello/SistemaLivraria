@@ -227,8 +227,10 @@
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "Cadastro_Cliente";
             this.Text = "Cadastro_Cliente";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Cadastro_Cliente_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

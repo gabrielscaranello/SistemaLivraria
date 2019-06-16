@@ -41,5 +41,13 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void Venda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
     }
 }

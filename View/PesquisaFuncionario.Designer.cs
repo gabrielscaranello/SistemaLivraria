@@ -148,9 +148,11 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.button5);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "PesquisaFuncionario";
             this.Text = "Funcionário Controle";
             this.Load += new System.EventHandler(this.Controle_Funcionário_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaFuncionario_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

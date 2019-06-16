@@ -26,5 +26,13 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void Cadastro_Cliente_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
     }
 }

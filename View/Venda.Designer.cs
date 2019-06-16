@@ -62,7 +62,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(277, 297);
+            this.button5.Location = new System.Drawing.Point(277, 352);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(75, 66);
             this.button5.TabIndex = 22;
@@ -71,7 +71,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(520, 297);
+            this.btExcluir.Location = new System.Drawing.Point(520, 352);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(75, 66);
             this.btExcluir.TabIndex = 21;
@@ -80,7 +80,7 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(439, 297);
+            this.btSalvar.Location = new System.Drawing.Point(439, 352);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(75, 66);
             this.btSalvar.TabIndex = 20;
@@ -89,7 +89,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(358, 297);
+            this.btEditar.Location = new System.Drawing.Point(358, 352);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(75, 66);
             this.btEditar.TabIndex = 19;
@@ -98,7 +98,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(196, 297);
+            this.btVoltar.Location = new System.Drawing.Point(196, 352);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(75, 66);
             this.btVoltar.TabIndex = 18;
@@ -108,7 +108,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(54, 18);
+            this.label1.Location = new System.Drawing.Point(50, 21);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(71, 24);
             this.label1.TabIndex = 23;
@@ -117,7 +117,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(51, 55);
+            this.label2.Location = new System.Drawing.Point(88, 105);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 24;
@@ -126,7 +126,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(51, 82);
+            this.label3.Location = new System.Drawing.Point(49, 142);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 25;
@@ -135,7 +135,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(49, 111);
+            this.label4.Location = new System.Drawing.Point(52, 74);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 26;
@@ -143,21 +143,21 @@
             // 
             // txtNomeCliente
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(99, 52);
+            this.txtNomeCliente.Location = new System.Drawing.Point(139, 102);
             this.txtNomeCliente.Name = "txtNomeCliente";
-            this.txtNomeCliente.Size = new System.Drawing.Size(250, 20);
+            this.txtNomeCliente.Size = new System.Drawing.Size(375, 20);
             this.txtNomeCliente.TabIndex = 27;
             // 
             // txtCodFunc
             // 
-            this.txtCodFunc.Location = new System.Drawing.Point(141, 79);
+            this.txtCodFunc.Location = new System.Drawing.Point(139, 142);
             this.txtCodFunc.Name = "txtCodFunc";
-            this.txtCodFunc.Size = new System.Drawing.Size(136, 20);
+            this.txtCodFunc.Size = new System.Drawing.Size(375, 20);
             this.txtCodFunc.TabIndex = 28;
             // 
             // dtpDataVenda
             // 
-            this.dtpDataVenda.Location = new System.Drawing.Point(136, 105);
+            this.dtpDataVenda.Location = new System.Drawing.Point(139, 67);
             this.dtpDataVenda.Name = "dtpDataVenda";
             this.dtpDataVenda.Size = new System.Drawing.Size(228, 20);
             this.dtpDataVenda.TabIndex = 29;
@@ -171,7 +171,7 @@
             this.Preco,
             this.Quantidade,
             this.ValorTotal});
-            this.dataGVProdutos.Location = new System.Drawing.Point(52, 165);
+            this.dataGVProdutos.Location = new System.Drawing.Point(52, 220);
             this.dataGVProdutos.Name = "dataGVProdutos";
             this.dataGVProdutos.Size = new System.Drawing.Size(543, 126);
             this.dataGVProdutos.TabIndex = 30;
@@ -211,7 +211,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(418, 21);
+            this.label5.Location = new System.Drawing.Point(426, 21);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(49, 20);
             this.label5.TabIndex = 31;
@@ -219,7 +219,7 @@
             // 
             // btnPesquisaCliente
             // 
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(355, 50);
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(520, 100);
             this.btnPesquisaCliente.Name = "btnPesquisaCliente";
             this.btnPesquisaCliente.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaCliente.TabIndex = 33;
@@ -229,7 +229,7 @@
             // 
             // btnPesquisaFuncionario
             // 
-            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(283, 77);
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(520, 142);
             this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
             this.btnPesquisaFuncionario.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaFuncionario.TabIndex = 34;
@@ -239,7 +239,7 @@
             // 
             // btnPesquisaProduto
             // 
-            this.btnPesquisaProduto.Location = new System.Drawing.Point(241, 130);
+            this.btnPesquisaProduto.Location = new System.Drawing.Point(321, 185);
             this.btnPesquisaProduto.Name = "btnPesquisaProduto";
             this.btnPesquisaProduto.Size = new System.Drawing.Size(75, 23);
             this.btnPesquisaProduto.TabIndex = 37;
@@ -249,15 +249,15 @@
             // 
             // txtProduto
             // 
-            this.txtProduto.Location = new System.Drawing.Point(99, 131);
+            this.txtProduto.Location = new System.Drawing.Point(139, 185);
             this.txtProduto.Name = "txtProduto";
-            this.txtProduto.Size = new System.Drawing.Size(136, 20);
+            this.txtProduto.Size = new System.Drawing.Size(176, 20);
             this.txtProduto.TabIndex = 36;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(51, 134);
+            this.label6.Location = new System.Drawing.Point(83, 190);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(47, 13);
             this.label6.TabIndex = 35;
@@ -266,7 +266,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(328, 135);
+            this.label7.Location = new System.Drawing.Point(427, 188);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(65, 13);
             this.label7.TabIndex = 38;
@@ -274,7 +274,7 @@
             // 
             // btnOk
             // 
-            this.btnOk.Location = new System.Drawing.Point(436, 129);
+            this.btnOk.Location = new System.Drawing.Point(564, 183);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(31, 23);
             this.btnOk.TabIndex = 40;
@@ -283,7 +283,7 @@
             // 
             // numQuantidade
             // 
-            this.numQuantidade.Location = new System.Drawing.Point(392, 130);
+            this.numQuantidade.Location = new System.Drawing.Point(498, 186);
             this.numQuantidade.Name = "numQuantidade";
             this.numQuantidade.Size = new System.Drawing.Size(38, 20);
             this.numQuantidade.TabIndex = 41;
@@ -292,7 +292,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(612, 377);
+            this.ClientSize = new System.Drawing.Size(612, 430);
             this.Controls.Add(this.numQuantidade);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);
@@ -315,8 +315,10 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "Venda";
             this.Text = "Venda";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Venda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();
             this.ResumeLayout(false);

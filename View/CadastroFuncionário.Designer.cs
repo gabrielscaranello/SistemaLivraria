@@ -226,8 +226,10 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "CadastroFuncionário";
             this.Text = "Cadastro_de_Funcionário";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFuncionário_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

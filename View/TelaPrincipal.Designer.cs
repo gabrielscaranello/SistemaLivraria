@@ -157,8 +157,10 @@
             this.Controls.Add(this.btCadCli);
             this.Controls.Add(this.btVenda);
             this.Controls.Add(this.label1);
+            this.KeyPreview = true;
             this.Name = "telaPrincipal";
             this.Text = "Tela Principal";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaPrincipal_KeyDown_1);
             this.ResumeLayout(false);
             this.PerformLayout();
 
