@@ -49,5 +49,44 @@ namespace SistemaBiblioteca
             Cadastro_de_livro cadLiv = new Cadastro_de_livro();
             cadLiv.ShowDialog();
         }
+
+             //  private void TelaPrincipal_KeyDown(object sender, KeyEventArgs e)
+       // {
+        //    if (e.KeyValue.Equals(27))
+        //    {
+        //        this.Close();
+        //    }
+        //}
+
+        private void TelaPrincipal_KeyDown_1(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
+
+        private void BtControleVenda_Click(object sender, EventArgs e)
+        {
+            PesquisaVenda pesVenda = new PesquisaVenda();
+            pesVenda.ShowDialog();
+        }
+
+        private void BtControleCliente_Click(object sender, EventArgs e)
+        {
+            PesquisaCliente pesCliente = new PesquisaCliente();
+            pesCliente.ShowDialog();
+        }
+
+        private void BtControleLivro_Click(object sender, EventArgs e)
+        {
+            PesquisaLivro pesLivro = new PesquisaLivro();
+            pesLivro.ShowDialog();
+        }
+
+        private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

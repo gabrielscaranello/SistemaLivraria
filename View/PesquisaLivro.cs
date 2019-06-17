@@ -31,5 +31,13 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void PesquisaLivro_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
     }
 }

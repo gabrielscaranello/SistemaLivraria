@@ -26,5 +26,18 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void CadastroFuncionário_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
+
+        private void CadastroFuncionário_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

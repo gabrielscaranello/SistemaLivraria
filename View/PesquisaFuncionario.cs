@@ -21,5 +21,18 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void PesquisaFuncionario_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
+
+        private void BtVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

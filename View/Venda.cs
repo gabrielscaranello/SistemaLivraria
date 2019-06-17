@@ -41,5 +41,28 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void Venda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
+
+        private void Venda_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtVoltar_Click(object sender, EventArgs e)
+        {
+          
+        }
+
+        private void DataGVProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

@@ -35,24 +35,24 @@
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
             this.dtpDataAdm = new System.Windows.Forms.DateTimePicker();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btSalvar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(12, 9);
+            this.label1.Location = new System.Drawing.Point(62, 9);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 23;
@@ -70,7 +70,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(308, 52);
+            this.label3.Location = new System.Drawing.Point(366, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
@@ -80,7 +80,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(287, 104);
+            this.label4.Location = new System.Drawing.Point(350, 129);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(33, 13);
             this.label4.TabIndex = 26;
@@ -90,73 +90,28 @@
             // 
             this.txtNome.Location = new System.Drawing.Point(66, 49);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(236, 20);
+            this.txtNome.Size = new System.Drawing.Size(294, 20);
             this.txtNome.TabIndex = 27;
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(352, 49);
+            this.txtCargo.Location = new System.Drawing.Point(410, 49);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(149, 20);
+            this.txtCargo.Size = new System.Drawing.Size(213, 20);
             this.txtCargo.TabIndex = 28;
             this.txtCargo.TextChanged += new System.EventHandler(this.TbCargo_TextChanged);
             // 
             // dtpDataAdm
             // 
-            this.dtpDataAdm.Location = new System.Drawing.Point(326, 101);
+            this.dtpDataAdm.Location = new System.Drawing.Point(389, 126);
             this.dtpDataAdm.Name = "dtpDataAdm";
-            this.dtpDataAdm.Size = new System.Drawing.Size(175, 20);
+            this.dtpDataAdm.Size = new System.Drawing.Size(234, 20);
             this.dtpDataAdm.TabIndex = 29;
-            // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.voltar;
-            this.button5.Location = new System.Drawing.Point(179, 140);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(75, 66);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
-            // btExcluir
-            // 
-            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.LIXO;
-            this.btExcluir.Location = new System.Drawing.Point(426, 140);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(75, 66);
-            this.btExcluir.TabIndex = 21;
-            this.btExcluir.UseVisualStyleBackColor = true;
-            // 
-            // btSalvar
-            // 
-            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.SALV;
-            this.btSalvar.Location = new System.Drawing.Point(345, 140);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(75, 66);
-            this.btSalvar.TabIndex = 20;
-            this.btSalvar.UseVisualStyleBackColor = true;
-            // 
-            // btEditar
-            // 
-            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.EDIT;
-            this.btEditar.Location = new System.Drawing.Point(261, 140);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(75, 66);
-            this.btEditar.TabIndex = 19;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.avancar;
-            this.btVoltar.Location = new System.Drawing.Point(98, 140);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(75, 66);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(162, 104);
+            this.label5.Location = new System.Drawing.Point(196, 133);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 30;
@@ -165,7 +120,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 104);
+            this.label6.Location = new System.Drawing.Point(8, 133);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 32;
@@ -173,15 +128,15 @@
             // 
             // txtEndereco
             // 
-            this.txtEndereco.Location = new System.Drawing.Point(66, 75);
+            this.txtEndereco.Location = new System.Drawing.Point(66, 87);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(435, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(557, 20);
             this.txtEndereco.TabIndex = 35;
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(4, 78);
+            this.label7.Location = new System.Drawing.Point(4, 94);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(56, 13);
             this.label7.TabIndex = 34;
@@ -189,25 +144,70 @@
             // 
             // mtxtCPF
             // 
-            this.mtxtCPF.Location = new System.Drawing.Point(198, 101);
+            this.mtxtCPF.Location = new System.Drawing.Point(232, 126);
             this.mtxtCPF.Mask = "000,000,000-00";
             this.mtxtCPF.Name = "mtxtCPF";
-            this.mtxtCPF.Size = new System.Drawing.Size(83, 20);
+            this.mtxtCPF.Size = new System.Drawing.Size(88, 20);
             this.mtxtCPF.TabIndex = 36;
             // 
             // mtxtTelefone
             // 
-            this.mtxtTelefone.Location = new System.Drawing.Point(66, 101);
+            this.mtxtTelefone.Location = new System.Drawing.Point(66, 126);
             this.mtxtTelefone.Mask = "(00) 00000-0000";
             this.mtxtTelefone.Name = "mtxtTelefone";
             this.mtxtTelefone.Size = new System.Drawing.Size(90, 20);
             this.mtxtTelefone.TabIndex = 37;
             // 
+            // button5
+            // 
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(400, 396);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(52, 53);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btExcluir.Location = new System.Drawing.Point(574, 396);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(49, 53);
+            this.btExcluir.TabIndex = 21;
+            this.btExcluir.UseVisualStyleBackColor = true;
+            // 
+            // btSalvar
+            // 
+            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btSalvar.Location = new System.Drawing.Point(515, 396);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(56, 53);
+            this.btSalvar.TabIndex = 20;
+            this.btSalvar.UseVisualStyleBackColor = true;
+            // 
+            // btEditar
+            // 
+            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btEditar.Location = new System.Drawing.Point(458, 396);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(51, 53);
+            this.btEditar.TabIndex = 19;
+            this.btEditar.UseVisualStyleBackColor = true;
+            // 
+            // btVoltar
+            // 
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(342, 396);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(52, 53);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            // 
             // CadastroFuncionário
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(535, 216);
+            this.ClientSize = new System.Drawing.Size(635, 461);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.txtEndereco);
@@ -226,8 +226,11 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btVoltar);
+            this.KeyPreview = true;
             this.Name = "CadastroFuncionário";
             this.Text = "Cadastro_de_Funcionário";
+            this.Load += new System.EventHandler(this.CadastroFuncionário_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.CadastroFuncionário_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
 

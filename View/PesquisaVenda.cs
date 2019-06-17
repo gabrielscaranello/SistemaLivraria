@@ -21,5 +21,20 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void PesquisaVenda_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+
+            }
+        }
+
+        private void PesquisaVenda_Load(object sender, EventArgs e)
+        {
+
+            
+        }
     }
 }

@@ -200,5 +200,29 @@
   <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisar65x65.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pesquisar4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\excluir4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\salvar4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\edit4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\avancar4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\voltar4737.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ok4737.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
