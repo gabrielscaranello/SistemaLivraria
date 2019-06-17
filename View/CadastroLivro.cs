@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public Cadastro_de_livro()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Cadastro_de_livro_Load(object sender, EventArgs e)

@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public PesquisaVenda()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void BtVoltar_Click(object sender, EventArgs e)

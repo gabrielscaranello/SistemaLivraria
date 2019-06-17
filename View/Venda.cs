@@ -15,22 +15,28 @@ namespace SistemaBiblioteca
         public Venda()
         {
             InitializeComponent();
+
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
 
         private void Button1_Click(object sender, EventArgs e)
-        {
+        { 
+          
             PesquisaLivro pesquisaLivro = new PesquisaLivro();
             pesquisaLivro.ShowDialog();
         }
 
-       
+
         private void BtnPesquisaCliente_Click(object sender, EventArgs e)
         {
-            PesquisaCliente pesquisaCliente = new PesquisaCliente();
-            pesquisaCliente.ShowDialog();
+            if (e.Equals(13))
+            {
+                SendKeys.Send("{TAB}");
+                PesquisaCliente pesquisaCliente = new PesquisaCliente();
+                pesquisaCliente.ShowDialog();
+            }
         }
-
         private void BtnPesquisaFuncionario_Click(object sender, EventArgs e)
         {
             PesquisaFuncionario pesquisaFuncionario = new PesquisaFuncionario();
@@ -50,19 +56,72 @@ namespace SistemaBiblioteca
             }
         }
 
-        private void Venda_Load(object sender, EventArgs e)
-        {
-
-        }
 
         private void BtVoltar_Click(object sender, EventArgs e)
         {
-          
+
         }
 
         private void DataGVProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }
+
+        private void TxtNomeCliente_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DtpDataVenda_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void TxtNomeCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void BtnPesquisaCliente_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void TxtCodFunc_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (e.KeyChar == 13)
+            {
+                SendKeys.Send("{TAB}");
+            }
+        }
+
+        private void Venda_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

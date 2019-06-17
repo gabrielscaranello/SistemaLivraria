@@ -17,11 +17,8 @@ namespace SistemaBiblioteca
         public PesquisaCliente()
         {
             InitializeComponent();
-        }
-
-        
-
-        
+            StartPosition = FormStartPosition.CenterScreen;
+        }       
         
         private void Label2_Click(object sender, EventArgs e)
         {
@@ -65,6 +62,11 @@ namespace SistemaBiblioteca
             {
                 this.Close();
             }
+        }
+
+        private void PesquisaCliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public telaPrincipal()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Button3_Click(object sender, EventArgs e)
@@ -82,6 +83,13 @@ namespace SistemaBiblioteca
         {
             PesquisaLivro pesLivro = new PesquisaLivro();
             pesLivro.ShowDialog();
+        }
+
+       
+
+        private void TelaPrincipal_Load(object sender, EventArgs e)
+        {
+            panel1.Location = new Point(this.Width / 2 - 326, this.Height / 2 - 250);
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
