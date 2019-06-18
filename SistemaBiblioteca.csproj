@@ -180,28 +180,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundoBiblioteca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\avancar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EDIT.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SALV.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LIXO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\voltar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pesquisar65x65.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pesquisar4737.png" />
