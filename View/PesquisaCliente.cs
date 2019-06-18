@@ -35,8 +35,11 @@ namespace SistemaBiblioteca
             try
             {
                 conn.Open();
+                MySqlConnection connect = new MySqlConnection("select nome from livraria.Cliente");
+                comand.Parameters.Add(ResultadoPesquisa);
 
-                //aqui vai o codigo pro botão funcionar
+                comand.Parameters.Clear();
+                
 
                 conn.Close();
             }
