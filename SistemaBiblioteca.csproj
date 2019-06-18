@@ -72,6 +72,11 @@
     <Compile Include="Model\FuncionarioModel.cs" />
     <Compile Include="Model\LivroModel.cs" />
     <Compile Include="Model\VendaModel.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="View\CadastroCliente.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -158,6 +163,7 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -174,28 +180,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Resources\fundoBiblioteca.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\avancar.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\EDIT.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\SALV.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\LIXO.png" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\voltar.png" />
-  </ItemGroup>
-  <ItemGroup>
     <WCFMetadata Include="Connected Services\" />
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="Resources\pesquisar65x65.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\pesquisar4737.png" />
