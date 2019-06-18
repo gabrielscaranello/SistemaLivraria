@@ -89,10 +89,15 @@ namespace SistemaBiblioteca
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {
-            panel1.Location = new Point(this.Width / 2 - 326, this.Height / 2 - 250);
+            pnlTelaInicio.Location = new Point(this.Width / 2 - 326, this.Height / 2 - 250);
         }
 
         private void GroupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
+        private void PnlTelaInicio_Paint(object sender, PaintEventArgs e)
         {
 
         }

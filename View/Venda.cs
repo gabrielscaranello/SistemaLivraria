@@ -101,10 +101,7 @@ namespace SistemaBiblioteca
             }
         }
 
-        private void Venda_Load(object sender, EventArgs e)
-        {
-
-        }
+      
     }
 }
 

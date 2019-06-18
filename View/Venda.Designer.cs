@@ -330,7 +330,6 @@
             this.KeyPreview = true;
             this.Name = "Venda";
             this.Text = "Venda";
-            this.Load += new System.EventHandler(this.Venda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Venda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();

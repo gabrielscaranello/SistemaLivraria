@@ -113,6 +113,7 @@
             this.pnlTelaInicio.Controls.Add(this.btCadFun);
             resources.ApplyResources(this.pnlTelaInicio, "pnlTelaInicio");
             this.pnlTelaInicio.Name = "pnlTelaInicio";
+            this.pnlTelaInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTelaInicio_Paint);
             // 
             // pictureBox1
             // 
