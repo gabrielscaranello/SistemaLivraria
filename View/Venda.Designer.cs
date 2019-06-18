@@ -72,7 +72,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(45, 98);
+            this.label2.Location = new System.Drawing.Point(45, 63);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(42, 13);
             this.label2.TabIndex = 24;
@@ -81,7 +81,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(3, 153);
+            this.label3.Location = new System.Drawing.Point(3, 117);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(84, 13);
             this.label3.TabIndex = 25;
@@ -90,7 +90,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 64);
+            this.label4.Location = new System.Drawing.Point(3, 157);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(81, 13);
             this.label4.TabIndex = 26;
@@ -98,24 +98,29 @@
             // 
             // txtNomeCliente
             // 
-            this.txtNomeCliente.Location = new System.Drawing.Point(93, 95);
+            this.txtNomeCliente.Location = new System.Drawing.Point(93, 60);
             this.txtNomeCliente.Name = "txtNomeCliente";
             this.txtNomeCliente.Size = new System.Drawing.Size(474, 20);
             this.txtNomeCliente.TabIndex = 27;
+            this.txtNomeCliente.TextChanged += new System.EventHandler(this.TxtNomeCliente_TextChanged);
+            this.txtNomeCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtNomeCliente_KeyPress);
             // 
             // txtCodFunc
             // 
-            this.txtCodFunc.Location = new System.Drawing.Point(93, 150);
+            this.txtCodFunc.Location = new System.Drawing.Point(93, 114);
             this.txtCodFunc.Name = "txtCodFunc";
             this.txtCodFunc.Size = new System.Drawing.Size(474, 20);
             this.txtCodFunc.TabIndex = 28;
+            this.txtCodFunc.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.TxtCodFunc_KeyPress);
             // 
             // dtpDataVenda
             // 
-            this.dtpDataVenda.Location = new System.Drawing.Point(93, 58);
+            this.dtpDataVenda.Location = new System.Drawing.Point(93, 157);
             this.dtpDataVenda.Name = "dtpDataVenda";
             this.dtpDataVenda.Size = new System.Drawing.Size(228, 20);
             this.dtpDataVenda.TabIndex = 29;
+            this.dtpDataVenda.UseWaitCursor = true;
+            this.dtpDataVenda.Value = new System.DateTime(2019, 6, 17, 0, 0, 0, 0);
             // 
             // dataGVProdutos
             // 
@@ -127,11 +132,10 @@
             this.Preco,
             this.Quantidade,
             this.ValorTotal});
-            this.dataGVProdutos.Location = new System.Drawing.Point(93, 290);
+            this.dataGVProdutos.Location = new System.Drawing.Point(93, 289);
             this.dataGVProdutos.Name = "dataGVProdutos";
-            this.dataGVProdutos.Size = new System.Drawing.Size(537, 113);
+            this.dataGVProdutos.Size = new System.Drawing.Size(529, 113);
             this.dataGVProdutos.TabIndex = 30;
-            this.dataGVProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGVProdutos_CellContentClick);
             // 
             // CodProduto
             // 
@@ -201,7 +205,7 @@
             // 
             // numQuantidade
             // 
-            this.numQuantidade.Location = new System.Drawing.Point(93, 254);
+            this.numQuantidade.Location = new System.Drawing.Point(93, 251);
             this.numQuantidade.Name = "numQuantidade";
             this.numQuantidade.Size = new System.Drawing.Size(47, 20);
             this.numQuantidade.TabIndex = 41;
@@ -228,7 +232,7 @@
             // btnPesquisaFuncionario
             // 
             this.btnPesquisaFuncionario.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
-            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(573, 128);
+            this.btnPesquisaFuncionario.Location = new System.Drawing.Point(573, 92);
             this.btnPesquisaFuncionario.Name = "btnPesquisaFuncionario";
             this.btnPesquisaFuncionario.Size = new System.Drawing.Size(55, 47);
             this.btnPesquisaFuncionario.TabIndex = 34;
@@ -238,12 +242,13 @@
             // btnPesquisaCliente
             // 
             this.btnPesquisaCliente.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
-            this.btnPesquisaCliente.Location = new System.Drawing.Point(573, 75);
+            this.btnPesquisaCliente.Location = new System.Drawing.Point(573, 40);
             this.btnPesquisaCliente.Name = "btnPesquisaCliente";
             this.btnPesquisaCliente.Size = new System.Drawing.Size(55, 47);
             this.btnPesquisaCliente.TabIndex = 33;
             this.btnPesquisaCliente.UseVisualStyleBackColor = true;
             this.btnPesquisaCliente.Click += new System.EventHandler(this.BtnPesquisaCliente_Click);
+            this.btnPesquisaCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BtnPesquisaCliente_KeyPress);
             // 
             // button5
             // 
@@ -295,7 +300,8 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(637, 461);
+            this.AutoSize = true;
+            this.ClientSize = new System.Drawing.Size(634, 461);
             this.Controls.Add(this.numQuantidade);
             this.Controls.Add(this.btnOk);
             this.Controls.Add(this.label7);
@@ -321,7 +327,6 @@
             this.KeyPreview = true;
             this.Name = "Venda";
             this.Text = "Venda";
-            this.Load += new System.EventHandler(this.Venda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Venda_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();

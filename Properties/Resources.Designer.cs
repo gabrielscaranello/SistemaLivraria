@@ -103,6 +103,16 @@ namespace SistemaBiblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap Estante_com_livros2 {
+            get {
+                object obj = ResourceManager.GetObject("Estante com livros2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap excluir4737 {
             get {
                 object obj = ResourceManager.GetObject("excluir4737", resourceCulture);
@@ -126,6 +136,16 @@ namespace SistemaBiblioteca.Properties {
         internal static System.Drawing.Bitmap LIXO {
             get {
                 object obj = ResourceManager.GetObject("LIXO", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap logoLivraria {
+            get {
+                object obj = ResourceManager.GetObject("logoLivraria", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

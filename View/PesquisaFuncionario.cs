@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public PesquisaFuncionario()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Controle_Funcionário_Load(object sender, EventArgs e)

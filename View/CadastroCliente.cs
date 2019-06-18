@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public Cadastro_Cliente()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void TextBox3_TextChanged(object sender, EventArgs e)
@@ -34,5 +35,7 @@ namespace SistemaBiblioteca
                 this.Close();
             }
         }
+
+      
     }
 }

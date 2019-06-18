@@ -153,7 +153,12 @@
             this.KeyPreview = true;
             this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
+<<<<<<< HEAD
             //this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
+=======
+            this.Load += new System.EventHandler(this.PesquisaCliente_Load);
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
+>>>>>>> master
             this.ResumeLayout(false);
             this.PerformLayout();
 

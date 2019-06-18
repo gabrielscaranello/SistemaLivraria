@@ -174,6 +174,7 @@
             this.KeyPreview = true;
             this.Name = "PesquisaLivro";
             this.Text = "Livro_Controle";
+            this.Load += new System.EventHandler(this.PesquisaLivro_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaLivro_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();

@@ -15,6 +15,7 @@ namespace SistemaBiblioteca
         public CadastroFuncionário()
         {
             InitializeComponent();
+            StartPosition = FormStartPosition.CenterScreen;
         }
 
         private void Label3_Click(object sender, EventArgs e)

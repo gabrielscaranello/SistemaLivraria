@@ -1,4 +1,5 @@
 ﻿using AtividadeTelas.model;
+using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -19,7 +20,17 @@ namespace AtividadeTelas.control
         }
         public Boolean AtualizarLivro(Livro Livro)
         {
-            return false;
+            try
+            {
+                Banco.Execute("update", "UPDATE livro SET titulo = @Livro.titulo, autor = @Livro.autor, qtd_estoque = @Livro.qtd_estoque, ano = @Livro.ano, editora = @Livro.editora" +
+                    "genero = @Livro.genero, isbn = @Livro.isbn, valor_unitario = @Livro.valor_unitario WHERE id = @Livro.id");
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public Boolean ExcluirLivro(Livro Livro)
         {

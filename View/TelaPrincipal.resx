@@ -117,4 +117,340 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btVenda.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="btVenda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btVenda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btVenda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 215</value>
+  </data>
+  <data name="btVenda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="btVenda.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
+  <data name="btVenda.Text" xml:space="preserve">
+    <value>VENDA</value>
+  </data>
+  <data name="&gt;&gt;btVenda.Name" xml:space="preserve">
+    <value>btVenda</value>
+  </data>
+  <data name="&gt;&gt;btVenda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btVenda.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btVenda.ZOrder" xml:space="preserve">
+    <value>1</value>
+  </data>
+  <data name="btCadCli.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btCadCli.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btCadCli.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btCadCli.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 252</value>
+  </data>
+  <data name="btCadCli.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btCadCli.TabIndex" type="System.Int32, mscorlib">
+    <value>3</value>
+  </data>
+  <data name="btCadCli.Text" xml:space="preserve">
+    <value>CADASTRO CLIENTE</value>
+  </data>
+  <data name="&gt;&gt;btCadCli.Name" xml:space="preserve">
+    <value>btCadCli</value>
+  </data>
+  <data name="&gt;&gt;btCadCli.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCadCli.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btCadCli.ZOrder" xml:space="preserve">
+    <value>3</value>
+  </data>
+  <data name="btCadFun.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btCadFun.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btCadFun.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btCadFun.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 289</value>
+  </data>
+  <data name="btCadFun.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btCadFun.TabIndex" type="System.Int32, mscorlib">
+    <value>4</value>
+  </data>
+  <data name="btCadFun.Text" xml:space="preserve">
+    <value>CADASTRO FUNCIONÁRIO</value>
+  </data>
+  <data name="&gt;&gt;btCadFun.Name" xml:space="preserve">
+    <value>btCadFun</value>
+  </data>
+  <data name="&gt;&gt;btCadFun.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCadFun.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btCadFun.ZOrder" xml:space="preserve">
+    <value>8</value>
+  </data>
+  <data name="btCadLivros.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btCadLivros.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btCadLivros.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btCadLivros.Location" type="System.Drawing.Point, System.Drawing">
+    <value>45, 326</value>
+  </data>
+  <data name="btCadLivros.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btCadLivros.TabIndex" type="System.Int32, mscorlib">
+    <value>5</value>
+  </data>
+  <data name="btCadLivros.Text" xml:space="preserve">
+    <value>CADASTRO LIVRO</value>
+  </data>
+  <data name="&gt;&gt;btCadLivros.Name" xml:space="preserve">
+    <value>btCadLivros</value>
+  </data>
+  <data name="&gt;&gt;btCadLivros.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btCadLivros.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btCadLivros.ZOrder" xml:space="preserve">
+    <value>4</value>
+  </data>
+  <data name="btControleVenda.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btControleVenda.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btControleVenda.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btControleVenda.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 215</value>
+  </data>
+  <data name="btControleVenda.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btControleVenda.TabIndex" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <data name="btControleVenda.Text" xml:space="preserve">
+    <value>CONTROLE VENDA</value>
+  </data>
+  <data name="&gt;&gt;btControleVenda.Name" xml:space="preserve">
+    <value>btControleVenda</value>
+  </data>
+  <data name="&gt;&gt;btControleVenda.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btControleVenda.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btControleVenda.ZOrder" xml:space="preserve">
+    <value>6</value>
+  </data>
+  <data name="btControleCliente.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btControleCliente.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btControleCliente.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btControleCliente.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 252</value>
+  </data>
+  <data name="btControleCliente.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btControleCliente.TabIndex" type="System.Int32, mscorlib">
+    <value>7</value>
+  </data>
+  <data name="btControleCliente.Text" xml:space="preserve">
+    <value>CONTROLE CLIENTE</value>
+  </data>
+  <data name="&gt;&gt;btControleCliente.Name" xml:space="preserve">
+    <value>btControleCliente</value>
+  </data>
+  <data name="&gt;&gt;btControleCliente.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btControleCliente.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btControleCliente.ZOrder" xml:space="preserve">
+    <value>5</value>
+  </data>
+  <data name="btControleFunc.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btControleFunc.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btControleFunc.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btControleFunc.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 289</value>
+  </data>
+  <data name="btControleFunc.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btControleFunc.TabIndex" type="System.Int32, mscorlib">
+    <value>8</value>
+  </data>
+  <data name="btControleFunc.Text" xml:space="preserve">
+    <value>CONTROLE FUNCIONÁRIO</value>
+  </data>
+  <data name="&gt;&gt;btControleFunc.Name" xml:space="preserve">
+    <value>btControleFunc</value>
+  </data>
+  <data name="&gt;&gt;btControleFunc.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btControleFunc.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btControleFunc.ZOrder" xml:space="preserve">
+    <value>7</value>
+  </data>
+  <data name="btControleLivro.Anchor" type="System.Windows.Forms.AnchorStyles, System.Windows.Forms">
+    <value>Bottom</value>
+  </data>
+  <data name="btControleLivro.Font" type="System.Drawing.Font, System.Drawing">
+    <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btControleLivro.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="btControleLivro.Location" type="System.Drawing.Point, System.Drawing">
+    <value>300, 326</value>
+  </data>
+  <data name="btControleLivro.Size" type="System.Drawing.Size, System.Drawing">
+    <value>249, 31</value>
+  </data>
+  <data name="btControleLivro.TabIndex" type="System.Int32, mscorlib">
+    <value>9</value>
+  </data>
+  <data name="btControleLivro.Text" xml:space="preserve">
+    <value>CONTROLE LIVRO</value>
+  </data>
+  <data name="&gt;&gt;btControleLivro.Name" xml:space="preserve">
+    <value>btControleLivro</value>
+  </data>
+  <data name="&gt;&gt;btControleLivro.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btControleLivro.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btControleLivro.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
+  </data>
+  <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
+    <value>72, 52</value>
+  </data>
+  <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>457, 139</value>
+  </data>
+  <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Name" xml:space="preserve">
+    <value>pictureBox1</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Type" xml:space="preserve">
+    <value>System.Windows.Forms.PictureBox, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;pictureBox1.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <data name="pnlTelaInicio.Location" type="System.Drawing.Point, System.Drawing">
+    <value>12, 12</value>
+  </data>
+  <data name="pnlTelaInicio.Size" type="System.Drawing.Size, System.Drawing">
+    <value>611, 437</value>
+  </data>
+  <data name="pnlTelaInicio.TabIndex" type="System.Int32, mscorlib">
+    <value>10</value>
+  </data>
+  <data name="&gt;&gt;pnlTelaInicio.Name" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;pnlTelaInicio.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;pnlTelaInicio.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;pnlTelaInicio.ZOrder" xml:space="preserve">
+    <value>0</value>
+  </data>
+  <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
+    <value>6, 13</value>
+  </data>
+  <data name="$this.AutoScroll" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="$this.AutoScrollMinSize" type="System.Drawing.Size, System.Drawing">
+    <value>651, 500</value>
+  </data>
+  <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+    <value>635, 461</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Tela Principal</value>
+  </data>
+  <data name="&gt;&gt;$this.Name" xml:space="preserve">
+    <value>telaPrincipal</value>
+  </data>
+  <data name="&gt;&gt;$this.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Form, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
 </root>
