@@ -135,9 +135,8 @@
             this.ValorTotal});
             this.dataGVProdutos.Location = new System.Drawing.Point(93, 289);
             this.dataGVProdutos.Name = "dataGVProdutos";
-            this.dataGVProdutos.Size = new System.Drawing.Size(537, 113);
+            this.dataGVProdutos.Size = new System.Drawing.Size(529, 113);
             this.dataGVProdutos.TabIndex = 30;
-            this.dataGVProdutos.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DataGVProdutos_CellContentClick);
             // 
             // CodProduto
             // 

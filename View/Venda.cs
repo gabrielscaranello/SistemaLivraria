@@ -62,11 +62,6 @@ namespace SistemaBiblioteca
 
         }
 
-        private void DataGVProdutos_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
         private void TxtNomeCliente_TextChanged(object sender, EventArgs e)
         {
 
