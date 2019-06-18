@@ -13,6 +13,13 @@ namespace AtividadeTelas.control
         public ClienteControle()
         {
         }
+        public MySqlCommand BuscarClienteNome(String nome)
+        {
+            Banco conn = new Banco();
+            MySqlCommand command = conn.Conn().CreateCommand();
+            command.CommandText = "select * from livraria.cliente where nome";
+            return command;
+        }
         public Boolean CadastrarCliente(Cliente cliente)
         {
             return false;
@@ -35,11 +42,6 @@ namespace AtividadeTelas.control
         public Boolean ExcluirCliente(Cliente cliente)
         {
             return false;
-        }
-
-        public Array BuscarClienteNome(String nome)
-        {
-            return null;
         }
 
         public Cliente BuscarClienteId(int id)
