@@ -100,7 +100,7 @@
             // 
             // btPesquisarVenda
             // 
-          
+            this.btPesquisarVenda.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
             this.btPesquisarVenda.Location = new System.Drawing.Point(556, 66);
             this.btPesquisarVenda.Name = "btPesquisarVenda";
             this.btPesquisarVenda.Size = new System.Drawing.Size(61, 42);
@@ -117,7 +117,7 @@
             // 
             // button5
             // 
-            
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
             this.button5.Location = new System.Drawing.Point(562, 407);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(61, 42);
@@ -126,7 +126,7 @@
             // 
             // btVoltar
             // 
-          
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
             this.btVoltar.Location = new System.Drawing.Point(494, 407);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(61, 42);

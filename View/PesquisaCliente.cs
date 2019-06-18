@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using AtividadeTelas.model;
 using MySql.Data.MySqlClient;
 
 namespace SistemaBiblioteca
@@ -28,52 +27,35 @@ namespace SistemaBiblioteca
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            String connString = " Server=srv02.hostoo.io; Port=3306;Database=sistemalivraria;Uid=sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
+            String connString = " Server=srv02.hostoo.io; Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
             MySqlConnection conn = new MySqlConnection(connString);
             MySqlCommand comand = conn.CreateCommand();
-            comand.CommandText = "select * from livraria.cliente where nome";
-            comand.CommandType = CommandType.Text;
+            comand.CommandText = "select nome from livraria.Cliente";
 
             try
             {
                 conn.Open();
 
-                MySqlDataReader result;
-                result = comand.ExecuteReader();
-                Cliente cliente = new Cliente();
-                //cliente = ;
-                Console.WriteLine(result.Read());
+                //aqui vai o codigo pro botão funcionar
 
-
+                conn.Close();
             }
-            catch (Exception erro)
-            {
+            catch (Exception erro) {
                 MessageBox.Show("Erro na pesquisa" + erro);
             }
-            finally
-            {
-                conn.Close();
-
+            MySqlDataReader reader = comand.ExecuteReader();
+            while (reader.Read()) {
+                Console.WriteLine(reader["nome"].ToString());
             }
-
-            
-            }
-          
+            Console.ReadLine();
 
         }
 
-<<<<<<< HEAD
-        //private void ResultadoPesquisa_SelectedIndexChanged(object sender, EventArgs e)
-        //{}
+        private void ResultadoPesquisa_SelectedIndexChanged(object sender, EventArgs e)
+        {
 
-       // private void PesquisaCliente_KeyDown(object sender, KeyEventArgs e)
-        //{
-         //   if (e.KeyValue.Equals(27))
-          //  {
-           //     this.Close();
-            //}
-        //}
-=======
+        }
+
         private void PesquisaCliente_KeyDown(object sender, KeyEventArgs e)
         {
             if (e.KeyValue.Equals(27))
@@ -86,5 +68,5 @@ namespace SistemaBiblioteca
         {
 
         }
->>>>>>> master
     }
+}
