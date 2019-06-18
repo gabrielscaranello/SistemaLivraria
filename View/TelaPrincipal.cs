@@ -51,13 +51,13 @@ namespace SistemaBiblioteca
             cadLiv.ShowDialog();
         }
 
-             //  private void TelaPrincipal_KeyDown(object sender, KeyEventArgs e)
-       // {
-        //    if (e.KeyValue.Equals(27))
-        //    {
-        //        this.Close();
-        //    }
-        //}
+               private void TelaPrincipal_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyValue.Equals(27))
+            {
+                this.Close();
+            }
+        }
 
         private void TelaPrincipal_KeyDown_1(object sender, KeyEventArgs e)
         {

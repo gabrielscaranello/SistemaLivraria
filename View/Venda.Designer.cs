@@ -121,7 +121,6 @@
             this.dtpDataVenda.TabIndex = 29;
             this.dtpDataVenda.UseWaitCursor = true;
             this.dtpDataVenda.Value = new System.DateTime(2019, 6, 17, 0, 0, 0, 0);
-            this.dtpDataVenda.ValueChanged += new System.EventHandler(this.DtpDataVenda_ValueChanged);
             // 
             // dataGVProdutos
             // 
