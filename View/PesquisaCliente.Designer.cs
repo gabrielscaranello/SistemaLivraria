@@ -115,7 +115,7 @@
             this.ResultadoPesquisa.Name = "ResultadoPesquisa";
             this.ResultadoPesquisa.Size = new System.Drawing.Size(566, 173);
             this.ResultadoPesquisa.TabIndex = 33;
-            this.ResultadoPesquisa.SelectedIndexChanged += new System.EventHandler(this.ResultadoPesquisa_SelectedIndexChanged);
+            //this.ResultadoPesquisa.SelectedIndexChanged += new System.EventHandler(this.ResultadoPesquisa_SelectedIndexChanged);
             // 
             // button5
             // 
@@ -153,8 +153,12 @@
             this.KeyPreview = true;
             this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
+<<<<<<< HEAD
+            //this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
+=======
             this.Load += new System.EventHandler(this.PesquisaCliente_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
+>>>>>>> master
             this.ResumeLayout(false);
             this.PerformLayout();
 

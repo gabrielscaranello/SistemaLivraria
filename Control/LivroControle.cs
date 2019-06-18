@@ -22,9 +22,8 @@ namespace AtividadeTelas.control
         {
             try
             {
-                Banco conn = new Banco();
-                MySqlCommand command = conn.Conn().CreateCommand();
-                command.CommandText = "UPDATE cliente SET nome = @Cliente.nome, telefone = @Cliente.telefone, cpf = @Cliente.cpf, endereco = @Cliente.endereco, email = @Cliente.email, dataNasc = @Cliente.dataNasc  WHERE id = @Cliente.id";
+                Banco.Execute("update", "UPDATE livro SET titulo = @Livro.titulo, autor = @Livro.autor, qtd_estoque = @Livro.qtd_estoque, ano = @Livro.ano, editora = @Livro.editora" +
+                    "genero = @Livro.genero, isbn = @Livro.isbn, valor_unitario = @Livro.valor_unitario WHERE id = @Livro.id");
 
                 return true;
             }
