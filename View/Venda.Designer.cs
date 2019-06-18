@@ -325,7 +325,6 @@
             this.Controls.Add(this.btSalvar);
             this.Controls.Add(this.btEditar);
             this.Controls.Add(this.btVoltar);
-            this.Enabled = false;
             this.KeyPreview = true;
             this.Name = "Venda";
             this.Text = "Venda";
