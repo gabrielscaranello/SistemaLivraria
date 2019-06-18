@@ -153,6 +153,16 @@ namespace SistemaBiblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap logoLivrariaa {
+            get {
+                object obj = ResourceManager.GetObject("logoLivrariaa", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ok4737 {
             get {
                 object obj = ResourceManager.GetObject("ok4737", resourceCulture);
