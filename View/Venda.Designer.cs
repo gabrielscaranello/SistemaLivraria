@@ -207,7 +207,7 @@
             // 
             // numQuantidade
             // 
-            this.numQuantidade.Location = new System.Drawing.Point(93, 254);
+            this.numQuantidade.Location = new System.Drawing.Point(93, 251);
             this.numQuantidade.Name = "numQuantidade";
             this.numQuantidade.Size = new System.Drawing.Size(47, 20);
             this.numQuantidade.TabIndex = 41;
