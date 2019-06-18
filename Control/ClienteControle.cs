@@ -16,7 +16,7 @@ namespace AtividadeTelas.control
         public MySqlCommand BuscarClienteNome(String nome)
         {
             Banco conn = new Banco();
-            MySqlCommand command = conn.Conn().CreateCommand();
+            MySqlCommand command = new MySqlCommand();
             command.CommandText = "select * from livraria.cliente where nome";
             return command;
         }

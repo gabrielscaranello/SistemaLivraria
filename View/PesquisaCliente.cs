@@ -51,6 +51,7 @@ namespace SistemaBiblioteca
 
         }
 
+
         private void ResultadoPesquisa_SelectedIndexChanged(object sender, EventArgs e)
         {
 
@@ -64,9 +65,34 @@ namespace SistemaBiblioteca
             }
         }
 
-        private void PesquisaCliente_Load(object sender, EventArgs e)
-        {
+// HEAD
+        //private void ResultadoPesquisa_SelectedIndexChanged(object sender, EventArgs e)
+        //{}
+
+       // private void PesquisaCliente_KeyDown(object sender, KeyEventArgs e)
+        //{
+         //   if (e.KeyValue.Equals(27))
+          //  {
+           //     this.Close();
+            //}
+        //}
+
+
+     //   private void PesquisaCliente_KeyDown(object sender, KeyEventArgs e)
+      //  {
+          //  if (e.KeyValue.Equals(27))
+            //{
+                
+            //}
+        //}
+
+       // private void PesquisaCliente_Load(object sender, EventArgs e)
+       // {
+
+      //  }
+
 
         }
+
     }
-}
+
