@@ -38,9 +38,7 @@
             this.btControleFunc = new System.Windows.Forms.Button();
             this.btControleLivro = new System.Windows.Forms.Button();
             this.pnlTelaInicio = new System.Windows.Forms.Panel();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTelaInicio.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btVenda
@@ -102,7 +100,6 @@
             // pnlTelaInicio
             // 
             this.pnlTelaInicio.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTelaInicio.Controls.Add(this.pictureBox1);
             this.pnlTelaInicio.Controls.Add(this.btVenda);
             this.pnlTelaInicio.Controls.Add(this.btControleLivro);
             this.pnlTelaInicio.Controls.Add(this.btCadCli);
@@ -115,14 +112,6 @@
             this.pnlTelaInicio.Name = "pnlTelaInicio";
             this.pnlTelaInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTelaInicio_Paint);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SistemaBiblioteca.Properties.Resources.logoLivrariaa;
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            // 
             // telaPrincipal
             // 
             resources.ApplyResources(this, "$this");
@@ -134,7 +123,6 @@
             this.Load += new System.EventHandler(this.TelaPrincipal_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.TelaPrincipal_KeyDown_1);
             this.pnlTelaInicio.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -149,7 +137,6 @@
         private System.Windows.Forms.Button btControleFunc;
         private System.Windows.Forms.Button btControleLivro;
         private System.Windows.Forms.Panel pnlTelaInicio;
-        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 
