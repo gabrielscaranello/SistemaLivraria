@@ -161,7 +161,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(400, 396);
+            this.button5.Location = new System.Drawing.Point(388, 152);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(52, 53);
             this.button5.TabIndex = 22;
@@ -170,7 +170,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btExcluir.Location = new System.Drawing.Point(574, 396);
+            this.btExcluir.Location = new System.Drawing.Point(562, 152);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(49, 53);
             this.btExcluir.TabIndex = 21;
@@ -179,7 +179,7 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btSalvar.Location = new System.Drawing.Point(515, 396);
+            this.btSalvar.Location = new System.Drawing.Point(503, 152);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(56, 53);
             this.btSalvar.TabIndex = 20;
@@ -188,7 +188,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btEditar.Location = new System.Drawing.Point(458, 396);
+            this.btEditar.Location = new System.Drawing.Point(446, 152);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(51, 53);
             this.btEditar.TabIndex = 19;
@@ -197,7 +197,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(342, 396);
+            this.btVoltar.Location = new System.Drawing.Point(330, 152);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(52, 53);
             this.btVoltar.TabIndex = 18;
@@ -207,7 +207,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 461);
+            this.ClientSize = new System.Drawing.Size(635, 214);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.txtEndereco);

@@ -120,7 +120,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(575, 407);
+            this.button5.Location = new System.Drawing.Point(575, 305);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(50, 43);
             this.button5.TabIndex = 22;
@@ -129,7 +129,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(515, 407);
+            this.btVoltar.Location = new System.Drawing.Point(515, 305);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(54, 43);
             this.btVoltar.TabIndex = 18;
@@ -139,7 +139,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 462);
+            this.ClientSize = new System.Drawing.Size(634, 359);
             this.Controls.Add(this.ResultadoPesquisa);
             this.Controls.Add(this.btnPesquisa);
             this.Controls.Add(this.txtPesquisarNome);
@@ -153,7 +153,6 @@
             this.KeyPreview = true;
             this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
-            //this.Load += new System.EventHandler(this.PesquisaCliente_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
