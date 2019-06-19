@@ -63,7 +63,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="comand\ComandText.cs" />
-    <Compile Include="Control\Banco.cs" />
+    <Compile Include="Control\DB.cs" />
     <Compile Include="Control\ClienteControle.cs" />
     <Compile Include="Control\FuncionarioControle.cs" />
     <Compile Include="Control\LivroControle.cs" />
