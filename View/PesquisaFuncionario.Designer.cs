@@ -118,7 +118,7 @@
             // button5
             // 
             this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(574, 406);
+            this.button5.Location = new System.Drawing.Point(563, 295);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(59, 42);
             this.button5.TabIndex = 22;
@@ -127,7 +127,7 @@
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(516, 406);
+            this.btVoltar.Location = new System.Drawing.Point(505, 295);
             this.btVoltar.Name = "btVoltar";
             this.btVoltar.Size = new System.Drawing.Size(59, 42);
             this.btVoltar.TabIndex = 18;
@@ -138,7 +138,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(634, 461);
+            this.ClientSize = new System.Drawing.Size(634, 341);
             this.Controls.Add(this.ResultadoPesquisa);
             this.Controls.Add(this.btnPesquisarFunc);
             this.Controls.Add(this.txtNomeFunc);

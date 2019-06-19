@@ -23,13 +23,13 @@ namespace AtividadeTelas.control
                 connection.Open();
                 MySqlCommand command = connection.CreateCommand();
                 command.CommandText = sql;
-                command.CommandType = CommandType.text;
+                command.CommandType = CommandType.Text;
 
                 if (type.Equals("select"))
                 {
                     MySqlDataReader result;
                     result = command.ExecuteReader();
-                    return result.Read();
+                    
                 }
                 else
                 {
@@ -39,10 +39,15 @@ namespace AtividadeTelas.control
             }
             catch (Exception error)
             {
-                return error.Message;
+                Console.WriteLine(error);
                 throw;
             }
-            return "Success";
+            return null;
+        }
+
+        internal object Conn()
+        {
+            throw new NotImplementedException();
         }
     }
 }

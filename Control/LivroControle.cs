@@ -22,8 +22,8 @@ namespace AtividadeTelas.control
         {
             try
             {
-                Banco.Execute("update", "UPDATE livro SET titulo = @Livro.titulo, @Livro.autor, @Livro.qtd_estoque, @Livro.ano, @Livro.editora" +
-                    "@Livro.genero, @Livro.isbn, @Livro.valor_unitario WHERE id = @Livro.id");
+                Banco.Execute("update", "UPDATE livro SET titulo = @Livro.titulo, autor = @Livro.autor, qtd_estoque = @Livro.qtd_estoque, ano = @Livro.ano, editora = @Livro.editora" +
+                    "genero = @Livro.genero, isbn = @Livro.isbn, valor_unitario = @Livro.valor_unitario WHERE id = @Livro.id");
 
                 return true;
             }

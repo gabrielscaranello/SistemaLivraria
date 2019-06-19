@@ -118,7 +118,7 @@
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Image = global::SistemaBiblioteca.Properties.Resources.logoLivrariaa;
+            this.pictureBox1.Image = global::SistemaBiblioteca.Properties.Resources.logoLivraria;
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
