@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using AtividadeTelas.control;
 using MySql.Data.MySqlClient;
 
 namespace SistemaBiblioteca
@@ -27,31 +28,18 @@ namespace SistemaBiblioteca
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            String connString = " Server=srv02.hostoo.io; Port=3306;Database=Sistemalivraria;Uid=Sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
-            MySqlConnection conn = new MySqlConnection(connString);
-            MySqlCommand comand = conn.CreateCommand();
-            comand.CommandText = "select nome from livraria.Cliente";
 
-            try
-            {
-                conn.Open();
-                MySqlConnection connect = new MySqlConnection("select nome from livraria.Cliente");
-                comand.Parameters.Add(ResultadoPesquisa);
+            //MySqlDataReader pesquisa = DB.Select("select nome from clientes");
 
-                comand.Parameters.Clear();
-                
+            //while (pesquisa.Read())
+            //{
+            //    Console.WriteLine(pesquisa["id"].ToString());
+            //}
 
-                conn.Close();
-            }
-            catch (Exception erro) {
-                MessageBox.Show("Erro na pesquisa" + erro);
-            }
-            MySqlDataReader reader = comand.ExecuteReader();
-            while (reader.Read()) {
-                Console.WriteLine(reader["nome"].ToString());
-            }
-            Console.ReadLine();
-
+            //String sql = "insert into clientes(nome, telefone, cpf, endereco, email, data_nasc)" +
+            //    "values('gabriel', '9999', '123123', 'hchchc', 'mail','1998-12-29')";
+            //String sql = "delete from clientes where id_cliente = 2";
+            //DB.Execute(sql);
         }
 
 

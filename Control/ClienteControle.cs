@@ -15,10 +15,11 @@ namespace AtividadeTelas.control
         }
         public MySqlCommand BuscarClienteNome(String nome)
         {
-            Banco conn = new Banco();
-            MySqlCommand command = new MySqlCommand();
-            command.CommandText = "select * from livraria.cliente where nome";
-            return command;
+            //BancoBanco conn = new Banco();
+            //MySqlCommand command = new MySqlCommand();
+            //command.CommandText = "select * from livraria.cliente where nome";
+            //return command;
+            return null;
         }
         public Boolean CadastrarCliente(Cliente cliente)
         {
@@ -28,7 +29,7 @@ namespace AtividadeTelas.control
         {
             try
             {
-                Banco.Execute("update", "UPDATE cliente SET nome = @Cliente.nome, telefone = @Cliente.telefone, cpf = @Cliente.cpf, endereco = @Cliente.endereco, email = @Cliente.email, dataNasc = @Cliente.dataNasc  WHERE id = @Cliente.id");
+                //Banco.Execute("update", "UPDATE cliente SET nome = @Cliente.nome, telefone = @Cliente.telefone, cpf = @Cliente.cpf, endereco = @Cliente.endereco, email = @Cliente.email, dataNasc = @Cliente.dataNasc  WHERE id = @Cliente.id");
           
                 return true;
             }

@@ -22,9 +22,7 @@ namespace AtividadeTelas.control
         {
             try
             {
-                Banco.Execute("update", "UPDATE livro SET titulo = @Livro.titulo, autor = @Livro.autor, qtd_estoque = @Livro.qtd_estoque, ano = @Livro.ano, editora = @Livro.editora" +
-                    "genero = @Livro.genero, isbn = @Livro.isbn, valor_unitario = @Livro.valor_unitario WHERE id = @Livro.id");
-
+               
                 return true;
             }
             catch
