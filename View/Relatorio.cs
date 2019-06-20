@@ -20,7 +20,6 @@ namespace SistemaBiblioteca.View
 
         private void Relatorio_Load(object sender, EventArgs e)
         {
-            DB.Execute("");
         }
     }
 }
