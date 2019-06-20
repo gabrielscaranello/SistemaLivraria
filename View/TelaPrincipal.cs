@@ -1,4 +1,5 @@
-﻿using System;
+﻿using SistemaBiblioteca.View;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -100,6 +101,12 @@ namespace SistemaBiblioteca
         private void PnlTelaInicio_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void BtnRelatorio_Click(object sender, EventArgs e)
+        {
+            Relatorio relatorio = new Relatorio();
+            relatorio.ShowDialog();
         }
     }
 }
