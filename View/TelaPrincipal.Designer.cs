@@ -38,7 +38,6 @@
             this.btControleFunc = new System.Windows.Forms.Button();
             this.btControleLivro = new System.Windows.Forms.Button();
             this.pnlTelaInicio = new System.Windows.Forms.Panel();
-            this.btnRelatorio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.pnlTelaInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -103,7 +102,6 @@
             // pnlTelaInicio
             // 
             this.pnlTelaInicio.BackColor = System.Drawing.Color.Transparent;
-            this.pnlTelaInicio.Controls.Add(this.btnRelatorio);
             this.pnlTelaInicio.Controls.Add(this.pictureBox1);
             this.pnlTelaInicio.Controls.Add(this.btVenda);
             this.pnlTelaInicio.Controls.Add(this.btControleLivro);
@@ -116,13 +114,6 @@
             resources.ApplyResources(this.pnlTelaInicio, "pnlTelaInicio");
             this.pnlTelaInicio.Name = "pnlTelaInicio";
             this.pnlTelaInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTelaInicio_Paint);
-            // 
-            // btnRelatorio
-            // 
-            resources.ApplyResources(this.btnRelatorio, "btnRelatorio");
-            this.btnRelatorio.Name = "btnRelatorio";
-            this.btnRelatorio.UseVisualStyleBackColor = true;
-            this.btnRelatorio.Click += new System.EventHandler(this.BtnRelatorio_Click);
             // 
             // pictureBox1
             // 
@@ -159,7 +150,6 @@
         private System.Windows.Forms.Button btControleLivro;
         private System.Windows.Forms.Panel pnlTelaInicio;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.Button btnRelatorio;
     }
 }
 

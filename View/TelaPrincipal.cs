@@ -1,5 +1,4 @@
-﻿using SistemaBiblioteca.View;
-using System;
+﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -86,11 +85,7 @@ namespace SistemaBiblioteca
             pesLivro.ShowDialog();
         }
 
-        private void BtnRelatorio_Click(object sender, EventArgs e)
-        {
-            Relatorio telaRelatorio = new Relatorio();
-            telaRelatorio.ShowDialog();
-        }
+       
 
         private void TelaPrincipal_Load(object sender, EventArgs e)
         {

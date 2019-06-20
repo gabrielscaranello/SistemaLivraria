@@ -384,6 +384,7 @@
   <data name="&gt;&gt;btControleLivro.ZOrder" xml:space="preserve">
     <value>3</value>
   </data>
+<<<<<<< Updated upstream
   <data name="btnRelatorio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
   </data>
@@ -409,6 +410,30 @@
     <value>pnlTelaInicio</value>
   </data>
   <data name="&gt;&gt;btnRelatorio.ZOrder" xml:space="preserve">
+=======
+  <data name="btnDados.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 407</value>
+  </data>
+  <data name="btnDados.Size" type="System.Drawing.Size, System.Drawing">
+    <value>75, 23</value>
+  </data>
+  <data name="btnDados.TabIndex" type="System.Int32, mscorlib">
+    <value>11</value>
+  </data>
+  <data name="btnDados.Text" xml:space="preserve">
+    <value>DADOS</value>
+  </data>
+  <data name="&gt;&gt;btnDados.Name" xml:space="preserve">
+    <value>btnDados</value>
+  </data>
+  <data name="&gt;&gt;btnDados.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;btnDados.Parent" xml:space="preserve">
+    <value>pnlTelaInicio</value>
+  </data>
+  <data name="&gt;&gt;btnDados.ZOrder" xml:space="preserve">
+>>>>>>> Stashed changes
     <value>0</value>
   </data>
   <data name="pictureBox1.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
@@ -469,10 +494,14 @@
     <value>651, 500</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
+<<<<<<< Updated upstream
     <value>652, 478</value>
   </data>
   <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
     <value>NoControl</value>
+=======
+    <value>673, 461</value>
+>>>>>>> Stashed changes
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tela Principal</value>
