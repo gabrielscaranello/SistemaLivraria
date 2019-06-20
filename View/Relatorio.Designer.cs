@@ -37,6 +37,7 @@
             this.ClientSize = new System.Drawing.Size(543, 371);
             this.Name = "Relatorio";
             this.Text = "Relatorio";
+            this.Load += new System.EventHandler(this.Relatorio_Load);
             this.ResumeLayout(false);
 
         }

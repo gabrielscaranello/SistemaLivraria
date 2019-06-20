@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,11 @@ namespace SistemaBiblioteca.View
         public Relatorio()
         {
             InitializeComponent();
+        }
+
+        private void Relatorio_Load(object sender, EventArgs e)
+        {
+            DB.Execute("");
         }
     }
 }
