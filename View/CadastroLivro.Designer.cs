@@ -48,6 +48,8 @@
             this.btEditar = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
+            this.txtPreco = new System.Windows.Forms.TextBox();
+            this.label9 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -164,7 +166,7 @@
             this.cboGenero.FormattingEnabled = true;
             this.cboGenero.Location = new System.Drawing.Point(64, 177);
             this.cboGenero.Name = "cboGenero";
-            this.cboGenero.Size = new System.Drawing.Size(562, 21);
+            this.cboGenero.Size = new System.Drawing.Size(333, 21);
             this.cboGenero.TabIndex = 39;
             // 
             // mtxtDataPublicacao
@@ -221,11 +223,29 @@
             this.btExcluir.TabIndex = 21;
             this.btExcluir.UseVisualStyleBackColor = true;
             // 
+            // txtPreco
+            // 
+            this.txtPreco.Location = new System.Drawing.Point(447, 178);
+            this.txtPreco.Name = "txtPreco";
+            this.txtPreco.Size = new System.Drawing.Size(175, 20);
+            this.txtPreco.TabIndex = 42;
+            // 
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(403, 181);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(38, 13);
+            this.label9.TabIndex = 41;
+            this.label9.Text = "Preço:";
+            // 
             // Cadastro_de_livro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 297);
+            this.Controls.Add(this.txtPreco);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.mtxtDataPublicacao);
             this.Controls.Add(this.cboGenero);
             this.Controls.Add(this.txtISBN);
@@ -277,5 +297,7 @@
         private System.Windows.Forms.Button btEditar;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.TextBox txtPreco;
+        private System.Windows.Forms.Label label9;
     }
 }
