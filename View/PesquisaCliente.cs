@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using AtividadeTelas.control;
+using AtividadeTelas.model;
 using MySql.Data.MySqlClient;
 
 namespace SistemaBiblioteca
@@ -28,11 +29,18 @@ namespace SistemaBiblioteca
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            MySqlDataReader clientes = DB.Select("select * from clientes where id_cliente = 1");
+            String pesquisa = txtPesquisarNome.Text;
 
-            while(clientes.Read())
+            MySqlDataReader clientes = DB.Select("select * from clientes where nome like %" + pesquisa + "%");
+            
+            while (clientes.Read())
             {
-                Console.WriteLine(clientes["nome"].ToString());
+
+
+
+                ResultadoPesquisa.Items.Add(clientes["nome"].ToString());
+
+                
             }
             Console.WriteLine("Essa merda não funciona");
 
