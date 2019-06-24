@@ -14,7 +14,7 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarVenda(Venda Venda)
         {
-            return false;
+            return DB.Execute("UPDATE vendas SET id_venda = @Venda.id_venda, id_cliente = @Venda.id_cliente, id_vendedor = @Venda.id_vendedor, data_venda = @Venda.data_venda, valor_total = @Venda.valor_total");
         }
         public Boolean AtualizarVenda(Venda Venda)
         {
