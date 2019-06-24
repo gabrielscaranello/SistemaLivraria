@@ -20,15 +20,7 @@ namespace AtividadeTelas.control
         }
         public Boolean AtualizarLivro(Livro Livro)
         {
-            try
-            {
-               
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return DB.Execute("UPDATE livro SET titulo = @Livro.titulo, autor = @Livro.autor, estoque = @Livro.estoque ano = @Livro.ano, editora = @Livro.editora, genero = @Livro.genero, isbn = @Livro.isbn WHERE id = @Livro.id");
         }
         public Boolean ExcluirLivro(Livro Livro)
         {
