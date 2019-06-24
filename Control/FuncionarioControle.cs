@@ -18,7 +18,7 @@ namespace AtividadeTelas.control
         }
         public Boolean AtualizarFuncionario(Funcionario Funcionario)
         {
-            return false;
+            return DB.Execute("UPDATE funcionario SET nome = @Funcionario.nome, cargo = @Funcionario.cargo, dataNasc = @Funcionario.data_nasc WHERE id = @Funcionario.id");
         }
         public Boolean ExcluirFuncionario(Funcionario Funcionario)
         {
