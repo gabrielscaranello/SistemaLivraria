@@ -14,11 +14,11 @@ namespace AtividadeTelas.model
         private DateTime data;
         private Array livros_venda;
 
-        protected int Id { get => id; set => id = value; }
-        protected int Cliente_id { get => cliente_id; set => cliente_id = value; }
-        protected int Funcionario_id { get => funcionario_id; set => funcionario_id = value; }
-        protected DateTime Data { get => data; set => data = value; }
-        protected Array Livros_venda { get => livros_venda; set => livros_venda = value; }
+        public int Id { get => id; set => id = value; }
+        public int Cliente_id { get => cliente_id; set => cliente_id = value; }
+        public int Funcionario_id { get => funcionario_id; set => funcionario_id = value; }
+        public DateTime Data { get => data; set => data = value; }
+        public Array Livros_venda { get => livros_venda; set => livros_venda = value; }
 
         public Venda()
         {

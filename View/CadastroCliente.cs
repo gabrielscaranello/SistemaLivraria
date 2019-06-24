@@ -1,8 +1,11 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using AtividadeTelas.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -36,6 +39,16 @@ namespace SistemaBiblioteca
             }
         }
 
-      
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            Cliente cliente = new Cliente();
+            cliente.Nome = txtNome.Text;
+            cliente.Telefone = mtxtTelefone.Text;
+            cliente.Cpf = mtxtCPF.Text;
+            cliente.Endereco = txtEndereco.Text;
+            cliente.Email = txtEmail.Text;
+            cliente.DataNasc = DateTime.ParseExact(mtxtNascimento.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+            new ClienteControle().CadastrarCliente(cliente);
+        }
     }
 }
