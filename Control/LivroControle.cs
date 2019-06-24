@@ -16,7 +16,16 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarLivro(Livro Livro)
         {
-            return false;
+            try
+            {
+                DB.Execute($"insert into livro (titulo, autor, qtd_estoque, ano, editora, genero, isbn, valor_unitario) values ('{Livro.Titulo}', '{Livro.Autor}', '{Livro.Estoque}', '{Livro.Ano}', '{Livro.Editora}', '{Livro.Genero.ToString()}','{Livro.Isbn.ToString()}','{Livro.Preco.ToString()}', '");
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public Boolean AtualizarLivro(Livro Livro)
         {

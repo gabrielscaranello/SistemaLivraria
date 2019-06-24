@@ -1,8 +1,11 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using AtividadeTelas.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -39,6 +42,17 @@ namespace SistemaBiblioteca
         private void CadastroFuncionário_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            Funcionario funcionario = new Funcionario();
+            funcionario.Nome = txtNome.Text;
+            funcionario.Cargo = mtxtTelefone.Text;
+            funcionario.Cpf = mtxtCPF.Text;
+            funcionario.Endereco = txtEndereco.Text;
+            funcionario.DataNasc = DateTime.ParseExact(dtpDataAdm.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+            new FuncionarioControle().CadastrarFuncionario(funcionario);
         }
     }
 }

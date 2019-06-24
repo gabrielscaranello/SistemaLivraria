@@ -5,6 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+
 namespace AtividadeTelas.control
 {
     class FuncionarioControle : Funcionario
@@ -12,9 +13,19 @@ namespace AtividadeTelas.control
         public FuncionarioControle()
         {
         }
-        public Boolean CadastrarFuncionario(Funcionario Funcionario)
+        public Boolean CadastrarFuncionario(Funcionario funcionario)
         {
-            return false;
+
+            try
+            {
+                DB.Execute($"insert into funcionario (nome, cargo, cpf, endereco, data_nasc) values ('{funcionario.Nome}', '{funcionario.Cargo}', '{funcionario.Cpf}', '{funcionario.Endereco}',  STR_TO_DATE('{funcionario.DataNasc.ToString()}', '%d/%m/%Y'))");
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public Boolean AtualizarFuncionario(Funcionario Funcionario)
         {

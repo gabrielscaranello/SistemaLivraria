@@ -184,6 +184,7 @@
             this.btSalvar.Size = new System.Drawing.Size(56, 53);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
             // btEditar
             // 

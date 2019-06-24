@@ -213,6 +213,7 @@
             this.btSalvar.Size = new System.Drawing.Size(52, 43);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click_1);
             // 
             // btExcluir
             // 
