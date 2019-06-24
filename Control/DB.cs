@@ -13,7 +13,7 @@ namespace AtividadeTelas.control
     class DB
     {
 
-        public static MySqlConnection Execute(String sql)
+        public static Boolean Execute(String sql)
         {
             string conexao = "Server=srv02.hostoo.io;Port=3306;Database=sistemalivraria;Uid=sistemalivraria;Pwd=B1n2&thcHhj9CdP4";
             MySqlConnection connection = new MySqlConnection(conexao);
@@ -31,10 +31,10 @@ namespace AtividadeTelas.control
             catch (Exception error)
             {
                 Console.WriteLine(error);
-                throw;
+                return false;
             }
             connection.Close();
-            return null;
+            return true;
         }
         public static MySqlDataReader Select(String sql)
         {
