@@ -18,7 +18,7 @@ namespace AtividadeTelas.control
         {
             try
             {
-                DB.Execute($"insert into livro (titulo, autor, qtd_estoque, ano, editora, genero, isbn, valor_unitario) values ('{Livro.Titulo}', '{Livro.Autor}', '{Livro.Estoque}', '{Livro.Ano}', '{Livro.Editora}', '{Livro.Genero.ToString()}','{Livro.Isbn.ToString()}','{Livro.Preco.ToString()}', '");
+                DB.Execute($"insert into livros (titulo, autor, qtd_estoque, ano, editora, genero, isbn, valor_unitario) values ('{Livro.Titulo}', '{Livro.Autor}', {Livro.Estoque}, {Livro.Ano}, '{Livro.Editora}', '{Livro.Genero}','{Livro.Isbn}',{Livro.Preco} )");
 
                 return true;
             }

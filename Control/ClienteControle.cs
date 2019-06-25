@@ -23,7 +23,16 @@ namespace AtividadeTelas.control
         }
         public Boolean CadastrarCliente(Cliente cliente)
         {
-            return false;
+            try
+            {
+                DB.Execute($"insert into clientes(nome, telefone, cpf, endereco, email, data_nasc) values ('{cliente.Nome}', '{cliente.Telefone}', '{cliente.Cpf}', '{cliente.Email}','{cliente.Endereco}',  STR_TO_DATE('{cliente.DataNasc.ToString()}', '%d/%m/%Y'))");
+
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
         }
         public Boolean AtualizarCliente(Cliente cliente)
         {

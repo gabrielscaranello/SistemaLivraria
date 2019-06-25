@@ -15,6 +15,7 @@ namespace AtividadeTelas.model
         private String cpf;
         private String endereco;
         private DateTime dataNasc;
+        private string telefone;
 
         public int Id { get => id; set => id = value; }
         public string Nome { get => nome; set => nome = value; }
@@ -22,7 +23,7 @@ namespace AtividadeTelas.model
         public string Cpf { get => cpf; set => cpf = value; }
         public string Endereco { get => endereco; set => endereco = value; }
         public DateTime DataNasc { get => dataNasc; set => dataNasc = value; }
-
+        public string Telefone { get => telefone; set => telefone = value; }
         public Funcionario()
         {
 

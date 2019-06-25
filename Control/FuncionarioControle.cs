@@ -18,7 +18,7 @@ namespace AtividadeTelas.control
 
             try
             {
-                DB.Execute($"insert into funcionario (nome, cargo, cpf, endereco, data_nasc) values ('{funcionario.Nome}', '{funcionario.Cargo}', '{funcionario.Cpf}', '{funcionario.Endereco}',  STR_TO_DATE('{funcionario.DataNasc.ToString()}', '%d/%m/%Y'))");
+                DB.Execute($"insert into funcionarios (nome, cargo, cpf, endereco, data_nasc) values ('{funcionario.Nome}', '{funcionario.Cargo}', '{funcionario.Cpf}', '{funcionario.Endereco}',  STR_TO_DATE('{funcionario.DataNasc.ToString()}', '%d/%m/%Y'))");
 
                 return true;
             }

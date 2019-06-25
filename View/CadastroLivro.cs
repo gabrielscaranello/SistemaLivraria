@@ -38,7 +38,7 @@ namespace SistemaBiblioteca
         {
             try
             {
-                Regex regex = new Regex(@"[^\d]");
+               
                 Livro livro = new Livro();
                 livro.Titulo = txtTitulo.Text;
                 livro.Autor = txtAutor.Text;
@@ -46,7 +46,7 @@ namespace SistemaBiblioteca
                 livro.Genero = cboGenero.Text;
                 livro.Estoque = int.Parse(txtEstoque.Text);
                 livro.Isbn = txtISBN.Text;
-                livro.Ano =int.Parse(mtxtDataPublicacao)
+                livro.Ano = int.Parse(txtAno.Text);
                 livro.Preco = float.Parse(txtPreco.Text);
                 new LivroControle().CadastrarLivro(livro);
                 MessageBox.Show("seu cadastro foi feita com sucesso");
@@ -58,20 +58,11 @@ namespace SistemaBiblioteca
             }
         }
 
-        private void BtSalvar_Click_1(object sender, EventArgs e)
-        {
-       
-            Livro livro = new Livro();
-            livro.Titulo = txtTitulo.Text;
-            livro.Autor = txtAutor.Text;
-            livro.Estoque = int.Parse(txtEstoque.Text);
-            livro.Ano = int.Parse(mtxtDataPublicacao.Text);
-            livro.Editora = txtEditora.Text;
-            livro.Genero = cboGenero.Text;
-            livro.Isbn = txtISBN.Text;
-            livro.Preco =float.Parse(txtPreco.Text);
+        
 
-            new LivroControle().CadastrarLivro(livro);
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

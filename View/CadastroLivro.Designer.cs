@@ -42,7 +42,6 @@
             this.txtEditora = new System.Windows.Forms.TextBox();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
-            this.mtxtDataPublicacao = new System.Windows.Forms.MaskedTextBox();
             this.btVoltar = new System.Windows.Forms.Button();
             this.button5 = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
@@ -50,6 +49,7 @@
             this.btExcluir = new System.Windows.Forms.Button();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
+            this.txtAno = new System.Windows.Forms.TextBox();
             this.SuspendLayout();
             // 
             // label1
@@ -93,7 +93,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(366, 215);
+            this.label5.Location = new System.Drawing.Point(366, 218);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(104, 13);
             this.label5.TabIndex = 27;
@@ -169,15 +169,6 @@
             this.cboGenero.Size = new System.Drawing.Size(333, 21);
             this.cboGenero.TabIndex = 39;
             // 
-            // mtxtDataPublicacao
-            // 
-            this.mtxtDataPublicacao.Location = new System.Drawing.Point(473, 211);
-            this.mtxtDataPublicacao.Mask = "00/00/0000";
-            this.mtxtDataPublicacao.Name = "mtxtDataPublicacao";
-            this.mtxtDataPublicacao.Size = new System.Drawing.Size(153, 20);
-            this.mtxtDataPublicacao.TabIndex = 40;
-            this.mtxtDataPublicacao.ValidatingType = typeof(System.DateTime);
-            // 
             // btVoltar
             // 
             this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
@@ -199,7 +190,7 @@
             // btEditar
             // 
             this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btEditar.Location = new System.Drawing.Point(463, 237);
+            this.btEditar.Location = new System.Drawing.Point(463, 242);
             this.btEditar.Name = "btEditar";
             this.btEditar.Size = new System.Drawing.Size(50, 43);
             this.btEditar.TabIndex = 19;
@@ -208,17 +199,17 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btSalvar.Location = new System.Drawing.Point(519, 237);
+            this.btSalvar.Location = new System.Drawing.Point(519, 242);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(52, 43);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
-            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click_1);
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btExcluir.Location = new System.Drawing.Point(577, 237);
+            this.btExcluir.Location = new System.Drawing.Point(577, 242);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(49, 43);
             this.btExcluir.TabIndex = 21;
@@ -240,14 +231,22 @@
             this.label9.TabIndex = 41;
             this.label9.Text = "Preço:";
             // 
+            // txtAno
+            // 
+            this.txtAno.Location = new System.Drawing.Point(467, 215);
+            this.txtAno.Name = "txtAno";
+            this.txtAno.Size = new System.Drawing.Size(159, 20);
+            this.txtAno.TabIndex = 43;
+            this.txtAno.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
+            // 
             // Cadastro_de_livro
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 297);
+            this.Controls.Add(this.txtAno);
             this.Controls.Add(this.txtPreco);
             this.Controls.Add(this.label9);
-            this.Controls.Add(this.mtxtDataPublicacao);
             this.Controls.Add(this.cboGenero);
             this.Controls.Add(this.txtISBN);
             this.Controls.Add(this.txtEditora);
@@ -292,7 +291,6 @@
         private System.Windows.Forms.TextBox txtEditora;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.ComboBox cboGenero;
-        private System.Windows.Forms.MaskedTextBox mtxtDataPublicacao;
         private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btEditar;
@@ -300,5 +298,6 @@
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.TextBox txtAno;
     }
 }
