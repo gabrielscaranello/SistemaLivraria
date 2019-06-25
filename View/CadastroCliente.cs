@@ -35,7 +35,13 @@ namespace SistemaBiblioteca
         {
             if (e.KeyValue.Equals(27))
             {
-                this.Close();
+                //Alerta na tecla de atalho 
+
+                DialogResult resultado = MessageBox.Show("Você deseja realmente fechar?", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == System.Windows.Forms.DialogResult.Yes)
+
+                    this.Close();           
             }
         }
 
@@ -49,6 +55,11 @@ namespace SistemaBiblioteca
             cliente.Email = txtEmail.Text;
             cliente.DataNasc = DateTime.ParseExact(mtxtNascimento.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
             new ClienteControle().CadastrarCliente(cliente);
+        }
+
+        private void Cadastro_Cliente_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

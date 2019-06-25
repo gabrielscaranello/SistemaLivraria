@@ -231,6 +231,7 @@
             this.KeyPreview = true;
             this.Name = "Cadastro_Cliente";
             this.Text = "Cadastro_Cliente";
+            this.Load += new System.EventHandler(this.Cadastro_Cliente_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Cadastro_Cliente_KeyDown);
             this.ResumeLayout(false);
             this.PerformLayout();
