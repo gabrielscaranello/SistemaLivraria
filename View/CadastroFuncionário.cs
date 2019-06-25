@@ -38,7 +38,21 @@ namespace SistemaBiblioteca
 
         private void CadastroFuncionário_Load(object sender, EventArgs e)
         {
+           
+        }
 
+        private void TxtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            if (txtCargo.Text == string.Empty || txtEndereco.Text == string.Empty || txtNome.Text == string.Empty)
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCargo.BackColor = Color.Blue;
+            }
         }
     }
 }
