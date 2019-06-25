@@ -31,7 +31,7 @@ namespace SistemaBiblioteca
         {
             String pesquisa = txtPesquisarNome.Text;
 
-            MySqlDataReader clientes = DB.Select("select * from clientes where nome like %" + pesquisa + "%");
+            MySqlDataReader clientes = DB.Select("select * from clientes where nome like '%" + pesquisa + "%'");
             
             while (clientes.Read())
             {
