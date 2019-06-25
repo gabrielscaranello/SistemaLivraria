@@ -59,7 +59,9 @@ namespace SistemaBiblioteca
 
 
 
-                ResultadoPesquisa.Items.Add(funcionarios["nome"].ToString());
+                ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
+                ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
+
 
 
             }
