@@ -27,16 +27,7 @@ namespace AtividadeTelas.control
         }
         public Boolean AtualizarCliente(Cliente cliente)
         {
-            try
-            {
-                //Banco.Execute("update", "UPDATE cliente SET nome = @Cliente.nome, telefone = @Cliente.telefone, cpf = @Cliente.cpf, endereco = @Cliente.endereco, email = @Cliente.email, dataNasc = @Cliente.dataNasc  WHERE id = @Cliente.id");
-          
-                return true;
-            }
-            catch
-            {
-                return false;
-            }
+            return DB.Execute("update", "UPDATE cliente SET nome = @Cliente.nome, telefone = @Cliente.telefone, cpf = @Cliente.cpf, endereco = @Cliente.endereco, email = @Cliente.email, dataNasc = @Cliente.dataNasc  WHERE id = @Cliente.id");
         }
         public Boolean ExcluirCliente(Cliente cliente)
         {
