@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -32,6 +34,39 @@ namespace SistemaBiblioteca
         }
 
         private void BtVoltar_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtnPesquisarFunc_Click(object sender, EventArgs e)
+        {
+            String pesquisa = txtNomeFunc.Text;
+            MySqlDataReader funcionarios;
+            if (pesquisa.Length > 0)
+            {
+                funcionarios = AtividadeTelas.control.DB.Select("select * from funcionarios where nome like '%" + pesquisa + "%'");
+            }
+            else
+            {
+                funcionarios = DB.Select("select * from funcionarios");
+
+            }
+            ResultadoPesquisa.Items.Clear();
+
+
+            while (funcionarios.Read())
+            {
+
+
+
+                ResultadoPesquisa.Items.Add(funcionarios["nome"].ToString());
+
+
+            }
+            Console.WriteLine("Essa merda não funciona");
+        }
+
+        private void TxtNomeFunc_TextChanged(object sender, EventArgs e)
         {
 
         }
