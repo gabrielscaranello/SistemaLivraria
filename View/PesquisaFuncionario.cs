@@ -59,13 +59,10 @@ namespace SistemaBiblioteca
 
 
 
-<<<<<<< Updated upstream
+
                 ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
                 ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
 
-=======
-                ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
->>>>>>> Stashed changes
 
 
             }
