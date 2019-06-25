@@ -45,13 +45,10 @@ namespace SistemaBiblioteca
             while (clientes.Read())
             {
 
-
-
                 ResultadoPesquisa.Items.Add(clientes["nome"].ToString());
-
                 
             }
-            Console.WriteLine("Essa merda não funciona");
+          
 
         }
 
