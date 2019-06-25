@@ -30,9 +30,18 @@ namespace SistemaBiblioteca
         private void Button1_Click(object sender, EventArgs e)
         {
             String pesquisa = txtPesquisarNome.Text;
+            MySqlDataReader clientes;
+            if (pesquisa.Length > 0)
+            {
+                 clientes = DB.Select("select * from clientes where nome like '%" + pesquisa + "%'");
+            } else
+            {
+                 clientes = DB.Select("select * from clientes");
 
-            MySqlDataReader clientes = DB.Select("select * from clientes where nome like '%" + pesquisa + "%'");
-            
+            }
+            ResultadoPesquisa.Items.Clear(); 
+
+
             while (clientes.Read())
             {
 
