@@ -51,19 +51,18 @@ namespace SistemaBiblioteca
                 funcionarios = DB.Select("select * from funcionarios");
 
             }
-            ResultadoPesquisa.Items.Clear();
+            //dgvTabPesquisaFunc.Columns.Clear();
 
 
             while (funcionarios.Read())
             {
 
 
+                //dgvTabCliente
+                //dgvTabPesquisaFunc.Columns.Add(funcionarios["id"].ToString());
 
-
-                ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
-                ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
-
-
+                //dgvTabCliente
+               // dgvTabPesquisaFunc.Columns.Add(funcionarios[ "nome"].ToString());
 
             }
             Console.WriteLine("Essa merda não funciona");

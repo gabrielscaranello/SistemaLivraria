@@ -104,6 +104,7 @@
             this.dgvTabCliente.Name = "dgvTabCliente";
             this.dgvTabCliente.Size = new System.Drawing.Size(503, 150);
             this.dgvTabCliente.TabIndex = 33;
+            this.dgvTabCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvTabCliente_CellContentClick);
             // 
             // dgvCampoID
             // 
