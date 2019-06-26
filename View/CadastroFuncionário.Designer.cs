@@ -34,18 +34,20 @@
             this.label4 = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
             this.txtCargo = new System.Windows.Forms.TextBox();
-            this.dtpDataAdm = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.txtEndereco = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
+            this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
+=======
+>>>>>>> master
             this.SuspendLayout();
             // 
             // label1
@@ -92,6 +94,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(294, 20);
             this.txtNome.TabIndex = 27;
+            this.txtNome.TextChanged += new System.EventHandler(this.TxtNome_TextChanged);
             // 
             // txtCargo
             // 
@@ -100,13 +103,6 @@
             this.txtCargo.Size = new System.Drawing.Size(213, 20);
             this.txtCargo.TabIndex = 28;
             this.txtCargo.TextChanged += new System.EventHandler(this.TbCargo_TextChanged);
-            // 
-            // dtpDataAdm
-            // 
-            this.dtpDataAdm.Location = new System.Drawing.Point(389, 126);
-            this.dtpDataAdm.Name = "dtpDataAdm";
-            this.dtpDataAdm.Size = new System.Drawing.Size(234, 20);
-            this.dtpDataAdm.TabIndex = 29;
             // 
             // label5
             // 
@@ -158,15 +154,6 @@
             this.mtxtTelefone.Size = new System.Drawing.Size(90, 20);
             this.mtxtTelefone.TabIndex = 37;
             // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(388, 152);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(52, 53);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
@@ -184,6 +171,8 @@
             this.btSalvar.Size = new System.Drawing.Size(56, 53);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
+<<<<<<< HEAD
             // 
             // btEditar
             // 
@@ -202,30 +191,39 @@
             this.btVoltar.Size = new System.Drawing.Size(52, 53);
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
+=======
+>>>>>>> master
+            // 
+            // mtxtDataNasc
+            // 
+            this.mtxtDataNasc.Location = new System.Drawing.Point(435, 121);
+            this.mtxtDataNasc.Mask = "00/00/0000";
+            this.mtxtDataNasc.Name = "mtxtDataNasc";
+            this.mtxtDataNasc.Size = new System.Drawing.Size(106, 20);
+            this.mtxtDataNasc.TabIndex = 38;
+            this.mtxtDataNasc.ValidatingType = typeof(System.DateTime);
+            this.mtxtDataNasc.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
             // 
             // CadastroFuncionário
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 214);
+            this.Controls.Add(this.mtxtDataNasc);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dtpDataAdm);
             this.Controls.Add(this.txtCargo);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.btEditar);
-            this.Controls.Add(this.btVoltar);
             this.KeyPreview = true;
             this.Name = "CadastroFuncionário";
             this.Text = "Cadastro_de_Funcionário";
@@ -237,24 +235,20 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btSalvar;
-        private System.Windows.Forms.Button btEditar;
-        private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtCargo;
-        private System.Windows.Forms.DateTimePicker dtpDataAdm;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.MaskedTextBox mtxtCPF;
         private System.Windows.Forms.MaskedTextBox mtxtTelefone;
+        private System.Windows.Forms.MaskedTextBox mtxtDataNasc;
     }
 }

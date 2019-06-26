@@ -63,6 +63,16 @@ namespace SistemaBiblioteca.Properties {
         /// <summary>
         ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap atualizar4737 {
+            get {
+                object obj = ResourceManager.GetObject("atualizar4737", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Consulta um recurso localizado do tipo System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap avancar4737 {
             get {
                 object obj = ResourceManager.GetObject("avancar4737", resourceCulture);

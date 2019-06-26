@@ -45,5 +45,10 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void BtPesquisarLivro_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

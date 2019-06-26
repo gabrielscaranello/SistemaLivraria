@@ -1,8 +1,11 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using AtividadeTelas.model;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -37,6 +40,37 @@ namespace SistemaBiblioteca
         }
 
         private void CadastroFuncionário_Load(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void TxtNome_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            if (String.IsNullOrWhiteSpace(txtCargo.Text) || String.IsNullOrWhiteSpace(txtEndereco.Text) || String.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCargo.BackColor = Color.Blue;
+            }
+        }
+
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            Funcionario funcionario = new Funcionario();
+            funcionario.Nome = txtNome.Text;
+            funcionario.Cargo = txtCargo.Text;
+            funcionario.Cpf = mtxtCPF.Text;
+            funcionario.Endereco = txtEndereco.Text;
+            funcionario.Telefone = mtxtTelefone.Text;
+            funcionario.DataNasc = DateTime.ParseExact(mtxtDataNasc.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+            new FuncionarioControle().CadastrarFuncionario(funcionario);
+        }
+
+        private void MaskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)
         {
 
         }
