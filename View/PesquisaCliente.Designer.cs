@@ -35,8 +35,8 @@
             this.button5 = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.dgvTabCliente = new System.Windows.Forms.DataGridView();
-            this.dgvNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tgvNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -98,24 +98,24 @@
             // 
             this.dgvTabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvNome,
-            this.tgvNome});
+            this.dgvCampoID,
+            this.dgvCampoNome});
             this.dgvTabCliente.Location = new System.Drawing.Point(54, 148);
             this.dgvTabCliente.Name = "dgvTabCliente";
             this.dgvTabCliente.Size = new System.Drawing.Size(503, 150);
             this.dgvTabCliente.TabIndex = 33;
             // 
-            // dgvNome
+            // dgvCampoID
             // 
-            this.dgvNome.HeaderText = "ID";
-            this.dgvNome.Name = "dgvNome";
-            this.dgvNome.Width = 50;
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
             // 
-            // tgvNome
+            // dgvCampoNome
             // 
-            this.tgvNome.HeaderText = "Nome";
-            this.tgvNome.Name = "tgvNome";
-            this.tgvNome.Width = 410;
+            this.dgvCampoNome.HeaderText = "Nome";
+            this.dgvCampoNome.Name = "dgvCampoNome";
+            this.dgvCampoNome.Width = 410;
             // 
             // PesquisaCliente
             // 
@@ -148,7 +148,7 @@
         private System.Windows.Forms.TextBox txtPesquisarNome;
         private System.Windows.Forms.Button btnPesquisa;
         private System.Windows.Forms.DataGridView dgvTabCliente;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNome;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tgvNome;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoNome;
     }
 }

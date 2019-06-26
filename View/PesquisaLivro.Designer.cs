@@ -37,8 +37,8 @@
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
             this.dgvTabPesquisaLivros = new System.Windows.Forms.DataGridView();
-            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabPesquisaLivros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -119,24 +119,24 @@
             // 
             this.dgvTabPesquisaLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvTabPesquisaLivros.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvID,
-            this.dgvTitulo});
+            this.dgvCampoID,
+            this.dgvCampoTitulo});
             this.dgvTabPesquisaLivros.Location = new System.Drawing.Point(60, 156);
             this.dgvTabPesquisaLivros.Name = "dgvTabPesquisaLivros";
             this.dgvTabPesquisaLivros.Size = new System.Drawing.Size(487, 150);
             this.dgvTabPesquisaLivros.TabIndex = 32;
             // 
-            // dgvID
+            // dgvCampoID
             // 
-            this.dgvID.HeaderText = "ID";
-            this.dgvID.Name = "dgvID";
-            this.dgvID.Width = 50;
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
             // 
-            // dgvTitulo
+            // dgvCampoTitulo
             // 
-            this.dgvTitulo.HeaderText = "Título";
-            this.dgvTitulo.Name = "dgvTitulo";
-            this.dgvTitulo.Width = 400;
+            this.dgvCampoTitulo.HeaderText = "Título";
+            this.dgvCampoTitulo.Name = "dgvCampoTitulo";
+            this.dgvCampoTitulo.Width = 400;
             // 
             // PesquisaLivro
             // 
@@ -174,7 +174,7 @@
         private System.Windows.Forms.Button btPesquisarLivro;
         private System.Windows.Forms.TextBox txtCodigo;
         private System.Windows.Forms.DataGridView dgvTabPesquisaLivros;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvTitulo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoTitulo;
     }
 }

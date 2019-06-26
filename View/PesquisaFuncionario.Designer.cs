@@ -34,10 +34,10 @@
             this.btnPesquisarFunc = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.dgvPesquisaFunc = new System.Windows.Forms.DataGridView();
-            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaFunc)).BeginInit();
+            this.dgvTabPesquisaFunc = new System.Windows.Forms.DataGridView();
+            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabPesquisaFunc)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -96,35 +96,35 @@
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
-            // dgvPesquisaFunc
+            // dgvTabPesquisaFunc
             // 
-            this.dgvPesquisaFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvPesquisaFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvID,
-            this.dgvNome});
-            this.dgvPesquisaFunc.Location = new System.Drawing.Point(59, 116);
-            this.dgvPesquisaFunc.Name = "dgvPesquisaFunc";
-            this.dgvPesquisaFunc.Size = new System.Drawing.Size(498, 150);
-            this.dgvPesquisaFunc.TabIndex = 30;
+            this.dgvTabPesquisaFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabPesquisaFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoNome});
+            this.dgvTabPesquisaFunc.Location = new System.Drawing.Point(59, 116);
+            this.dgvTabPesquisaFunc.Name = "dgvTabPesquisaFunc";
+            this.dgvTabPesquisaFunc.Size = new System.Drawing.Size(498, 150);
+            this.dgvTabPesquisaFunc.TabIndex = 30;
             // 
-            // dgvID
+            // dgvCampoID
             // 
-            this.dgvID.HeaderText = "ID";
-            this.dgvID.Name = "dgvID";
-            this.dgvID.Width = 50;
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
             // 
-            // dgvNome
+            // dgvCampoNome
             // 
-            this.dgvNome.HeaderText = "Nome";
-            this.dgvNome.Name = "dgvNome";
-            this.dgvNome.Width = 410;
+            this.dgvCampoNome.HeaderText = "Nome";
+            this.dgvCampoNome.Name = "dgvCampoNome";
+            this.dgvCampoNome.Width = 410;
             // 
             // PesquisaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 341);
-            this.Controls.Add(this.dgvPesquisaFunc);
+            this.Controls.Add(this.dgvTabPesquisaFunc);
             this.Controls.Add(this.btnPesquisarFunc);
             this.Controls.Add(this.txtNomeFunc);
             this.Controls.Add(this.label2);
@@ -136,7 +136,7 @@
             this.Text = "Funcionário Controle";
             this.Load += new System.EventHandler(this.Controle_Funcionário_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaFuncionario_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaFunc)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabPesquisaFunc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -150,8 +150,8 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNomeFunc;
         private System.Windows.Forms.Button btnPesquisarFunc;
-        private System.Windows.Forms.DataGridView dgvPesquisaFunc;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNome;
+        private System.Windows.Forms.DataGridView dgvTabPesquisaFunc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoNome;
     }
 }

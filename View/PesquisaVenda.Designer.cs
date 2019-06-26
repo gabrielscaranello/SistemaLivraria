@@ -29,15 +29,16 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.cbCadastrar = new System.Windows.Forms.CheckBox();
-            this.cbAtualizar = new System.Windows.Forms.CheckBox();
-            this.cbExcluir = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtVenda = new System.Windows.Forms.TextBox();
             this.btPesquisarVenda = new System.Windows.Forms.Button();
-            this.Resultados = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.dgvTabVenda = new System.Windows.Forms.DataGridView();
+            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoData = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dvgCampoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabVenda)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,38 +50,6 @@
             this.label1.Size = new System.Drawing.Size(234, 24);
             this.label1.TabIndex = 23;
             this.label1.Text = "CONTROLE DE VENDA";
-            // 
-            // cbCadastrar
-            // 
-            this.cbCadastrar.AutoSize = true;
-            this.cbCadastrar.Checked = true;
-            this.cbCadastrar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbCadastrar.Location = new System.Drawing.Point(63, 64);
-            this.cbCadastrar.Name = "cbCadastrar";
-            this.cbCadastrar.Size = new System.Drawing.Size(71, 17);
-            this.cbCadastrar.TabIndex = 24;
-            this.cbCadastrar.Text = "Cadastrar";
-            this.cbCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // cbAtualizar
-            // 
-            this.cbAtualizar.AutoSize = true;
-            this.cbAtualizar.Location = new System.Drawing.Point(286, 64);
-            this.cbAtualizar.Name = "cbAtualizar";
-            this.cbAtualizar.Size = new System.Drawing.Size(66, 17);
-            this.cbAtualizar.TabIndex = 25;
-            this.cbAtualizar.Text = "Atualizar";
-            this.cbAtualizar.UseVisualStyleBackColor = true;
-            // 
-            // cbExcluir
-            // 
-            this.cbExcluir.AutoSize = true;
-            this.cbExcluir.Location = new System.Drawing.Point(492, 64);
-            this.cbExcluir.Name = "cbExcluir";
-            this.cbExcluir.Size = new System.Drawing.Size(57, 17);
-            this.cbExcluir.TabIndex = 26;
-            this.cbExcluir.Text = "Excluir";
-            this.cbExcluir.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -107,53 +76,72 @@
             this.btPesquisarVenda.TabIndex = 29;
             this.btPesquisarVenda.UseVisualStyleBackColor = true;
             // 
-            // Resultados
+            // btnExcluir
             // 
-            this.Resultados.FormattingEnabled = true;
-            this.Resultados.Location = new System.Drawing.Point(59, 118);
-            this.Resultados.Name = "Resultados";
-            this.Resultados.Size = new System.Drawing.Size(558, 186);
-            this.Resultados.TabIndex = 30;
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(556, 301);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(61, 51);
+            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnAtualizar
             // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(556, 310);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(61, 42);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Image = global::SistemaBiblioteca.Properties.Resources.atualizar4737;
+            this.btnAtualizar.Location = new System.Drawing.Point(488, 301);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(61, 51);
+            this.btnAtualizar.TabIndex = 18;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
-            // btVoltar
+            // dgvTabVenda
             // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(488, 310);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(61, 42);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
+            this.dgvTabVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoData,
+            this.dvgCampoValor});
+            this.dgvTabVenda.Location = new System.Drawing.Point(60, 120);
+            this.dgvTabVenda.Name = "dgvTabVenda";
+            this.dgvTabVenda.Size = new System.Drawing.Size(475, 150);
+            this.dgvTabVenda.TabIndex = 30;
+            // 
+            // dgvCampoID
+            // 
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 150;
+            // 
+            // dgvCampoData
+            // 
+            this.dgvCampoData.HeaderText = "Data";
+            this.dgvCampoData.Name = "dgvCampoData";
+            this.dgvCampoData.Width = 150;
+            // 
+            // dvgCampoValor
+            // 
+            this.dvgCampoValor.HeaderText = "Valor";
+            this.dvgCampoValor.Name = "dvgCampoValor";
             // 
             // PesquisaVenda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(628, 356);
-            this.Controls.Add(this.Resultados);
+            this.Controls.Add(this.dgvTabVenda);
             this.Controls.Add(this.btPesquisarVenda);
             this.Controls.Add(this.txtVenda);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbExcluir);
-            this.Controls.Add(this.cbAtualizar);
-            this.Controls.Add(this.cbCadastrar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.btVoltar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAtualizar);
             this.KeyPreview = true;
             this.Name = "PesquisaVenda";
             this.Text = "Controle_Venda";
             this.Load += new System.EventHandler(this.PesquisaVenda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaVenda_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvTabVenda)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,15 +149,15 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btVoltar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbCadastrar;
-        private System.Windows.Forms.CheckBox cbAtualizar;
-        private System.Windows.Forms.CheckBox cbExcluir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtVenda;
         private System.Windows.Forms.Button btPesquisarVenda;
-        private System.Windows.Forms.ListBox Resultados;
+        private System.Windows.Forms.DataGridView dgvTabVenda;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoData;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dvgCampoValor;
     }
 }
