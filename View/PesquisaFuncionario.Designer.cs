@@ -32,8 +32,8 @@
             this.label2 = new System.Windows.Forms.Label();
             this.txtNomeFunc = new System.Windows.Forms.TextBox();
             this.btnPesquisarFunc = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.dgvPesquisaFunc = new System.Windows.Forms.DataGridView();
             this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -77,24 +77,24 @@
             this.btnPesquisarFunc.UseVisualStyleBackColor = true;
             this.btnPesquisarFunc.Click += new System.EventHandler(this.BtnPesquisarFunc_Click);
             // 
-            // button5
+            // btnExcluir
             // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(563, 295);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(59, 42);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(563, 283);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(59, 54);
+            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // btVoltar
+            // btnAtualizar
             // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(505, 295);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(59, 42);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
+            this.btnAtualizar.Image = global::SistemaBiblioteca.Properties.Resources.atualizar4737;
+            this.btnAtualizar.Location = new System.Drawing.Point(505, 283);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(59, 54);
+            this.btnAtualizar.TabIndex = 18;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // dgvPesquisaFunc
             // 
@@ -111,11 +111,13 @@
             // 
             this.dgvID.HeaderText = "ID";
             this.dgvID.Name = "dgvID";
+            this.dgvID.Width = 50;
             // 
             // dgvNome
             // 
             this.dgvNome.HeaderText = "Nome";
             this.dgvNome.Name = "dgvNome";
+            this.dgvNome.Width = 410;
             // 
             // PesquisaFuncionario
             // 
@@ -127,8 +129,8 @@
             this.Controls.Add(this.txtNomeFunc);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.btVoltar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAtualizar);
             this.KeyPreview = true;
             this.Name = "PesquisaFuncionario";
             this.Text = "Funcionário Controle";
@@ -142,8 +144,8 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btVoltar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNomeFunc;

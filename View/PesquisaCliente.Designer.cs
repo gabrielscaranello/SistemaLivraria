@@ -109,11 +109,13 @@
             // 
             this.dgvNome.HeaderText = "ID";
             this.dgvNome.Name = "dgvNome";
+            this.dgvNome.Width = 50;
             // 
             // tgvNome
             // 
             this.tgvNome.HeaderText = "Nome";
             this.tgvNome.Name = "tgvNome";
+            this.tgvNome.Width = 410;
             // 
             // PesquisaCliente
             // 
