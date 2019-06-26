@@ -40,12 +40,14 @@
             this.label7 = new System.Windows.Forms.Label();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.button5 = new System.Windows.Forms.Button();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
+<<<<<<< HEAD
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
             this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
+=======
+>>>>>>> master
             this.SuspendLayout();
             // 
             // label1
@@ -92,6 +94,7 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(294, 20);
             this.txtNome.TabIndex = 27;
+            this.txtNome.TextChanged += new System.EventHandler(this.TxtNome_TextChanged);
             // 
             // txtCargo
             // 
@@ -151,15 +154,6 @@
             this.mtxtTelefone.Size = new System.Drawing.Size(90, 20);
             this.mtxtTelefone.TabIndex = 37;
             // 
-            // button5
-            // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(388, 152);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(52, 53);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
-            // 
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
@@ -178,6 +172,7 @@
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
             this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
+<<<<<<< HEAD
             // 
             // btEditar
             // 
@@ -196,6 +191,8 @@
             this.btVoltar.Size = new System.Drawing.Size(52, 53);
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
+=======
+>>>>>>> master
             // 
             // mtxtDataNasc
             // 
@@ -225,11 +222,8 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
             this.Controls.Add(this.btExcluir);
             this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.btEditar);
-            this.Controls.Add(this.btVoltar);
             this.KeyPreview = true;
             this.Name = "CadastroFuncionário";
             this.Text = "Cadastro_de_Funcionário";
@@ -241,12 +235,8 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button button5;
         private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.Button btSalvar;
-        private System.Windows.Forms.Button btEditar;
-        private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;

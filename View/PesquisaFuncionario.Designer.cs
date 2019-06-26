@@ -29,15 +29,15 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.cbCadastrar = new System.Windows.Forms.CheckBox();
-            this.cbAtualizar = new System.Windows.Forms.CheckBox();
-            this.cbExcluir = new System.Windows.Forms.CheckBox();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNomeFunc = new System.Windows.Forms.TextBox();
             this.btnPesquisarFunc = new System.Windows.Forms.Button();
-            this.ResultadoPesquisa = new System.Windows.Forms.ListBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
+            this.dgvPesquisaFunc = new System.Windows.Forms.DataGridView();
+            this.dgvID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaFunc)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -49,38 +49,6 @@
             this.label1.Size = new System.Drawing.Size(317, 24);
             this.label1.TabIndex = 23;
             this.label1.Text = "CONTROLE DE FUNCIONÁRIOS";
-            // 
-            // cbCadastrar
-            // 
-            this.cbCadastrar.AutoSize = true;
-            this.cbCadastrar.Checked = true;
-            this.cbCadastrar.CheckState = System.Windows.Forms.CheckState.Checked;
-            this.cbCadastrar.Location = new System.Drawing.Point(61, 68);
-            this.cbCadastrar.Name = "cbCadastrar";
-            this.cbCadastrar.Size = new System.Drawing.Size(71, 17);
-            this.cbCadastrar.TabIndex = 24;
-            this.cbCadastrar.Text = "Cadastrar";
-            this.cbCadastrar.UseVisualStyleBackColor = true;
-            // 
-            // cbAtualizar
-            // 
-            this.cbAtualizar.AutoSize = true;
-            this.cbAtualizar.Location = new System.Drawing.Point(238, 68);
-            this.cbAtualizar.Name = "cbAtualizar";
-            this.cbAtualizar.Size = new System.Drawing.Size(66, 17);
-            this.cbAtualizar.TabIndex = 25;
-            this.cbAtualizar.Text = "Atualizar";
-            this.cbAtualizar.UseVisualStyleBackColor = true;
-            // 
-            // cbExcluir
-            // 
-            this.cbExcluir.AutoSize = true;
-            this.cbExcluir.Location = new System.Drawing.Point(500, 67);
-            this.cbExcluir.Name = "cbExcluir";
-            this.cbExcluir.Size = new System.Drawing.Size(57, 17);
-            this.cbExcluir.TabIndex = 26;
-            this.cbExcluir.Text = "Excluir";
-            this.cbExcluir.UseVisualStyleBackColor = true;
             // 
             // label2
             // 
@@ -97,6 +65,7 @@
             this.txtNomeFunc.Name = "txtNomeFunc";
             this.txtNomeFunc.Size = new System.Drawing.Size(498, 20);
             this.txtNomeFunc.TabIndex = 28;
+            this.txtNomeFunc.TextChanged += new System.EventHandler(this.TxtNomeFunc_TextChanged);
             // 
             // btnPesquisarFunc
             // 
@@ -106,54 +75,68 @@
             this.btnPesquisarFunc.Size = new System.Drawing.Size(59, 42);
             this.btnPesquisarFunc.TabIndex = 29;
             this.btnPesquisarFunc.UseVisualStyleBackColor = true;
+            this.btnPesquisarFunc.Click += new System.EventHandler(this.BtnPesquisarFunc_Click);
             // 
-            // ResultadoPesquisa
+            // btnExcluir
             // 
-            this.ResultadoPesquisa.FormattingEnabled = true;
-            this.ResultadoPesquisa.Location = new System.Drawing.Point(58, 116);
-            this.ResultadoPesquisa.Name = "ResultadoPesquisa";
-            this.ResultadoPesquisa.Size = new System.Drawing.Size(564, 173);
-            this.ResultadoPesquisa.TabIndex = 30;
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(563, 283);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(59, 54);
+            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // button5
+            // btnAtualizar
             // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(563, 295);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(59, 42);
-            this.button5.TabIndex = 22;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Image = global::SistemaBiblioteca.Properties.Resources.atualizar4737;
+            this.btnAtualizar.Location = new System.Drawing.Point(505, 283);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(59, 54);
+            this.btnAtualizar.TabIndex = 18;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
-            // btVoltar
+            // dgvPesquisaFunc
             // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(505, 295);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(59, 42);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
+            this.dgvPesquisaFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvPesquisaFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvID,
+            this.dgvNome});
+            this.dgvPesquisaFunc.Location = new System.Drawing.Point(59, 116);
+            this.dgvPesquisaFunc.Name = "dgvPesquisaFunc";
+            this.dgvPesquisaFunc.Size = new System.Drawing.Size(498, 150);
+            this.dgvPesquisaFunc.TabIndex = 30;
+            // 
+            // dgvID
+            // 
+            this.dgvID.HeaderText = "ID";
+            this.dgvID.Name = "dgvID";
+            this.dgvID.Width = 50;
+            // 
+            // dgvNome
+            // 
+            this.dgvNome.HeaderText = "Nome";
+            this.dgvNome.Name = "dgvNome";
+            this.dgvNome.Width = 410;
             // 
             // PesquisaFuncionario
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(634, 341);
-            this.Controls.Add(this.ResultadoPesquisa);
+            this.Controls.Add(this.dgvPesquisaFunc);
             this.Controls.Add(this.btnPesquisarFunc);
             this.Controls.Add(this.txtNomeFunc);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.cbExcluir);
-            this.Controls.Add(this.cbAtualizar);
-            this.Controls.Add(this.cbCadastrar);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.btVoltar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnAtualizar);
             this.KeyPreview = true;
             this.Name = "PesquisaFuncionario";
             this.Text = "Funcionário Controle";
             this.Load += new System.EventHandler(this.Controle_Funcionário_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaFuncionario_KeyDown);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvPesquisaFunc)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -161,15 +144,14 @@
 
         #endregion
 
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button btVoltar;
+        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btnAtualizar;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.CheckBox cbCadastrar;
-        private System.Windows.Forms.CheckBox cbAtualizar;
-        private System.Windows.Forms.CheckBox cbExcluir;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox txtNomeFunc;
         private System.Windows.Forms.Button btnPesquisarFunc;
-        private System.Windows.Forms.ListBox ResultadoPesquisa;
+        private System.Windows.Forms.DataGridView dgvPesquisaFunc;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvID;
+        private System.Windows.Forms.DataGridViewTextBoxColumn dgvNome;
     }
 }

@@ -30,7 +30,13 @@ namespace SistemaBiblioteca
         {
             if (e.KeyValue.Equals(27))
             {
-                this.Close();
+                //Alerta na tecla de atalho 
+
+                DialogResult resultado = MessageBox.Show("Você deseja realmente fechar?", "Pergunta", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+                if (resultado == System.Windows.Forms.DialogResult.Yes)
+
+                    this.Close();
             }
         }
 
