@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtPesquisarNome = new System.Windows.Forms.TextBox();
-            this.btnPesquisa = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
             this.dgvTabCliente = new System.Windows.Forms.DataGridView();
             this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCampoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnPesquisa = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabCliente)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +46,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(69, 27);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(202, 24);
+            this.label1.Size = new System.Drawing.Size(218, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "Controle De Clientes";
+            this.label1.Text = "PESQUISAR CLIENTE";
             // 
             // label2
             // 
@@ -65,6 +65,29 @@
             this.txtPesquisarNome.Name = "txtPesquisarNome";
             this.txtPesquisarNome.Size = new System.Drawing.Size(501, 20);
             this.txtPesquisarNome.TabIndex = 31;
+            // 
+            // dgvTabCliente
+            // 
+            this.dgvTabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoNome});
+            this.dgvTabCliente.Location = new System.Drawing.Point(54, 148);
+            this.dgvTabCliente.Name = "dgvTabCliente";
+            this.dgvTabCliente.Size = new System.Drawing.Size(503, 150);
+            this.dgvTabCliente.TabIndex = 33;
+            // 
+            // dgvCampoID
+            // 
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
+            // 
+            // dgvCampoNome
+            // 
+            this.dgvCampoNome.HeaderText = "Nome";
+            this.dgvCampoNome.Name = "dgvCampoNome";
+            this.dgvCampoNome.Width = 410;
             // 
             // btnPesquisa
             // 
@@ -93,29 +116,6 @@
             this.btVoltar.Size = new System.Drawing.Size(54, 43);
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
-            // 
-            // dgvTabCliente
-            // 
-            this.dgvTabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvCampoID,
-            this.dgvCampoNome});
-            this.dgvTabCliente.Location = new System.Drawing.Point(54, 148);
-            this.dgvTabCliente.Name = "dgvTabCliente";
-            this.dgvTabCliente.Size = new System.Drawing.Size(503, 150);
-            this.dgvTabCliente.TabIndex = 33;
-            // 
-            // dgvCampoID
-            // 
-            this.dgvCampoID.HeaderText = "ID";
-            this.dgvCampoID.Name = "dgvCampoID";
-            this.dgvCampoID.Width = 50;
-            // 
-            // dgvCampoNome
-            // 
-            this.dgvCampoNome.HeaderText = "Nome";
-            this.dgvCampoNome.Name = "dgvCampoNome";
-            this.dgvCampoNome.Width = 410;
             // 
             // PesquisaCliente
             // 

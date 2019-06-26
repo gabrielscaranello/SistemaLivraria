@@ -58,7 +58,7 @@ namespace SistemaBiblioteca
             }
         }
 
-        private void BtSalvar_Click(object sender, EventArgs e)
+        private void BtnSalvar_Click(object sender, EventArgs e)
         {
             Funcionario funcionario = new Funcionario();
             funcionario.Nome = txtNome.Text;

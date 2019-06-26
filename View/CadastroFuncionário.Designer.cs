@@ -42,12 +42,11 @@
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
-<<<<<<< HEAD
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
-            this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
-=======
->>>>>>> master
+
+          //  this.btEditar = new System.Windows.Forms.Button();
+          //  this.btVoltar = new System.Windows.Forms.Button();
+          //  this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
+
             this.SuspendLayout();
             // 
             // label1
@@ -171,28 +170,9 @@
             this.btSalvar.Size = new System.Drawing.Size(56, 53);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
-            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
-<<<<<<< HEAD
+           // this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
-            // btEditar
-            // 
-            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btEditar.Location = new System.Drawing.Point(446, 152);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(51, 53);
-            this.btEditar.TabIndex = 19;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(330, 152);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(52, 53);
-            this.btVoltar.TabIndex = 18;
-            this.btVoltar.UseVisualStyleBackColor = true;
-=======
->>>>>>> master
+ 
             // 
             // mtxtDataNasc
             // 

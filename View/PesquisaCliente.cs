@@ -39,13 +39,13 @@ namespace SistemaBiblioteca
                  clientes = DB.Select("select * from clientes");
 
             }
-            ResultadoPesquisa.Items.Clear(); 
+            //ResultadoPesquisa.Items.Clear(); 
 
 
             while (clientes.Read())
             {
 
-                ResultadoPesquisa.Items.Add(clientes["nome"].ToString());
+             //   ResultadoPesquisa.Items.Add(clientes["nome"].ToString());
                 
             }
           

@@ -51,7 +51,7 @@ namespace SistemaBiblioteca
                 funcionarios = DB.Select("select * from funcionarios");
 
             }
-            ResultadoPesquisa.Items.Clear();
+            //ResultadoPesquisa.Items.Clear();
 
 
             while (funcionarios.Read())
@@ -60,8 +60,8 @@ namespace SistemaBiblioteca
 
 
 
-                ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
-                ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
+             //   ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
+             //   ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
 
 
 

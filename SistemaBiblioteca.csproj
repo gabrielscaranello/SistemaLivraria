@@ -217,6 +217,7 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\atualizar4737.png" />
+    <None Include="Resources\login.jpg" />
     <Content Include="Resources\logoLivrariaa.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
