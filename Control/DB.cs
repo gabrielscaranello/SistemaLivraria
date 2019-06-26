@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Data;
+using System.Data.OleDb;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,6 +13,8 @@ namespace AtividadeTelas.control
 {
     class DB
     {
+        private static object dgvTabCliente;
+        private static OleDbCommand cmd;
 
         public static Boolean Execute(String sql)
         {
@@ -27,6 +30,8 @@ namespace AtividadeTelas.control
 
                 connection.Open();
                 command.ExecuteNonQuery();
+
+                
             }
             catch (Exception error)
             {
@@ -49,7 +54,7 @@ namespace AtividadeTelas.control
                 command.CommandType = CommandType.Text;
 
                 connection.Open();
-                MySqlDataReader result = command.ExecuteReader();
+                MySqlDataReader result = command.ExecuteReader();                
 
 
                 return result;

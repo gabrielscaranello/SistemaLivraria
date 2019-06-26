@@ -117,6 +117,33 @@
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
             // 
+<<<<<<< HEAD
+=======
+            // dgvTabCliente
+            // 
+            this.dgvTabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabCliente.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoNome});
+            this.dgvTabCliente.Location = new System.Drawing.Point(54, 148);
+            this.dgvTabCliente.Name = "dgvTabCliente";
+            this.dgvTabCliente.Size = new System.Drawing.Size(503, 150);
+            this.dgvTabCliente.TabIndex = 33;
+            this.dgvTabCliente.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DgvTabCliente_CellContentClick);
+            // 
+            // dgvCampoID
+            // 
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
+            // 
+            // dgvCampoNome
+            // 
+            this.dgvCampoNome.HeaderText = "Nome";
+            this.dgvCampoNome.Name = "dgvCampoNome";
+            this.dgvCampoNome.Width = 410;
+            // 
+>>>>>>> master
             // PesquisaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);

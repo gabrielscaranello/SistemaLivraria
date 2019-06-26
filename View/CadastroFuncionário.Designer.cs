@@ -43,14 +43,18 @@
             this.btExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
 
+<<<<<<< HEAD
           //  this.btEditar = new System.Windows.Forms.Button();
           //  this.btVoltar = new System.Windows.Forms.Button();
           //  this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
+=======
+            //this.btEditar = new System.Windows.Forms.Button();
+         //   this.btVoltar = new System.Windows.Forms.Button();
+            this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
+>>>>>>> master
 
             this.SuspendLayout();
-            // 
-            // label1
-            // 
+            
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 9);
@@ -58,28 +62,19 @@
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 23;
             this.label1.Text = "Cadastro De Funcionário";
-            // 
-            // label2
-            // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(22, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 24;
             this.label2.Text = "Nome:";
-            // 
-            // label3
-            // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(366, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = "Cargo:";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
-            // 
-            // label4
-            // 
+            this.label3.Click += new System.EventHandler(this.Label3_Click); 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(350, 129);
             this.label4.Name = "label4";
@@ -171,11 +166,29 @@
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
            // this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
+<<<<<<< HEAD
             // 
  
             // 
             // mtxtDataNasc
             // 
+=======
+ 
+            //this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            //this.btEditar.Location = new System.Drawing.Point(446, 152);
+            //this.btEditar.Name = "btEditar";
+            //this.btEditar.Size = new System.Drawing.Size(51, 53);
+           // this.btEditar.TabIndex = 19;
+            //this.btEditar.UseVisualStyleBackColor = true;
+           
+            //this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            //this.btVoltar.Location = new System.Drawing.Point(330, 152);
+            //this.btVoltar.Name = "btVoltar";
+           // this.btVoltar.Size = new System.Drawing.Size(52, 53);
+           // this.btVoltar.TabIndex = 18;
+            //this.btVoltar.UseVisualStyleBackColor = true;
+
+>>>>>>> master
             this.mtxtDataNasc.Location = new System.Drawing.Point(435, 121);
             this.mtxtDataNasc.Mask = "00/00/0000";
             this.mtxtDataNasc.Name = "mtxtDataNasc";
@@ -183,9 +196,7 @@
             this.mtxtDataNasc.TabIndex = 38;
             this.mtxtDataNasc.ValidatingType = typeof(System.DateTime);
             this.mtxtDataNasc.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
-            // 
-            // CadastroFuncionário
-            // 
+     
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 214);
