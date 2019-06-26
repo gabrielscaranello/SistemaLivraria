@@ -33,7 +33,7 @@ namespace SistemaBiblioteca
 
         private void BtVenda_Click(object sender, EventArgs e)
         {
-            Venda venda = new Venda();
+            TelaVenda venda = new TelaVenda();
             venda.ShowDialog();
 
         }
