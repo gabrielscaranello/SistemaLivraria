@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace SistemaBiblioteca
 {
-    public partial class Venda : Form
+    public partial class TelaVenda : Form
     {
-        public Venda()
+        public TelaVenda()
         {
             InitializeComponent();
 
