@@ -51,11 +51,7 @@ namespace SistemaBiblioteca
                 funcionarios = DB.Select("select * from funcionarios");
 
             }
-<<<<<<< HEAD
-            //ResultadoPesquisa.Items.Clear();
-=======
-            //dgvTabPesquisaFunc.Columns.Clear();
->>>>>>> master
+
 
 
             while (funcionarios.Read())
@@ -65,16 +61,15 @@ namespace SistemaBiblioteca
                 //dgvTabCliente
                 //dgvTabPesquisaFunc.Columns.Add(funcionarios["id"].ToString());
 
-<<<<<<< HEAD
 
              //   ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
              //   ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
 
 
-=======
+
                 //dgvTabCliente
                // dgvTabPesquisaFunc.Columns.Add(funcionarios[ "nome"].ToString());
->>>>>>> master
+
 
             }
             Console.WriteLine("Essa merda não funciona");

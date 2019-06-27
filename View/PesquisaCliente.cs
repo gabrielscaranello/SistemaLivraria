@@ -35,27 +35,19 @@ namespace SistemaBiblioteca
             String pesquisa = txtPesquisarNome.Text;
             MySqlDataReader clientes;
 
-<<<<<<< HEAD
-            }
-            //ResultadoPesquisa.Items.Clear(); 
-=======
+
             clientes = DB.Select("select * from clientes where nome like '%" + pesquisa + "%'");
 
             dgvTabCliente.Rows.Clear();
 
 
->>>>>>> master
 
 
             while (clientes.Read())
             {
-<<<<<<< HEAD
 
-             //   ResultadoPesquisa.Items.Add(clientes["nome"].ToString());
-                
-=======
                 dgvTabCliente.Rows.Add(clientes["id_cliente"].ToString(), clientes["nome"].ToString());
->>>>>>> master
+
             }
 
 

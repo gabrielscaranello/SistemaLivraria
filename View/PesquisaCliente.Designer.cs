@@ -117,8 +117,7 @@
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
             // 
-<<<<<<< HEAD
-=======
+
             // dgvTabCliente
             // 
             this.dgvTabCliente.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
@@ -143,7 +142,7 @@
             this.dgvCampoNome.Name = "dgvCampoNome";
             this.dgvCampoNome.Width = 410;
             // 
->>>>>>> master
+
             // PesquisaCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,7 +158,7 @@
             this.KeyPreview = true;
             this.Name = "PesquisaCliente";
             this.Text = "Cliente_Controle";
-            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
+//            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.PesquisaCliente_KeyDown);
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabCliente)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
