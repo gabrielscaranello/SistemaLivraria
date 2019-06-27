@@ -42,37 +42,19 @@ namespace SistemaBiblioteca
         {
             String pesquisa = txtNomeFunc.Text;
             MySqlDataReader funcionarios;
-            if (pesquisa.Length > 0)
-            {
-                funcionarios = AtividadeTelas.control.DB.Select("select * from funcionarios where nome like '%" + pesquisa + "%'");
-            }
-            else
-            {
-                funcionarios = DB.Select("select * from funcionarios");
 
-            }
+            funcionarios = DB.Select("select * from funcionarios where nome like '%" + pesquisa + "%'");
+
+            dgvTabPesquisaFunc.Rows.Clear();
+
 
 
 
             while (funcionarios.Read())
             {
-
-
-                //dgvTabCliente
-                //dgvTabPesquisaFunc.Columns.Add(funcionarios["id"].ToString());
-
-
-             //   ResultadoPesquisa.Items.Add(funcionarios[ "nome"].ToString());
-             //   ResultadoPesquisa.Items.Add(funcionarios["id"].ToString());
-
-
-
-                //dgvTabCliente
-               // dgvTabPesquisaFunc.Columns.Add(funcionarios[ "nome"].ToString());
-
-
+                dgvTabPesquisaFunc.Rows.Add(funcionarios["id"].ToString(), funcionarios["nome"].ToString());
             }
-            Console.WriteLine("Essa merda não funciona");
+
         }
 
         private void TxtNomeFunc_TextChanged(object sender, EventArgs e)

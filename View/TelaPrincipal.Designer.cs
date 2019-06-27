@@ -38,8 +38,8 @@
             this.btControleFunc = new System.Windows.Forms.Button();
             this.btControleLivro = new System.Windows.Forms.Button();
             this.pnlTelaInicio = new System.Windows.Forms.Panel();
-            this.btnRelatorio = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnRelatorio = new System.Windows.Forms.Button();
             this.pnlTelaInicio.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -117,13 +117,6 @@
             this.pnlTelaInicio.Name = "pnlTelaInicio";
             this.pnlTelaInicio.Paint += new System.Windows.Forms.PaintEventHandler(this.PnlTelaInicio_Paint);
             // 
-            // btnRelatorio
-            // 
-            resources.ApplyResources(this.btnRelatorio, "btnRelatorio");
-            this.btnRelatorio.Name = "btnRelatorio";
-            this.btnRelatorio.UseVisualStyleBackColor = true;
-            this.btnRelatorio.Click += new System.EventHandler(this.BtnRelatorio_Click);
-            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
@@ -131,6 +124,13 @@
             resources.ApplyResources(this.pictureBox1, "pictureBox1");
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.TabStop = false;
+            // 
+            // btnRelatorio
+            // 
+            resources.ApplyResources(this.btnRelatorio, "btnRelatorio");
+            this.btnRelatorio.Name = "btnRelatorio";
+            this.btnRelatorio.UseVisualStyleBackColor = true;
+            this.btnRelatorio.Click += new System.EventHandler(this.BtnRelatorio_Click);
             // 
             // telaPrincipal
             // 

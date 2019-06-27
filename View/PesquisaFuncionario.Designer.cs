@@ -31,12 +31,12 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtNomeFunc = new System.Windows.Forms.TextBox();
-            this.dgvTabPesquisaFunc = new System.Windows.Forms.DataGridView();
-            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCampoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnPesquisarFunc = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
+            this.dgvTabPesquisaFunc = new System.Windows.Forms.DataGridView();
+            this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dgvCampoNome = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabPesquisaFunc)).BeginInit();
             this.SuspendLayout();
             // 
@@ -46,9 +46,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(75, 34);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(292, 24);
+            this.label1.Size = new System.Drawing.Size(317, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "PESQUISAR  FUNCIONÁRIOS";
+            this.label1.Text = "CONTROLE DE FUNCIONÁRIOS";
             // 
             // label2
             // 
@@ -66,29 +66,6 @@
             this.txtNomeFunc.Size = new System.Drawing.Size(498, 20);
             this.txtNomeFunc.TabIndex = 28;
             this.txtNomeFunc.TextChanged += new System.EventHandler(this.TxtNomeFunc_TextChanged);
-            // 
-            // dgvTabPesquisaFunc
-            // 
-            this.dgvTabPesquisaFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabPesquisaFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvCampoID,
-            this.dgvCampoNome});
-            this.dgvTabPesquisaFunc.Location = new System.Drawing.Point(59, 116);
-            this.dgvTabPesquisaFunc.Name = "dgvTabPesquisaFunc";
-            this.dgvTabPesquisaFunc.Size = new System.Drawing.Size(498, 150);
-            this.dgvTabPesquisaFunc.TabIndex = 30;
-            // 
-            // dgvCampoID
-            // 
-            this.dgvCampoID.HeaderText = "ID";
-            this.dgvCampoID.Name = "dgvCampoID";
-            this.dgvCampoID.Width = 50;
-            // 
-            // dgvCampoNome
-            // 
-            this.dgvCampoNome.HeaderText = "Nome";
-            this.dgvCampoNome.Name = "dgvCampoNome";
-            this.dgvCampoNome.Width = 410;
             // 
             // btnPesquisarFunc
             // 
@@ -118,6 +95,29 @@
             this.btnAtualizar.TabIndex = 18;
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
+            // 
+            // dgvTabPesquisaFunc
+            // 
+            this.dgvTabPesquisaFunc.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabPesquisaFunc.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoNome});
+            this.dgvTabPesquisaFunc.Location = new System.Drawing.Point(59, 116);
+            this.dgvTabPesquisaFunc.Name = "dgvTabPesquisaFunc";
+            this.dgvTabPesquisaFunc.Size = new System.Drawing.Size(498, 150);
+            this.dgvTabPesquisaFunc.TabIndex = 30;
+            // 
+            // dgvCampoID
+            // 
+            this.dgvCampoID.HeaderText = "ID";
+            this.dgvCampoID.Name = "dgvCampoID";
+            this.dgvCampoID.Width = 50;
+            // 
+            // dgvCampoNome
+            // 
+            this.dgvCampoNome.HeaderText = "Nome";
+            this.dgvCampoNome.Name = "dgvCampoNome";
+            this.dgvCampoNome.Width = 410;
             // 
             // PesquisaFuncionario
             // 

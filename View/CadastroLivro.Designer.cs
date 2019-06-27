@@ -42,9 +42,11 @@
             this.txtEditora = new System.Windows.Forms.TextBox();
             this.txtISBN = new System.Windows.Forms.TextBox();
             this.cboGenero = new System.Windows.Forms.ComboBox();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
             this.txtPreco = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
             this.txtAno = new System.Windows.Forms.TextBox();
@@ -167,33 +169,51 @@
             this.cboGenero.Size = new System.Drawing.Size(333, 21);
             this.cboGenero.TabIndex = 39;
             // 
-            // btnEditar
+            // btVoltar
             // 
-            this.btnEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btnEditar.Location = new System.Drawing.Point(463, 242);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(50, 43);
-            this.btnEditar.TabIndex = 19;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(346, 241);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(51, 43);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // button5
             // 
-            this.btnSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btnSalvar.Location = new System.Drawing.Point(519, 242);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(52, 43);
-            this.btnSalvar.TabIndex = 20;
-            this.btnSalvar.UseVisualStyleBackColor = true;
-            this.btnSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(403, 241);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(54, 43);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // btnExcluir
+            // btEditar
             // 
-            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btnExcluir.Location = new System.Drawing.Point(577, 242);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(49, 43);
-            this.btnExcluir.TabIndex = 21;
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btEditar.Location = new System.Drawing.Point(463, 242);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(50, 43);
+            this.btEditar.TabIndex = 19;
+            this.btEditar.UseVisualStyleBackColor = true;
+            // 
+            // btSalvar
+            // 
+            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btSalvar.Location = new System.Drawing.Point(519, 242);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(52, 43);
+            this.btSalvar.TabIndex = 20;
+            this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
+            // 
+            // btExcluir
+            // 
+            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btExcluir.Location = new System.Drawing.Point(577, 242);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(49, 43);
+            this.btExcluir.TabIndex = 21;
+            this.btExcluir.UseVisualStyleBackColor = true;
             // 
             // txtPreco
             // 
@@ -241,9 +261,11 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btExcluir);
+            this.Controls.Add(this.btSalvar);
+            this.Controls.Add(this.btEditar);
+            this.Controls.Add(this.btVoltar);
             this.KeyPreview = true;
             this.Name = "Cadastro_de_livro";
             this.Text = "Cadastro_de_livro";
@@ -269,9 +291,11 @@
         private System.Windows.Forms.TextBox txtEditora;
         private System.Windows.Forms.TextBox txtISBN;
         private System.Windows.Forms.ComboBox cboGenero;
-        private System.Windows.Forms.Button btnEditar;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnExcluir;
+        private System.Windows.Forms.Button btVoltar;
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btEditar;
+        private System.Windows.Forms.Button btSalvar;
+        private System.Windows.Forms.Button btExcluir;
         private System.Windows.Forms.TextBox txtPreco;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.TextBox txtAno;

@@ -32,13 +32,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.txtTitulo = new System.Windows.Forms.TextBox();
+            this.btPesquisarLivro = new System.Windows.Forms.Button();
             this.txtCodigo = new System.Windows.Forms.TextBox();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnAtualizar = new System.Windows.Forms.Button();
             this.dgvTabPesquisaLivros = new System.Windows.Forms.DataGridView();
             this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCampoTitulo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btPesquisarLivro = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnAtualizar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTabPesquisaLivros)).BeginInit();
             this.SuspendLayout();
             // 
@@ -48,9 +48,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(56, 23);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(205, 24);
+            this.label1.Size = new System.Drawing.Size(236, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "PESQUISAR LIVROS";
+            this.label1.Text = "CONTROLE DE LIVROS";
             // 
             // label2
             // 
@@ -78,12 +78,42 @@
             this.txtTitulo.Size = new System.Drawing.Size(487, 20);
             this.txtTitulo.TabIndex = 29;
             // 
+            // btPesquisarLivro
+            // 
+            this.btPesquisarLivro.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
+            this.btPesquisarLivro.Location = new System.Drawing.Point(553, 83);
+            this.btPesquisarLivro.Name = "btPesquisarLivro";
+            this.btPesquisarLivro.Size = new System.Drawing.Size(69, 51);
+            this.btPesquisarLivro.TabIndex = 30;
+            this.btPesquisarLivro.UseVisualStyleBackColor = true;
+            this.btPesquisarLivro.Click += new System.EventHandler(this.BtPesquisarLivro_Click);
+            // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(60, 114);
             this.txtCodigo.Name = "txtCodigo";
             this.txtCodigo.Size = new System.Drawing.Size(487, 20);
             this.txtCodigo.TabIndex = 31;
+            // 
+            // btnExcluir
+            // 
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(561, 329);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(61, 49);
+            this.btnExcluir.TabIndex = 22;
+            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Click += new System.EventHandler(this.Button5_Click);
+            // 
+            // btnAtualizar
+            // 
+            this.btnAtualizar.Image = global::SistemaBiblioteca.Properties.Resources.atualizar4737;
+            this.btnAtualizar.Location = new System.Drawing.Point(495, 329);
+            this.btnAtualizar.Name = "btnAtualizar";
+            this.btnAtualizar.Size = new System.Drawing.Size(60, 49);
+            this.btnAtualizar.TabIndex = 18;
+            this.btnAtualizar.UseVisualStyleBackColor = true;
+            this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // dgvTabPesquisaLivros
             // 
@@ -107,36 +137,6 @@
             this.dgvCampoTitulo.HeaderText = "Título";
             this.dgvCampoTitulo.Name = "dgvCampoTitulo";
             this.dgvCampoTitulo.Width = 400;
-            // 
-            // btPesquisarLivro
-            // 
-            this.btPesquisarLivro.Image = global::SistemaBiblioteca.Properties.Resources.pesquisar4737;
-            this.btPesquisarLivro.Location = new System.Drawing.Point(553, 83);
-            this.btPesquisarLivro.Name = "btPesquisarLivro";
-            this.btPesquisarLivro.Size = new System.Drawing.Size(69, 51);
-            this.btPesquisarLivro.TabIndex = 30;
-            this.btPesquisarLivro.UseVisualStyleBackColor = true;
-            this.btPesquisarLivro.Click += new System.EventHandler(this.BtPesquisarLivro_Click);
-            // 
-            // btnExcluir
-            // 
-            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btnExcluir.Location = new System.Drawing.Point(561, 329);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(61, 49);
-            this.btnExcluir.TabIndex = 22;
-            this.btnExcluir.UseVisualStyleBackColor = true;
-            this.btnExcluir.Click += new System.EventHandler(this.Button5_Click);
-            // 
-            // btnAtualizar
-            // 
-            this.btnAtualizar.Image = global::SistemaBiblioteca.Properties.Resources.atualizar4737;
-            this.btnAtualizar.Location = new System.Drawing.Point(495, 329);
-            this.btnAtualizar.Name = "btnAtualizar";
-            this.btnAtualizar.Size = new System.Drawing.Size(60, 49);
-            this.btnAtualizar.TabIndex = 18;
-            this.btnAtualizar.UseVisualStyleBackColor = true;
-            this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
             // PesquisaLivro
             // 

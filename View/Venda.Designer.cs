@@ -1,6 +1,6 @@
 ﻿namespace SistemaBiblioteca
 {
-    partial class TelaVenda
+    partial class Venda
     {
         /// <summary>
         /// Required designer variable.
@@ -35,7 +35,12 @@
             this.txtNomeCliente = new System.Windows.Forms.TextBox();
             this.txtCodFunc = new System.Windows.Forms.TextBox();
             this.dtpDataVenda = new System.Windows.Forms.DateTimePicker();
-            this.dgvTabProdutos = new System.Windows.Forms.DataGridView();
+            this.dataGVProdutos = new System.Windows.Forms.DataGridView();
+            this.CodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -45,15 +50,12 @@
             this.btnPesquisaProduto = new System.Windows.Forms.Button();
             this.btnPesquisaFuncionario = new System.Windows.Forms.Button();
             this.btnPesquisaCliente = new System.Windows.Forms.Button();
-            this.btnExcluir = new System.Windows.Forms.Button();
-            this.btnSalvar = new System.Windows.Forms.Button();
-            this.btnEditar = new System.Windows.Forms.Button();
-            this.dgvCampoCodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCampoProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCampoPreco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCampoQnt = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dgvCampoValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTabProdutos)).BeginInit();
+            this.button5 = new System.Windows.Forms.Button();
+            this.btExcluir = new System.Windows.Forms.Button();
+            this.btSalvar = new System.Windows.Forms.Button();
+            this.btEditar = new System.Windows.Forms.Button();
+            this.btVoltar = new System.Windows.Forms.Button();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
             // 
@@ -120,20 +122,51 @@
             this.dtpDataVenda.UseWaitCursor = true;
             this.dtpDataVenda.Value = new System.DateTime(2019, 6, 17, 0, 0, 0, 0);
             // 
-            // dgvTabProdutos
+            // dataGVProdutos
             // 
-            this.dgvTabProdutos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
-            this.dgvTabProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvCampoCodProduto,
-            this.dgvCampoProduto,
-            this.dgvCampoPreco,
-            this.dgvCampoQnt,
-            this.dgvCampoValorTotal});
-            this.dgvTabProdutos.Location = new System.Drawing.Point(93, 289);
-            this.dgvTabProdutos.Name = "dgvTabProdutos";
-            this.dgvTabProdutos.Size = new System.Drawing.Size(474, 87);
-            this.dgvTabProdutos.TabIndex = 30;
+            this.dataGVProdutos.BackgroundColor = System.Drawing.SystemColors.ButtonFace;
+            this.dataGVProdutos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGVProdutos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.CodProduto,
+            this.Produto,
+            this.Preco,
+            this.Quantidade,
+            this.ValorTotal});
+            this.dataGVProdutos.Location = new System.Drawing.Point(93, 289);
+            this.dataGVProdutos.Name = "dataGVProdutos";
+            this.dataGVProdutos.Size = new System.Drawing.Size(529, 113);
+            this.dataGVProdutos.TabIndex = 30;
+            // 
+            // CodProduto
+            // 
+            this.CodProduto.Frozen = true;
+            this.CodProduto.HeaderText = "CódProduto";
+            this.CodProduto.Name = "CodProduto";
+            this.CodProduto.ReadOnly = true;
+            // 
+            // Produto
+            // 
+            this.Produto.Frozen = true;
+            this.Produto.HeaderText = "Produto";
+            this.Produto.Name = "Produto";
+            this.Produto.ReadOnly = true;
+            // 
+            // Preco
+            // 
+            this.Preco.HeaderText = "ValorUnitário";
+            this.Preco.Name = "Preco";
+            this.Preco.ReadOnly = true;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "Quantidade";
+            this.Quantidade.Name = "Quantidade";
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.HeaderText = "ValorTotal";
+            this.ValorTotal.Name = "ValorTotal";
+            this.ValorTotal.ReadOnly = true;
             // 
             // label5
             // 
@@ -217,70 +250,53 @@
             this.btnPesquisaCliente.Click += new System.EventHandler(this.BtnPesquisaCliente_Click);
             this.btnPesquisaCliente.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.BtnPesquisaCliente_KeyPress);
             // 
-            // btnExcluir
+            // button5
             // 
-            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btnExcluir.Location = new System.Drawing.Point(578, 409);
-            this.btnExcluir.Name = "btnExcluir";
-            this.btnExcluir.Size = new System.Drawing.Size(55, 47);
-            this.btnExcluir.TabIndex = 21;
-            this.btnExcluir.UseVisualStyleBackColor = true;
+            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
+            this.button5.Location = new System.Drawing.Point(391, 409);
+            this.button5.Name = "button5";
+            this.button5.Size = new System.Drawing.Size(55, 47);
+            this.button5.TabIndex = 22;
+            this.button5.UseVisualStyleBackColor = true;
             // 
-            // btnSalvar
+            // btExcluir
             // 
-            this.btnSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btnSalvar.Location = new System.Drawing.Point(511, 409);
-            this.btnSalvar.Name = "btnSalvar";
-            this.btnSalvar.Size = new System.Drawing.Size(55, 47);
-            this.btnSalvar.TabIndex = 20;
-            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btExcluir.Location = new System.Drawing.Point(578, 409);
+            this.btExcluir.Name = "btExcluir";
+            this.btExcluir.Size = new System.Drawing.Size(55, 47);
+            this.btExcluir.TabIndex = 21;
+            this.btExcluir.UseVisualStyleBackColor = true;
             // 
-            // btnEditar
+            // btSalvar
             // 
-            this.btnEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btnEditar.Location = new System.Drawing.Point(449, 409);
-            this.btnEditar.Name = "btnEditar";
-            this.btnEditar.Size = new System.Drawing.Size(55, 47);
-            this.btnEditar.TabIndex = 19;
-            this.btnEditar.UseVisualStyleBackColor = true;
+            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btSalvar.Location = new System.Drawing.Point(511, 409);
+            this.btSalvar.Name = "btSalvar";
+            this.btSalvar.Size = new System.Drawing.Size(55, 47);
+            this.btSalvar.TabIndex = 20;
+            this.btSalvar.UseVisualStyleBackColor = true;
             // 
-            // dgvCampoCodProduto
+            // btEditar
             // 
-            this.dgvCampoCodProduto.Frozen = true;
-            this.dgvCampoCodProduto.HeaderText = "CódProduto";
-            this.dgvCampoCodProduto.Name = "dgvCampoCodProduto";
-            this.dgvCampoCodProduto.ReadOnly = true;
-            this.dgvCampoCodProduto.Width = 50;
+            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btEditar.Location = new System.Drawing.Point(449, 409);
+            this.btEditar.Name = "btEditar";
+            this.btEditar.Size = new System.Drawing.Size(55, 47);
+            this.btEditar.TabIndex = 19;
+            this.btEditar.UseVisualStyleBackColor = true;
             // 
-            // dgvCampoProduto
+            // btVoltar
             // 
-            this.dgvCampoProduto.Frozen = true;
-            this.dgvCampoProduto.HeaderText = "Produto";
-            this.dgvCampoProduto.Name = "dgvCampoProduto";
-            this.dgvCampoProduto.ReadOnly = true;
-            this.dgvCampoProduto.Width = 200;
+            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
+            this.btVoltar.Location = new System.Drawing.Point(330, 409);
+            this.btVoltar.Name = "btVoltar";
+            this.btVoltar.Size = new System.Drawing.Size(55, 47);
+            this.btVoltar.TabIndex = 18;
+            this.btVoltar.UseVisualStyleBackColor = true;
+            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
-            // dgvCampoPreco
-            // 
-            this.dgvCampoPreco.HeaderText = "ValorUnitário";
-            this.dgvCampoPreco.Name = "dgvCampoPreco";
-            this.dgvCampoPreco.ReadOnly = true;
-            this.dgvCampoPreco.Width = 70;
-            // 
-            // dgvCampoQnt
-            // 
-            this.dgvCampoQnt.HeaderText = "Qnt";
-            this.dgvCampoQnt.Name = "dgvCampoQnt";
-            this.dgvCampoQnt.Width = 50;
-            // 
-            // dgvCampoValorTotal
-            // 
-            this.dgvCampoValorTotal.HeaderText = "ValorTotal";
-            this.dgvCampoValorTotal.Name = "dgvCampoValorTotal";
-            this.dgvCampoValorTotal.ReadOnly = true;
-            this.dgvCampoValorTotal.Width = 70;
-            // 
-            // TelaVenda
+            // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -295,7 +311,7 @@
             this.Controls.Add(this.btnPesquisaFuncionario);
             this.Controls.Add(this.btnPesquisaCliente);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.dgvTabProdutos);
+            this.Controls.Add(this.dataGVProdutos);
             this.Controls.Add(this.dtpDataVenda);
             this.Controls.Add(this.txtCodFunc);
             this.Controls.Add(this.txtNomeCliente);
@@ -303,15 +319,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btnExcluir);
-            this.Controls.Add(this.btnSalvar);
-            this.Controls.Add(this.btnEditar);
+            this.Controls.Add(this.button5);
+            this.Controls.Add(this.btExcluir);
+            this.Controls.Add(this.btSalvar);
+            this.Controls.Add(this.btEditar);
+            this.Controls.Add(this.btVoltar);
             this.KeyPreview = true;
-            this.Name = "TelaVenda";
+            this.Name = "Venda";
             this.Text = "Venda";
             this.Load += new System.EventHandler(this.Venda_Load);
             this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.Venda_KeyDown);
-            ((System.ComponentModel.ISupportInitialize)(this.dgvTabProdutos)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -319,9 +337,12 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btnExcluir;
-        private System.Windows.Forms.Button btnSalvar;
-        private System.Windows.Forms.Button btnEditar;
+
+        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.Button btSalvar;
+        private System.Windows.Forms.Button btEditar;
+        private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -329,7 +350,12 @@
         private System.Windows.Forms.TextBox txtNomeCliente;
         private System.Windows.Forms.TextBox txtCodFunc;
         private System.Windows.Forms.DateTimePicker dtpDataVenda;
-        private System.Windows.Forms.DataGridView dgvTabProdutos;
+        private System.Windows.Forms.DataGridView dataGVProdutos;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Produto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnPesquisaCliente;
         private System.Windows.Forms.Button btnPesquisaFuncionario;
@@ -339,10 +365,5 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.NumericUpDown numQuantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoCodProduto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoProduto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoPreco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoQnt;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dgvCampoValorTotal;
     }
 }
