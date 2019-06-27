@@ -40,15 +40,13 @@
             this.label7 = new System.Windows.Forms.Label();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.btExcluir = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
             this.btSalvar = new System.Windows.Forms.Button();
-
-            //this.btEditar = new System.Windows.Forms.Button();
-         //   this.btVoltar = new System.Windows.Forms.Button();
             this.mtxtDataNasc = new System.Windows.Forms.MaskedTextBox();
-
             this.SuspendLayout();
-            
+            // 
+            // label1
+            // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(62, 9);
@@ -56,19 +54,28 @@
             this.label1.Size = new System.Drawing.Size(242, 24);
             this.label1.TabIndex = 23;
             this.label1.Text = "Cadastro De Funcionário";
+            // 
+            // label2
+            // 
             this.label2.AutoSize = true;
             this.label2.Location = new System.Drawing.Point(22, 52);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(38, 13);
             this.label2.TabIndex = 24;
             this.label2.Text = "Nome:";
+            // 
+            // label3
+            // 
             this.label3.AutoSize = true;
             this.label3.Location = new System.Drawing.Point(366, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = "Cargo:";
-            this.label3.Click += new System.EventHandler(this.Label3_Click); 
+            this.label3.Click += new System.EventHandler(this.Label3_Click);
+            // 
+            // label4
+            // 
             this.label4.AutoSize = true;
             this.label4.Location = new System.Drawing.Point(350, 129);
             this.label4.Name = "label4";
@@ -142,39 +149,23 @@
             this.mtxtTelefone.Size = new System.Drawing.Size(90, 20);
             this.mtxtTelefone.TabIndex = 37;
             // 
-            // btExcluir
+            // btnExcluir
             // 
-            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btExcluir.Location = new System.Drawing.Point(562, 152);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(49, 53);
-            this.btExcluir.TabIndex = 21;
-            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(574, 149);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(49, 53);
+            this.btnExcluir.TabIndex = 21;
             // 
             // btSalvar
             // 
-            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btSalvar.Location = new System.Drawing.Point(503, 152);
+            this.btSalvar.Location = new System.Drawing.Point(0, 0);
             this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(56, 53);
-            this.btSalvar.TabIndex = 20;
-            this.btSalvar.UseVisualStyleBackColor = true;
-           // this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
- 
-            //this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            //this.btEditar.Location = new System.Drawing.Point(446, 152);
-            //this.btEditar.Name = "btEditar";
-            //this.btEditar.Size = new System.Drawing.Size(51, 53);
-           // this.btEditar.TabIndex = 19;
-            //this.btEditar.UseVisualStyleBackColor = true;
-           
-            //this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            //this.btVoltar.Location = new System.Drawing.Point(330, 152);
-            //this.btVoltar.Name = "btVoltar";
-           // this.btVoltar.Size = new System.Drawing.Size(52, 53);
-           // this.btVoltar.TabIndex = 18;
-            //this.btVoltar.UseVisualStyleBackColor = true;
-
+            this.btSalvar.Size = new System.Drawing.Size(75, 23);
+            this.btSalvar.TabIndex = 39;
+            // 
+            // mtxtDataNasc
+            // 
             this.mtxtDataNasc.Location = new System.Drawing.Point(435, 121);
             this.mtxtDataNasc.Mask = "00/00/0000";
             this.mtxtDataNasc.Name = "mtxtDataNasc";
@@ -182,7 +173,9 @@
             this.mtxtDataNasc.TabIndex = 38;
             this.mtxtDataNasc.ValidatingType = typeof(System.DateTime);
             this.mtxtDataNasc.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
-     
+            // 
+            // CadastroFuncionário
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(635, 214);
@@ -199,7 +192,7 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btExcluir);
+            this.Controls.Add(this.btnExcluir);
             this.Controls.Add(this.btSalvar);
             this.KeyPreview = true;
             this.Name = "CadastroFuncionário";
@@ -212,7 +205,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.Button btExcluir;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.Button btSalvar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;

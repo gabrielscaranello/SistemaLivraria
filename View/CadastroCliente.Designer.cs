@@ -41,11 +41,9 @@
             this.mtxtNascimento = new System.Windows.Forms.MaskedTextBox();
             this.mtxtCPF = new System.Windows.Forms.MaskedTextBox();
             this.mtxtTelefone = new System.Windows.Forms.MaskedTextBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.btExcluir = new System.Windows.Forms.Button();
-            this.btSalvar = new System.Windows.Forms.Button();
-            this.btEditar = new System.Windows.Forms.Button();
-            this.btVoltar = new System.Windows.Forms.Button();
+            this.btnExcluir = new System.Windows.Forms.Button();
+            this.btnSalvar = new System.Windows.Forms.Button();
+            this.btnEditar = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -158,65 +156,45 @@
             this.mtxtTelefone.Size = new System.Drawing.Size(91, 20);
             this.mtxtTelefone.TabIndex = 20;
             // 
-            // button5
+            // btnExcluir
             // 
-            this.button5.Image = global::SistemaBiblioteca.Properties.Resources.avancar4737;
-            this.button5.Location = new System.Drawing.Point(237, 190);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(53, 51);
-            this.button5.TabIndex = 17;
-            this.button5.UseVisualStyleBackColor = true;
+            this.btnExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
+            this.btnExcluir.Location = new System.Drawing.Point(414, 190);
+            this.btnExcluir.Name = "btnExcluir";
+            this.btnExcluir.Size = new System.Drawing.Size(51, 51);
+            this.btnExcluir.TabIndex = 16;
+            this.btnExcluir.UseVisualStyleBackColor = true;
             // 
-            // btExcluir
+            // btnSalvar
             // 
-            this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btExcluir.Location = new System.Drawing.Point(414, 190);
-            this.btExcluir.Name = "btExcluir";
-            this.btExcluir.Size = new System.Drawing.Size(51, 51);
-            this.btExcluir.TabIndex = 16;
-            this.btExcluir.UseVisualStyleBackColor = true;
+            this.btnSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
+            this.btnSalvar.Location = new System.Drawing.Point(355, 190);
+            this.btnSalvar.Name = "btnSalvar";
+            this.btnSalvar.Size = new System.Drawing.Size(53, 51);
+            this.btnSalvar.TabIndex = 15;
+            this.btnSalvar.UseVisualStyleBackColor = true;
+            this.btnSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
-            // btSalvar
+            // btnEditar
             // 
-            this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btSalvar.Location = new System.Drawing.Point(355, 190);
-            this.btSalvar.Name = "btSalvar";
-            this.btSalvar.Size = new System.Drawing.Size(53, 51);
-            this.btSalvar.TabIndex = 15;
-            this.btSalvar.UseVisualStyleBackColor = true;
-            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
-            // 
-            // btEditar
-            // 
-            this.btEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
-            this.btEditar.Location = new System.Drawing.Point(296, 190);
-            this.btEditar.Name = "btEditar";
-            this.btEditar.Size = new System.Drawing.Size(53, 51);
-            this.btEditar.TabIndex = 14;
-            this.btEditar.UseVisualStyleBackColor = true;
-            // 
-            // btVoltar
-            // 
-            this.btVoltar.Image = global::SistemaBiblioteca.Properties.Resources.voltar4737;
-            this.btVoltar.Location = new System.Drawing.Point(178, 190);
-            this.btVoltar.Name = "btVoltar";
-            this.btVoltar.Size = new System.Drawing.Size(53, 51);
-            this.btVoltar.TabIndex = 0;
-            this.btVoltar.UseVisualStyleBackColor = true;
-            this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
+            this.btnEditar.Image = global::SistemaBiblioteca.Properties.Resources.edit4737;
+            this.btnEditar.Location = new System.Drawing.Point(296, 190);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(53, 51);
+            this.btnEditar.TabIndex = 14;
+            this.btnEditar.UseVisualStyleBackColor = true;
             // 
             // Cadastro_Cliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(476, 273);
+            this.ClientSize = new System.Drawing.Size(498, 273);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
             this.Controls.Add(this.mtxtNascimento);
-            this.Controls.Add(this.button5);
-            this.Controls.Add(this.btExcluir);
-            this.Controls.Add(this.btSalvar);
-            this.Controls.Add(this.btEditar);
+            this.Controls.Add(this.btnExcluir);
+            this.Controls.Add(this.btnSalvar);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.txtEmail);
             this.Controls.Add(this.txtEndereco);
             this.Controls.Add(this.txtNome);
@@ -227,7 +205,6 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.btVoltar);
             this.KeyPreview = true;
             this.Name = "Cadastro_Cliente";
             this.Text = "Cadastro_Cliente";
@@ -239,8 +216,6 @@
         }
 
         #endregion
-
-        private System.Windows.Forms.Button btVoltar;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
@@ -251,10 +226,9 @@
         private System.Windows.Forms.TextBox txtNome;
         private System.Windows.Forms.TextBox txtEndereco;
         private System.Windows.Forms.TextBox txtEmail;
-        private System.Windows.Forms.Button btEditar;
-        private System.Windows.Forms.Button btSalvar;
-        private System.Windows.Forms.Button btExcluir;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnEditar;
+        private System.Windows.Forms.Button btnSalvar;
+        private System.Windows.Forms.Button btnExcluir;
         private System.Windows.Forms.MaskedTextBox mtxtNascimento;
         private System.Windows.Forms.MaskedTextBox mtxtCPF;
         private System.Windows.Forms.MaskedTextBox mtxtTelefone;

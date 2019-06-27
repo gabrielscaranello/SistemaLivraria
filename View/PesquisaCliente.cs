@@ -35,6 +35,7 @@ namespace SistemaBiblioteca
             String pesquisa = txtPesquisarNome.Text;
             MySqlDataReader clientes;
 
+
             clientes = DB.Select("select * from clientes where nome like '%" + pesquisa + "%'");
 
             dgvTabCliente.Rows.Clear();
@@ -44,7 +45,9 @@ namespace SistemaBiblioteca
 
             while (clientes.Read())
             {
+
                 dgvTabCliente.Rows.Add(clientes["id_cliente"].ToString(), clientes["nome"].ToString());
+
             }
 
 

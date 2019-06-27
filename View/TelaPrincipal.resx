@@ -271,7 +271,7 @@
     <value>6</value>
   </data>
   <data name="btControleVenda.Text" xml:space="preserve">
-    <value>CONTROLE VENDA</value>
+    <value>PESQUISAR VENDA</value>
   </data>
   <data name="&gt;&gt;btControleVenda.Name" xml:space="preserve">
     <value>btControleVenda</value>
@@ -304,7 +304,7 @@
     <value>7</value>
   </data>
   <data name="btControleCliente.Text" xml:space="preserve">
-    <value>CONTROLE CLIENTE</value>
+    <value>PESQUISAR CLIENTE</value>
   </data>
   <data name="&gt;&gt;btControleCliente.Name" xml:space="preserve">
     <value>btControleCliente</value>
@@ -337,7 +337,7 @@
     <value>8</value>
   </data>
   <data name="btControleFunc.Text" xml:space="preserve">
-    <value>CONTROLE FUNCIONÁRIO</value>
+    <value>PESQUISAR FUNCIONÁRIO</value>
   </data>
   <data name="&gt;&gt;btControleFunc.Name" xml:space="preserve">
     <value>btControleFunc</value>
@@ -370,7 +370,7 @@
     <value>9</value>
   </data>
   <data name="btControleLivro.Text" xml:space="preserve">
-    <value>CONTROLE LIVRO</value>
+    <value>PESQUISAR LIVROS</value>
   </data>
   <data name="&gt;&gt;btControleLivro.Name" xml:space="preserve">
     <value>btControleLivro</value>
@@ -386,6 +386,9 @@
   </data>
   <data name="btnRelatorio.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 12pt, style=Bold</value>
+  </data>
+  <data name="btnRelatorio.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="btnRelatorio.Location" type="System.Drawing.Point, System.Drawing">
     <value>45, 363</value>
@@ -415,10 +418,10 @@
     <value>NoControl</value>
   </data>
   <data name="pictureBox1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>72, 52</value>
+    <value>45, 52</value>
   </data>
   <data name="pictureBox1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>457, 139</value>
+    <value>464, 139</value>
   </data>
   <data name="pictureBox1.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -470,6 +473,9 @@
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
     <value>635, 461</value>
+  </data>
+  <data name="$this.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>NoControl</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Tela Principal</value>

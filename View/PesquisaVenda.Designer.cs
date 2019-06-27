@@ -31,10 +31,10 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtVenda = new System.Windows.Forms.TextBox();
+            this.dgvTabVenda = new System.Windows.Forms.DataGridView();
             this.btPesquisarVenda = new System.Windows.Forms.Button();
             this.btnExcluir = new System.Windows.Forms.Button();
             this.btnAtualizar = new System.Windows.Forms.Button();
-            this.dgvTabVenda = new System.Windows.Forms.DataGridView();
             this.dgvCampoID = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dgvCampoData = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dvgCampoValor = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -47,9 +47,9 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.Location = new System.Drawing.Point(59, 32);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(234, 24);
+            this.label1.Size = new System.Drawing.Size(223, 24);
             this.label1.TabIndex = 23;
-            this.label1.Text = "CONTROLE DE VENDA";
+            this.label1.Text = "PESQUISA DE VENDA";
             // 
             // label2
             // 
@@ -66,6 +66,18 @@
             this.txtVenda.Name = "txtVenda";
             this.txtVenda.Size = new System.Drawing.Size(490, 20);
             this.txtVenda.TabIndex = 28;
+            // 
+            // dgvTabVenda
+            // 
+            this.dgvTabVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvTabVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgvCampoID,
+            this.dgvCampoData,
+            this.dvgCampoValor});
+            this.dgvTabVenda.Location = new System.Drawing.Point(60, 120);
+            this.dgvTabVenda.Name = "dgvTabVenda";
+            this.dgvTabVenda.Size = new System.Drawing.Size(490, 150);
+            this.dgvTabVenda.TabIndex = 30;
             // 
             // btPesquisarVenda
             // 
@@ -95,34 +107,23 @@
             this.btnAtualizar.UseVisualStyleBackColor = true;
             this.btnAtualizar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
-            // dgvTabVenda
-            // 
-            this.dgvTabVenda.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvTabVenda.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dgvCampoID,
-            this.dgvCampoData,
-            this.dvgCampoValor});
-            this.dgvTabVenda.Location = new System.Drawing.Point(60, 120);
-            this.dgvTabVenda.Name = "dgvTabVenda";
-            this.dgvTabVenda.Size = new System.Drawing.Size(475, 150);
-            this.dgvTabVenda.TabIndex = 30;
-            // 
             // dgvCampoID
             // 
             this.dgvCampoID.HeaderText = "ID";
             this.dgvCampoID.Name = "dgvCampoID";
-            this.dgvCampoID.Width = 150;
+            this.dgvCampoID.Width = 50;
             // 
             // dgvCampoData
             // 
             this.dgvCampoData.HeaderText = "Data";
             this.dgvCampoData.Name = "dgvCampoData";
-            this.dgvCampoData.Width = 150;
+            this.dgvCampoData.Width = 200;
             // 
             // dvgCampoValor
             // 
             this.dvgCampoValor.HeaderText = "Valor";
             this.dvgCampoValor.Name = "dvgCampoValor";
+            this.dvgCampoValor.Width = 200;
             // 
             // PesquisaVenda
             // 
