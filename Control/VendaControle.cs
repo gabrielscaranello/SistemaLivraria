@@ -7,20 +7,20 @@ using System.Threading.Tasks;
 
 namespace AtividadeTelas.control
 {
-    class VendaControle : Venda
+    class VendaControle : ModeloVenda
     {
         public VendaControle()
         {
         }
-        public Boolean CadastrarVenda(Venda Venda)
+        public Boolean CadastrarVenda(ModeloVenda Venda)
         {
             return false;
         }
-        public Boolean AtualizarVenda(Venda Venda)
+        public Boolean AtualizarVenda(ModeloVenda Venda)
         {
             return DB.Execute("UPDATE vendas SET id_venda = @Venda.id_venda, id_cliente = @Venda.id_cliente, id_vendedor = @Venda.id_vendedor, data_venda = @Venda.data_venda, valor_total = @Venda.valor_total");
         }
-        public Boolean ExcluirVenda(Venda Venda)
+        public Boolean ExcluirVenda(ModeloVenda Venda)
         {
             return false;
         }
@@ -30,7 +30,7 @@ namespace AtividadeTelas.control
             return null;
         }
 
-        public Venda BuscarVendaId(int id)
+        public ModeloVenda BuscarVendaId(int id)
         {
             return null;
         }
