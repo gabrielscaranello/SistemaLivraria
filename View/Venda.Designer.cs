@@ -36,11 +36,6 @@
             this.txtCodFunc = new System.Windows.Forms.TextBox();
             this.dtpDataVenda = new System.Windows.Forms.DateTimePicker();
             this.dataGVProdutos = new System.Windows.Forms.DataGridView();
-            this.CodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -55,6 +50,11 @@
             this.btSalvar = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
+            this.CodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
@@ -134,39 +134,8 @@
             this.ValorTotal});
             this.dataGVProdutos.Location = new System.Drawing.Point(93, 289);
             this.dataGVProdutos.Name = "dataGVProdutos";
-            this.dataGVProdutos.Size = new System.Drawing.Size(529, 113);
+            this.dataGVProdutos.Size = new System.Drawing.Size(474, 113);
             this.dataGVProdutos.TabIndex = 30;
-            // 
-            // CodProduto
-            // 
-            this.CodProduto.Frozen = true;
-            this.CodProduto.HeaderText = "CódProduto";
-            this.CodProduto.Name = "CodProduto";
-            this.CodProduto.ReadOnly = true;
-            // 
-            // Produto
-            // 
-            this.Produto.Frozen = true;
-            this.Produto.HeaderText = "Produto";
-            this.Produto.Name = "Produto";
-            this.Produto.ReadOnly = true;
-            // 
-            // Preco
-            // 
-            this.Preco.HeaderText = "ValorUnitário";
-            this.Preco.Name = "Preco";
-            this.Preco.ReadOnly = true;
-            // 
-            // Quantidade
-            // 
-            this.Quantidade.HeaderText = "Quantidade";
-            this.Quantidade.Name = "Quantidade";
-            // 
-            // ValorTotal
-            // 
-            this.ValorTotal.HeaderText = "ValorTotal";
-            this.ValorTotal.Name = "ValorTotal";
-            this.ValorTotal.ReadOnly = true;
             // 
             // label5
             // 
@@ -296,6 +265,42 @@
             this.btVoltar.UseVisualStyleBackColor = true;
             this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
             // 
+            // CodProduto
+            // 
+            this.CodProduto.Frozen = true;
+            this.CodProduto.HeaderText = "CódProduto";
+            this.CodProduto.Name = "CodProduto";
+            this.CodProduto.ReadOnly = true;
+            this.CodProduto.Width = 50;
+            // 
+            // Produto
+            // 
+            this.Produto.Frozen = true;
+            this.Produto.HeaderText = "Produto";
+            this.Produto.Name = "Produto";
+            this.Produto.ReadOnly = true;
+            this.Produto.Width = 210;
+            // 
+            // Preco
+            // 
+            this.Preco.HeaderText = "ValorUnitário";
+            this.Preco.Name = "Preco";
+            this.Preco.ReadOnly = true;
+            this.Preco.Width = 60;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "QNT.";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.Width = 50;
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.HeaderText = "ValorTotal";
+            this.ValorTotal.Name = "ValorTotal";
+            this.ValorTotal.ReadOnly = true;
+            this.ValorTotal.Width = 60;
+            // 
             // Venda
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -351,11 +356,6 @@
         private System.Windows.Forms.TextBox txtCodFunc;
         private System.Windows.Forms.DateTimePicker dtpDataVenda;
         private System.Windows.Forms.DataGridView dataGVProdutos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CodProduto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Produto;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button btnPesquisaCliente;
         private System.Windows.Forms.Button btnPesquisaFuncionario;
@@ -365,5 +365,10 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Button btnOk;
         private System.Windows.Forms.NumericUpDown numQuantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn CodProduto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Produto;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Preco;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Quantidade;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ValorTotal;
     }
 }

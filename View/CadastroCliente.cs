@@ -47,6 +47,8 @@ namespace SistemaBiblioteca
 
         private void BtSalvar_Click(object sender, EventArgs e)
         {
+            validarCampo();
+
             Cliente cliente = new Cliente();
             cliente.Nome = txtNome.Text;
             cliente.Telefone = mtxtTelefone.Text;
@@ -55,7 +57,22 @@ namespace SistemaBiblioteca
             cliente.Email = txtEmail.Text;
             cliente.DataNasc = DateTime.ParseExact(mtxtNascimento.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
             new ClienteControle().CadastrarCliente(cliente);
+
+            //txtNome.Enabled = true;
+            //txtEndereco.Enabled = true;
         }
+            private bool validarCampo()
+            {
+                bool Salvar = false;
+
+                if(txtNome.Text == "")
+                {
+                    Salvar = false;
+                    errorProvider1.SetError(txtNome, "Inserir nome!");
+                }
+                return Salvar;
+            }
+        
 
         private void Cadastro_Cliente_Load(object sender, EventArgs e)
         {
