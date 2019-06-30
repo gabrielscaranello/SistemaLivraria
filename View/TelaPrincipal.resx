@@ -141,6 +141,9 @@
   <data name="btVenda.Text" xml:space="preserve">
     <value>VENDA</value>
   </data>
+  <data name="btVenda.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;btVenda.Name" xml:space="preserve">
     <value>btVenda</value>
   </data>
@@ -173,6 +176,9 @@
   </data>
   <data name="btCadCli.Text" xml:space="preserve">
     <value>CADASTRO CLIENTE</value>
+  </data>
+  <data name="btCadCli.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btCadCli.Name" xml:space="preserve">
     <value>btCadCli</value>
@@ -207,6 +213,9 @@
   <data name="btCadFun.Text" xml:space="preserve">
     <value>CADASTRO FUNCIONÁRIO</value>
   </data>
+  <data name="btCadFun.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;btCadFun.Name" xml:space="preserve">
     <value>btCadFun</value>
   </data>
@@ -240,6 +249,9 @@
   <data name="btCadLivros.Text" xml:space="preserve">
     <value>CADASTRO LIVRO</value>
   </data>
+  <data name="btCadLivros.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
+  </data>
   <data name="&gt;&gt;btCadLivros.Name" xml:space="preserve">
     <value>btCadLivros</value>
   </data>
@@ -271,7 +283,10 @@
     <value>6</value>
   </data>
   <data name="btControleVenda.Text" xml:space="preserve">
-    <value>CONTROLE VENDA</value>
+    <value>PESQUISAR VENDA</value>
+  </data>
+  <data name="btControleVenda.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btControleVenda.Name" xml:space="preserve">
     <value>btControleVenda</value>
@@ -304,7 +319,10 @@
     <value>7</value>
   </data>
   <data name="btControleCliente.Text" xml:space="preserve">
-    <value>CONTROLE CLIENTE</value>
+    <value>PESQUISAR CLIENTE</value>
+  </data>
+  <data name="btControleCliente.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btControleCliente.Name" xml:space="preserve">
     <value>btControleCliente</value>
@@ -337,7 +355,10 @@
     <value>8</value>
   </data>
   <data name="btControleFunc.Text" xml:space="preserve">
-    <value>CONTROLE FUNCIONÁRIO</value>
+    <value>PESQUISAR FUNCIONÁRIO</value>
+  </data>
+  <data name="btControleFunc.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btControleFunc.Name" xml:space="preserve">
     <value>btControleFunc</value>
@@ -370,7 +391,10 @@
     <value>9</value>
   </data>
   <data name="btControleLivro.Text" xml:space="preserve">
-    <value>CONTROLE LIVRO</value>
+    <value>PESQUISAR LIVROS</value>
+  </data>
+  <data name="btControleLivro.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
+    <value>MiddleLeft</value>
   </data>
   <data name="&gt;&gt;btControleLivro.Name" xml:space="preserve">
     <value>btControleLivro</value>
