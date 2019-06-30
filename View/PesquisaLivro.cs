@@ -1,4 +1,6 @@
-﻿using System;
+﻿using AtividadeTelas.control;
+using MySql.Data.MySqlClient;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -48,7 +50,20 @@ namespace SistemaBiblioteca
 
         private void BtPesquisarLivro_Click(object sender, EventArgs e)
         {
+            String pesquisa = txtTitulo.Text;
+            MySqlDataReader livro;
 
+            livro = DB.Select("select id_livro, titulo from livros where titulo like '%" + pesquisa + "%'");
+
+            dgvTabPesquisaLivros.Rows.Clear();
+
+
+
+
+            while (livro.Read())
+            {
+                dgvTabPesquisaLivros.Rows.Add(livro["id_livro"].ToString(), livro["titulo"].ToString());
+            }
         }
     }
 }
