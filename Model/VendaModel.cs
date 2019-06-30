@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace AtividadeTelas.model
 {
-    class Venda
+    class ModeloVenda
     {
         private int id;
         private int cliente_id;
@@ -20,7 +20,7 @@ namespace AtividadeTelas.model
         public DateTime Data { get => data; set => data = value; }
         public Array Livros_venda { get => livros_venda; set => livros_venda = value; }
 
-        public Venda()
+        public ModeloVenda()
         {
         }
     }
