@@ -111,7 +111,7 @@ namespace SistemaBiblioteca
                 mtxtTelefone.BackColor = Color.Red;
             }
             else if (String.IsNullOrWhiteSpace(mtxtCPF.Text))
-            {''
+            {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 mtxtCPF.BackColor = Color.Red;
             }
