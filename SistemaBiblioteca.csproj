@@ -154,6 +154,9 @@
     <EmbeddedResource Include="View\PesquisaFuncionario.resx">
       <DependentUpon>PesquisaFuncionario.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\Relatorio.resx">
+      <DependentUpon>Relatorio.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Venda.resx">
       <DependentUpon>Venda.cs</DependentUpon>
     </EmbeddedResource>
