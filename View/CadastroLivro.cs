@@ -42,26 +42,34 @@ namespace SistemaBiblioteca
 
         private void BtSalvar_Click(object sender, EventArgs e)
         {
-            try
-            {
-               
-                Livro livro = new Livro();
-                livro.Titulo = txtTitulo.Text;
-                livro.Autor = txtAutor.Text;
-                livro.Editora = txtEditora.Text;
-                livro.Genero = cboGenero.Text;
-                livro.Estoque = int.Parse(txtEstoque.Text);
-                livro.Isbn = txtISBN.Text;
-                livro.Ano = int.Parse(txtAno.Text);
-                livro.Preco = float.Parse(txtPreco.Text);
-                new LivroControle().CadastrarLivro(livro);
-                MessageBox.Show("seu cadastro foi feita com sucesso");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-                MessageBox.Show(ex.StackTrace);
-            }
+
+            //if (String.IsNullOrWhiteSpace(txtCargo.Text) || String.IsNullOrWhiteSpace(txtEndereco.Text) || String.IsNullOrWhiteSpace(txtNome.Text) || String.IsNullOrWhiteSpace(mtxtTelefone.Text) || String.IsNullOrWhiteSpace(mtxtCPF.Text) || String.IsNullOrWhiteSpace(mtxtDataNasc.Text))
+            //{
+            //    MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            //    txtCargo.BackColor = Color.Blue;
+            //}
+            //else
+            //{
+                try
+                {
+                    Livro livro = new Livro();
+                    livro.Titulo = txtTitulo.Text;
+                    livro.Autor = txtAutor.Text;
+                    livro.Editora = txtEditora.Text;
+                    livro.Genero = cboGenero.Text;
+                    livro.Estoque = int.Parse(txtEstoque.Text);
+                    livro.Isbn = txtISBN.Text;
+                    livro.Ano = int.Parse(txtAno.Text);
+                    livro.Preco = float.Parse(txtPreco.Text);
+                    new LivroControle().CadastrarLivro(livro);
+                    MessageBox.Show("Seu cadastro foi feita com sucesso");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                    MessageBox.Show(ex.StackTrace);
+                }
+            //}
         }
 
         

@@ -67,7 +67,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(366, 52);
+            this.label3.Location = new System.Drawing.Point(330, 52);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
@@ -76,30 +76,30 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(350, 129);
+            this.label4.Location = new System.Drawing.Point(292, 129);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(33, 13);
+            this.label4.Size = new System.Drawing.Size(107, 13);
             this.label4.TabIndex = 26;
-            this.label4.Text = "Data:";
+            this.label4.Text = "Data de Nascimento:";
             // 
             // txtNome
             // 
             this.txtNome.Location = new System.Drawing.Point(66, 49);
             this.txtNome.Name = "txtNome";
-            this.txtNome.Size = new System.Drawing.Size(294, 20);
+            this.txtNome.Size = new System.Drawing.Size(258, 20);
             this.txtNome.TabIndex = 27;
             // 
             // txtCargo
             // 
-            this.txtCargo.Location = new System.Drawing.Point(410, 49);
+            this.txtCargo.Location = new System.Drawing.Point(374, 49);
             this.txtCargo.Name = "txtCargo";
-            this.txtCargo.Size = new System.Drawing.Size(213, 20);
+            this.txtCargo.Size = new System.Drawing.Size(137, 20);
             this.txtCargo.TabIndex = 28;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(196, 133);
+            this.label5.Location = new System.Drawing.Point(162, 129);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(30, 13);
             this.label5.TabIndex = 30;
@@ -108,7 +108,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(8, 133);
+            this.label6.Location = new System.Drawing.Point(8, 129);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(52, 13);
             this.label6.TabIndex = 32;
@@ -118,7 +118,7 @@
             // 
             this.txtEndereco.Location = new System.Drawing.Point(66, 87);
             this.txtEndereco.Name = "txtEndereco";
-            this.txtEndereco.Size = new System.Drawing.Size(557, 20);
+            this.txtEndereco.Size = new System.Drawing.Size(445, 20);
             this.txtEndereco.TabIndex = 35;
             // 
             // label7
@@ -132,7 +132,7 @@
             // 
             // mtxtCPF
             // 
-            this.mtxtCPF.Location = new System.Drawing.Point(232, 126);
+            this.mtxtCPF.Location = new System.Drawing.Point(198, 126);
             this.mtxtCPF.Mask = "000,000,000-00";
             this.mtxtCPF.Name = "mtxtCPF";
             this.mtxtCPF.Size = new System.Drawing.Size(88, 20);
@@ -149,7 +149,7 @@
             // btExcluir
             // 
             this.btExcluir.Image = global::SistemaBiblioteca.Properties.Resources.excluir4737;
-            this.btExcluir.Location = new System.Drawing.Point(562, 152);
+            this.btExcluir.Location = new System.Drawing.Point(462, 152);
             this.btExcluir.Name = "btExcluir";
             this.btExcluir.Size = new System.Drawing.Size(49, 53);
             this.btExcluir.TabIndex = 21;
@@ -158,15 +158,16 @@
             // btSalvar
             // 
             this.btSalvar.Image = global::SistemaBiblioteca.Properties.Resources.salvar4737;
-            this.btSalvar.Location = new System.Drawing.Point(503, 152);
+            this.btSalvar.Location = new System.Drawing.Point(403, 152);
             this.btSalvar.Name = "btSalvar";
             this.btSalvar.Size = new System.Drawing.Size(56, 53);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
             // mtxtDataNasc
             // 
-            this.mtxtDataNasc.Location = new System.Drawing.Point(435, 121);
+            this.mtxtDataNasc.Location = new System.Drawing.Point(405, 126);
             this.mtxtDataNasc.Mask = "00/00/0000";
             this.mtxtDataNasc.Name = "mtxtDataNasc";
             this.mtxtDataNasc.Size = new System.Drawing.Size(106, 20);
@@ -177,7 +178,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(635, 214);
+            this.ClientSize = new System.Drawing.Size(520, 214);
             this.Controls.Add(this.mtxtDataNasc);
             this.Controls.Add(this.mtxtTelefone);
             this.Controls.Add(this.mtxtCPF);
