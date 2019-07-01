@@ -13,8 +13,6 @@ namespace AtividadeTelas.control
 {
     class DB
     {
-        private static object dgvTabCliente;
-        private static OleDbCommand cmd;
 
         public static Boolean Execute(String sql)
         {
@@ -64,11 +62,6 @@ namespace AtividadeTelas.control
                 Console.WriteLine(error);
                 throw;
             }
-        }
-
-        internal object Conn()
-        {
-            throw new NotImplementedException();
         }
     }
 }
