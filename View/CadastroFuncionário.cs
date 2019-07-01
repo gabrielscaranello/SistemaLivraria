@@ -91,34 +91,45 @@ namespace SistemaBiblioteca
             if (String.IsNullOrWhiteSpace(txtNome.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtNome.BackColor = Color.Red;
+                txtNome.BackColor = Color.SlateGray;
                 txtNome.ForeColor = Color.White;
+                txtNome.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtCargo.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtCargo.BackColor = Color.Red;
+                txtCargo.BackColor = Color.SlateGray;
+                txtCargo.ForeColor = Color.White;
+                txtCargo.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtEndereco.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtEndereco.BackColor = Color.Red;
+                txtEndereco.BackColor = Color.SlateGray;
+                txtEndereco.ForeColor = Color.White;
+                txtEndereco.Focus();
             }
 
-            else if (String.IsNullOrWhiteSpace(mtxtTelefone.Text))
+            else if (String.IsNullOrWhiteSpace(mtxtTelefone.Text) || !mtxtTelefone.MaskCompleted)
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                mtxtTelefone.BackColor = Color.Red;
+                mtxtTelefone.BackColor = Color.SlateGray;
+                mtxtTelefone.ForeColor = Color.White;
+                mtxtTelefone.Focus();
             }
-            else if (String.IsNullOrWhiteSpace(mtxtCPF.Text))
+            else if (String.IsNullOrWhiteSpace(mtxtCPF.Text) || !mtxtCPF.MaskCompleted)
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                mtxtCPF.BackColor = Color.Red;
+                mtxtCPF.BackColor = Color.SlateGray;
+                mtxtCPF.ForeColor = Color.White;
+                mtxtCPF.Focus();
             }
-            else if (String.IsNullOrWhiteSpace(mtxtDataNasc.Text))
+            else if (String.IsNullOrWhiteSpace(mtxtDataNasc.Text) || !mtxtDataNasc.MaskCompleted)
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                mtxtDataNasc.BackColor = Color.Red;
+                mtxtDataNasc.BackColor = Color.SlateGray;
+                mtxtDataNasc.ForeColor = Color.White;
+                mtxtDataNasc.Focus();
             }
             else
             {

@@ -92,51 +92,59 @@ namespace SistemaBiblioteca
             if (String.IsNullOrWhiteSpace(txtTitulo.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtTitulo.BackColor = Color.Red;
+                txtTitulo.BackColor = Color.SlateGray;
                 txtTitulo.ForeColor = Color.White;
+                txtTitulo.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtAutor.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtAutor.BackColor = Color.Red;
+                txtAutor.BackColor = Color.SlateGray;
                 txtAutor.ForeColor = Color.White;
+                txtAutor.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtEditora.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtEditora.BackColor = Color.Red;
+                txtEditora.BackColor = Color.SlateGray;
                 txtEditora.ForeColor = Color.White;
+                txtEditora.Focus();
             }
 
             else if (String.IsNullOrWhiteSpace(cboGenero.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                cboGenero.BackColor = Color.Red;
+                cboGenero.BackColor = Color.SlateGray;
                 cboGenero.ForeColor = Color.White;
+                cboGenero.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtEstoque.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtEstoque.BackColor = Color.Red;
+                txtEstoque.BackColor = Color.SlateGray;
                 txtEstoque.ForeColor = Color.White;
+                txtEstoque.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtISBN.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtISBN.BackColor = Color.Red;
+                txtISBN.BackColor = Color.SlateGray;
                 txtISBN.ForeColor = Color.White;
+                txtISBN.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtAno.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtAno.BackColor = Color.Red;
+                txtAno.BackColor = Color.SlateGray;
                 txtAno.ForeColor = Color.White;
+                txtAno.Focus();
             }
             else if (String.IsNullOrWhiteSpace(txtPreco.Text))
             {
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-                txtPreco.BackColor = Color.Red;
+                txtPreco.BackColor = Color.SlateGray;
                 txtPreco.ForeColor = Color.White;
+                txtPreco.Focus();
             }
             else
             {
