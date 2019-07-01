@@ -109,6 +109,56 @@ namespace SistemaBiblioteca
         {
 
         }
+
+        private void BtSalvar_Click(object sender, EventArgs e)
+        {
+            if (!String.IsNullOrWhiteSpace(txtNomeCliente.Text))
+            {
+                txtNomeCliente.BackColor = Color.White;
+                txtNomeCliente.ForeColor = Color.Black;
+            }
+
+            if (!String.IsNullOrWhiteSpace(txtCodFunc.Text))
+            {
+                txtCodFunc.BackColor = Color.White;
+                txtCodFunc.ForeColor = Color.Black;
+            }
+
+            if (!String.IsNullOrWhiteSpace(txtProduto.Text))
+            {
+                txtProduto.BackColor = Color.White;
+                txtProduto.ForeColor = Color.White;
+            }
+
+
+
+            if (String.IsNullOrWhiteSpace(txtNomeCliente.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNomeCliente.BackColor = Color.SlateGray;
+                txtNomeCliente.ForeColor = Color.White;
+                txtNomeCliente.Focus();
+            }
+            else if (String.IsNullOrWhiteSpace(txtCodFunc.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCodFunc.BackColor = Color.SlateGray;
+                txtCodFunc.ForeColor = Color.White;
+                txtCodFunc.Focus();
+            }
+            else if (String.IsNullOrWhiteSpace(txtProduto.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtProduto.BackColor = Color.SlateGray;
+                txtProduto.ForeColor = Color.White;
+                txtProduto.Focus();
+            }
+            else
+            {
+
+                //inserir o código de salvar aqui...
+            }
+        }
     }
 }
 

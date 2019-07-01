@@ -36,6 +36,11 @@
             this.txtCodFunc = new System.Windows.Forms.TextBox();
             this.dtpDataVenda = new System.Windows.Forms.DateTimePicker();
             this.dataGVProdutos = new System.Windows.Forms.DataGridView();
+            this.CodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label5 = new System.Windows.Forms.Label();
             this.txtProduto = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
@@ -50,11 +55,6 @@
             this.btSalvar = new System.Windows.Forms.Button();
             this.btEditar = new System.Windows.Forms.Button();
             this.btVoltar = new System.Windows.Forms.Button();
-            this.CodProduto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Produto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Preco = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Quantidade = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ValorTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dataGVProdutos)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numQuantidade)).BeginInit();
             this.SuspendLayout();
@@ -136,6 +136,42 @@
             this.dataGVProdutos.Name = "dataGVProdutos";
             this.dataGVProdutos.Size = new System.Drawing.Size(474, 113);
             this.dataGVProdutos.TabIndex = 30;
+            // 
+            // CodProduto
+            // 
+            this.CodProduto.Frozen = true;
+            this.CodProduto.HeaderText = "CódProduto";
+            this.CodProduto.Name = "CodProduto";
+            this.CodProduto.ReadOnly = true;
+            this.CodProduto.Width = 50;
+            // 
+            // Produto
+            // 
+            this.Produto.Frozen = true;
+            this.Produto.HeaderText = "Produto";
+            this.Produto.Name = "Produto";
+            this.Produto.ReadOnly = true;
+            this.Produto.Width = 210;
+            // 
+            // Preco
+            // 
+            this.Preco.HeaderText = "ValorUnitário";
+            this.Preco.Name = "Preco";
+            this.Preco.ReadOnly = true;
+            this.Preco.Width = 60;
+            // 
+            // Quantidade
+            // 
+            this.Quantidade.HeaderText = "QNT.";
+            this.Quantidade.Name = "Quantidade";
+            this.Quantidade.Width = 50;
+            // 
+            // ValorTotal
+            // 
+            this.ValorTotal.HeaderText = "ValorTotal";
+            this.ValorTotal.Name = "ValorTotal";
+            this.ValorTotal.ReadOnly = true;
+            this.ValorTotal.Width = 60;
             // 
             // label5
             // 
@@ -245,6 +281,7 @@
             this.btSalvar.Size = new System.Drawing.Size(55, 47);
             this.btSalvar.TabIndex = 20;
             this.btSalvar.UseVisualStyleBackColor = true;
+            this.btSalvar.Click += new System.EventHandler(this.BtSalvar_Click);
             // 
             // btEditar
             // 
@@ -264,42 +301,6 @@
             this.btVoltar.TabIndex = 18;
             this.btVoltar.UseVisualStyleBackColor = true;
             this.btVoltar.Click += new System.EventHandler(this.BtVoltar_Click);
-            // 
-            // CodProduto
-            // 
-            this.CodProduto.Frozen = true;
-            this.CodProduto.HeaderText = "CódProduto";
-            this.CodProduto.Name = "CodProduto";
-            this.CodProduto.ReadOnly = true;
-            this.CodProduto.Width = 50;
-            // 
-            // Produto
-            // 
-            this.Produto.Frozen = true;
-            this.Produto.HeaderText = "Produto";
-            this.Produto.Name = "Produto";
-            this.Produto.ReadOnly = true;
-            this.Produto.Width = 210;
-            // 
-            // Preco
-            // 
-            this.Preco.HeaderText = "ValorUnitário";
-            this.Preco.Name = "Preco";
-            this.Preco.ReadOnly = true;
-            this.Preco.Width = 60;
-            // 
-            // Quantidade
-            // 
-            this.Quantidade.HeaderText = "QNT.";
-            this.Quantidade.Name = "Quantidade";
-            this.Quantidade.Width = 50;
-            // 
-            // ValorTotal
-            // 
-            this.ValorTotal.HeaderText = "ValorTotal";
-            this.ValorTotal.Name = "ValorTotal";
-            this.ValorTotal.ReadOnly = true;
-            this.ValorTotal.Width = 60;
             // 
             // Venda
             // 
