@@ -56,15 +56,18 @@ namespace SistemaBiblioteca
                 MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 txtCargo.BackColor = Color.Blue;
             }
-                
-            Funcionario funcionario = new Funcionario();
-            funcionario.Nome = txtNome.Text;
-            funcionario.Cargo = txtCargo.Text;
-            funcionario.Cpf = mtxtCPF.Text;
-            funcionario.Endereco = txtEndereco.Text;
-            funcionario.Telefone = mtxtTelefone.Text;
-            funcionario.DataNasc = DateTime.ParseExact(mtxtDataNasc.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
-            new FuncionarioControle().CadastrarFuncionario(funcionario);
+            else
+            {
+                Funcionario funcionario = new Funcionario();
+                funcionario.Nome = txtNome.Text;
+                funcionario.Cargo = txtCargo.Text;
+                funcionario.Cpf = mtxtCPF.Text;
+                funcionario.Endereco = txtEndereco.Text;
+                funcionario.Telefone = mtxtTelefone.Text;
+                funcionario.DataNasc = DateTime.ParseExact(mtxtDataNasc.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+                new FuncionarioControle().CadastrarFuncionario(funcionario);
+            }
+
         }
 
         private void MaskedTextBox1_MaskInputRejected(object sender, MaskInputRejectedEventArgs e)

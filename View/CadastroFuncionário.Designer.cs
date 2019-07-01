@@ -72,7 +72,6 @@
             this.label3.Size = new System.Drawing.Size(38, 13);
             this.label3.TabIndex = 25;
             this.label3.Text = "Cargo:";
-            this.label3.Click += new System.EventHandler(this.Label3_Click);
             // 
             // label4
             // 
@@ -89,7 +88,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(294, 20);
             this.txtNome.TabIndex = 27;
-            this.txtNome.TextChanged += new System.EventHandler(this.TxtNome_TextChanged);
             // 
             // txtCargo
             // 
@@ -97,7 +95,6 @@
             this.txtCargo.Name = "txtCargo";
             this.txtCargo.Size = new System.Drawing.Size(213, 20);
             this.txtCargo.TabIndex = 28;
-            this.txtCargo.TextChanged += new System.EventHandler(this.TbCargo_TextChanged);
             // 
             // label5
             // 
@@ -175,7 +172,6 @@
             this.mtxtDataNasc.Size = new System.Drawing.Size(106, 20);
             this.mtxtDataNasc.TabIndex = 38;
             this.mtxtDataNasc.ValidatingType = typeof(System.DateTime);
-            this.mtxtDataNasc.MaskInputRejected += new System.Windows.Forms.MaskInputRejectedEventHandler(this.MaskedTextBox1_MaskInputRejected);
             // 
             // CadastroFuncionário
             // 
