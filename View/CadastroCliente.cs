@@ -41,42 +41,102 @@ namespace SistemaBiblioteca
 
                 if (resultado == System.Windows.Forms.DialogResult.Yes)
 
-                    this.Close();           
+                    this.Close();
             }
         }
 
         private void BtSalvar_Click(object sender, EventArgs e)
         {
-            validarCampo();
-
-            Cliente cliente = new Cliente();
-            cliente.Nome = txtNome.Text;
-            cliente.Telefone = mtxtTelefone.Text;
-            cliente.Cpf = mtxtCPF.Text;
-            cliente.Endereco = txtEndereco.Text;
-            cliente.Email = txtEmail.Text;
-            cliente.DataNasc = DateTime.ParseExact(mtxtNascimento.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
-            new ClienteControle().CadastrarCliente(cliente);
-
-            //txtNome.Enabled = true;
-            //txtEndereco.Enabled = true;
-        }
-            private bool validarCampo()
+            if (!String.IsNullOrWhiteSpace(txtNome.Text))
             {
-                bool Salvar = false;
-
-                if(txtNome.Text == "")
-                {
-                    Salvar = false;
-                    errorProvider1.SetError(txtNome, "Inserir nome!");
-                }
-                return Salvar;
+                txtNome.BackColor = Color.White;
+                txtNome.ForeColor = Color.Black;
             }
-        
 
-        private void Cadastro_Cliente_Load(object sender, EventArgs e)
-        {
+            if (!String.IsNullOrWhiteSpace(mtxtTelefone.Text))
+            {
+                mtxtTelefone.BackColor = Color.White;
+                mtxtTelefone.ForeColor = Color.Black;
+            }
 
+            if (!String.IsNullOrWhiteSpace(mtxtCPF.Text))
+            {
+                mtxtCPF.BackColor = Color.White;
+                mtxtCPF.ForeColor = Color.White;
+            }
+
+            if (!String.IsNullOrWhiteSpace(txtEndereco.Text))
+            {
+                txtEndereco.BackColor = Color.White;
+                txtEndereco.ForeColor = Color.Black;
+            }
+
+            if (!String.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                txtEmail.BackColor = Color.White;
+                txtEmail.ForeColor = Color.Black;
+            }
+
+            if (!String.IsNullOrWhiteSpace(mtxtNascimento.Text))
+            {
+                mtxtNascimento.BackColor = Color.White;
+                mtxtNascimento.ForeColor = Color.Black;
+            }
+
+
+            if (String.IsNullOrWhiteSpace(txtNome.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtNome.BackColor = Color.Red;
+                txtNome.ForeColor = Color.White;
+            }
+            else if (String.IsNullOrWhiteSpace(mtxtTelefone.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                mtxtTelefone.BackColor = Color.Red;
+                mtxtTelefone.ForeColor = Color.White;
+            }
+            else if (String.IsNullOrWhiteSpace(mtxtCPF.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                mtxtCPF.BackColor = Color.Red;
+                mtxtCPF.ForeColor = Color.White;
+            }
+
+            else if (String.IsNullOrWhiteSpace(txtEndereco.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEndereco.ForeColor = Color.White;
+                txtEndereco.BackColor = Color.Red;
+            }
+            else if (String.IsNullOrWhiteSpace(txtEmail.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtEmail.ForeColor = Color.White;
+                txtEmail.BackColor = Color.Red;
+            }
+            else if (String.IsNullOrWhiteSpace(mtxtNascimento.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                mtxtNascimento.ForeColor = Color.White;
+                mtxtNascimento.BackColor = Color.Red;
+            }
+            else
+            {
+                Cliente cliente = new Cliente();
+                cliente.Nome = txtNome.Text;
+                cliente.Telefone = mtxtTelefone.Text;
+                cliente.Cpf = mtxtCPF.Text;
+                cliente.Endereco = txtEndereco.Text;
+                cliente.Email = txtEmail.Text;
+                cliente.DataNasc = DateTime.ParseExact(mtxtNascimento.Text, "dd/MM/yyyy", CultureInfo.CreateSpecificCulture("pt-BR"));
+                new ClienteControle().CadastrarCliente(cliente);
+            }
+        }
+
+            private void Cadastro_Cliente_Load(object sender, EventArgs e)
+            {
+
+            }
         }
     }
-}
