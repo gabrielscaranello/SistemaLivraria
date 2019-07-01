@@ -41,7 +41,7 @@ namespace SistemaBiblioteca
 
         private void CadastroFuncionário_Load(object sender, EventArgs e)
         {
-           
+
         }
 
         private void TxtNome_TextChanged(object sender, EventArgs e)
@@ -49,17 +49,14 @@ namespace SistemaBiblioteca
 
         }
 
-        //private void BtSalvar_Click(object sender, EventArgs e)
-        //{
-        //    if (String.IsNullOrWhiteSpace(txtCargo.Text) || String.IsNullOrWhiteSpace(txtEndereco.Text) || String.IsNullOrWhiteSpace(txtNome.Text))
-        //    {
-        //        MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-        //        txtCargo.BackColor = Color.Blue;
-        //    }
-        //}
-
         private void BtSalvar_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrWhiteSpace(txtCargo.Text) || String.IsNullOrWhiteSpace(txtEndereco.Text) || String.IsNullOrWhiteSpace(txtNome.Text) || String.IsNullOrWhiteSpace(mtxtTelefone.Text) || String.IsNullOrWhiteSpace(mtxtCPF.Text) || String.IsNullOrWhiteSpace(mtxtDataNasc.Text))
+            {
+                MessageBox.Show("Campo obrigatório vazio!", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                txtCargo.BackColor = Color.Blue;
+            }
+                
             Funcionario funcionario = new Funcionario();
             funcionario.Nome = txtNome.Text;
             funcionario.Cargo = txtCargo.Text;
